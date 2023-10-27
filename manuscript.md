@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T17:30:15+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T17:30:15+00:00" />
+  <meta name="dc.modified" content="2023-10-27T17:35:50+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T17:35:50+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@06c2b39](https://github.com/slobentanzer/causality_perspective_2023/tree/06c2b39596cdeb364551198da2a527fa5c97807f)
+from [slobentanzer/causality_perspective_2023@97229fb](https://github.com/slobentanzer/causality_perspective_2023/tree/97229fb90e1e6135991ff833047b6771e1afe904)
 on October 27, 2023.
 </em></small>
 
@@ -272,7 +272,7 @@ They can be fine-tuned for more specific tasks, because they are thought to deri
 While this designation is not too far off the mark for LLMs, it is not yet clear whether the same can be said for molecular models.
 
 Recent molecular foundation model benchmarks highlight clear discrepancies between the "foundational" aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
-<Details here>
+- Details here
 
 ### Attention (and large amounts of data) is all you need?
 
