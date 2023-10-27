@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T08:06:46+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T08:06:46+00:00" />
+  <meta name="dc.modified" content="2023-10-27T13:50:15+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T13:50:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a">slobentanzer/causality_perspective_2023@b4c291d</a>
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/ff3b8cc09436e0ff099c82b8dd2e808310680dee">slobentanzer/causality_perspective_2023@ff3b8cc</a>
 on October 27, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -132,6 +132,20 @@ Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, I
 </div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <h2 id="introduction">Introduction</h2>
+<p>Correlation is not causation.
+As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
+Since being described by Aristotle approximately 2500 years ago, causal reasoning (CR) remained virtually unchanged <span class="citation" data-cites="YcLevYSc">[<a href="#ref-YcLevYSc" role="doc-biblioref">1</a>]</span> until significant formal and mathematical advancements in the last decades <span class="citation" data-cites="peGxtHPM">[<a href="#ref-712MuGug" role="doc-biblioref">4</a>]</span>.
+In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.</p>
+<p>Randomised clinical trials show that, in a lower-dimensional context, we can achieve the high levels of confidence needed to satisfy the ethical requirements of modern medicine.
+However, translating this mode of reasoning into the high-dimensional space of modern omics is met with enormous challenges.
+The dramatically increased parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results, as well as in model explainability.</p>
+<p>With this perspective, we want to encourage and guide the use of CR to inform biomedical problems and vice versa.
+We will elaborate on three main points:</p>
+<ul>
+<li><p>biases and what they mean for CR, particularly in the context of biomedical data</p></li>
+<li><p>the role of prior knowledge in CR and how to translate prior knowledge into suitable biases</p></li>
+<li><p>the role of foundation models in molecular systems biology and their relationship to CR</p></li>
+</ul>
 <h2 id="bias">Bias</h2>
 <h3 id="meaning-and-examples-of-biases">Meaning and examples of biases</h3>
 <h3 id="why-do-we-need-biases">Why do we need biases?</h3>
@@ -145,14 +159,26 @@ Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, I
 <h2 id="causality-in-foundation-models">Causality in foundation models</h2>
 <p>Current interest in transformers</p>
 <p>Recent foundation model benchmarks</p>
-<p>Is attention (and large amounts of data) “all you need” to induce reliable biases in your model? (GPT “understands” language well) <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">1</a>]</span></p>
+<p>Is attention (and large amounts of data) “all you need” to induce reliable biases in your model? (GPT “understands” language well) <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">5</a>]</span></p>
 <p>What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models?</p>
 <p>Latent encodings of explicit prior knowledge (GEARS)</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-YcLevYSc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>The Organon, Or Logical Treatises, Of Aristole, Vol. 1 Of 2</strong> <div class="csl-block">Aristotle</div> <em>Forgotten Books</em> (2015) <div class="csl-block">ISBN: 9781330267608</div></div>
+</div>
+<div id="ref-peGxtHPM" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Causality</strong> <div class="csl-block">Judea Pearl</div> <em>Cambridge University Press</em> (2009-09-14) <a href="https://doi.org/ggd72q">https://doi.org/ggd72q</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1017/cbo9780511803161">10.1017/cbo9780511803161</a></div></div>
+</div>
+<div id="ref-w47lt0ah" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Identification of Causal Effects Using Instrumental Variables</strong> <div class="csl-block">Joshua D Angrist, Guido W Imbens, Donald B Rubin</div> <em>Journal of the American Statistical Association</em> (1996-06) <a href="https://doi.org/gdz4f4">https://doi.org/gdz4f4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1080/01621459.1996.10476902">10.1080/01621459.1996.10476902</a></div></div>
+</div>
+<div id="ref-712MuGug" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Myth and measurement: the new economics of the minimum wage</strong> <div class="csl-block">David E Card, Alan B Krueger</div> <em>Princeton University Press</em> (2016) <div class="csl-block">ISBN: 9781400880874</div></div>
+</div>
 <div id="ref-19EQh1DNG" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>ChatGPT broke the Turing test — the race is on for new ways to assess AI</strong> <div class="csl-block">Celeste Biever</div> <em>Nature</em> (2023-07-25) <a href="https://doi.org/gskd92">https://doi.org/gskd92</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-02361-7">10.1038/d41586-023-02361-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37491395">37491395</a></div></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>ChatGPT broke the Turing test — the race is on for new ways to assess AI</strong> <div class="csl-block">Celeste Biever</div> <em>Nature</em> (2023-07-25) <a href="https://doi.org/gskd92">https://doi.org/gskd92</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-02361-7">10.1038/d41586-023-02361-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37491395">37491395</a></div></div>
 </div>
 </div>
 <!-- default theme -->
