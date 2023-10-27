@@ -8,6 +8,7 @@ lang: en-UK
 date-meta: '2023-10-27'
 author-meta:
 - Sebastian Lobentanzer
+- Julio Saez-Rodriguez
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -22,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T07:52:52+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T07:52:52+00:00" />
+  <meta name="dc.modified" content="2023-10-27T08:06:46+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T08:06:46+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,15 +35,19 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Julio Saez-Rodriguez" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
+  <meta name="twitter:creator" content="@saezlab" />
   <link rel="canonical" href="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta property="og:url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta property="twitter:url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/4f227d95b912c9bcb218bb211cc6bf12f65eacdb/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/4f227d95b912c9bcb218bb211cc6bf12f65eacdb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/4f227d95b912c9bcb218bb211cc6bf12f65eacdb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/4f227d95b912c9bcb218bb211cc6bf12f65eacdb/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@4f227d9](https://github.com/slobentanzer/causality_perspective_2023/tree/4f227d95b912c9bcb218bb211cc6bf12f65eacdb)
+from [slobentanzer/causality_perspective_2023@b4c291d](https://github.com/slobentanzer/causality_perspective_2023/tree/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a)
 on October 27, 2023.
 </em></small>
 
@@ -84,6 +89,19 @@ on October 27, 2023.
     [slobentanzer](https://github.com/slobentanzer)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [slobentanzer](https://twitter.com/slobentanzer)
+    <br>
+  <small>
+     Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  </small>
+
++ **Julio Saez-Rodriguez**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-8552-8976](https://orcid.org/0000-0002-8552-8976)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [saezrodriguez](https://github.com/saezrodriguez)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [saezlab](https://twitter.com/saezlab)
     <br>
   <small>
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
@@ -133,7 +151,7 @@ Current interest in transformers
 
 Recent foundation model benchmarks
 
-Is attention (and large amounts of data) “all you need” to induce reliable biases in your model? (GPT “understands” language well)
+Is attention (and large amounts of data) “all you need” to induce reliable biases in your model? (GPT “understands” language well) [@doi:10.1038/d41586-023-02361-7]
 
 What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models?
 
