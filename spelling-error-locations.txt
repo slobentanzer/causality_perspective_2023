@@ -1,3 +1,7 @@
+content/10.introduction.md:6:biomedicine
+content/10.introduction.md:9:omics
+content/10.introduction.md:10:explainability
+content/10.introduction.md:10:identifiability
 content/30.prior_knowledge.md:5:BioCypher
 content/30.prior_knowledge.md:5:OmniPath
 content/30.prior_knowledge.md:7:Ontologies

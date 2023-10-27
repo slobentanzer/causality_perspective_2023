@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T08:06:46+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T08:06:46+00:00" />
+  <meta name="dc.modified" content="2023-10-27T13:50:15+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T13:50:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@b4c291d](https://github.com/slobentanzer/causality_perspective_2023/tree/b4c291d4e0247565ff1d4fd98f91162ba8c5ac5a)
+from [slobentanzer/causality_perspective_2023@ff3b8cc](https://github.com/slobentanzer/causality_perspective_2023/tree/ff3b8cc09436e0ff099c82b8dd2e808310680dee)
 on October 27, 2023.
 </em></small>
 
@@ -121,7 +121,23 @@ on October 27, 2023.
 
 ## Introduction
 
+Correlation is not causation.
+As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
+Since being described by Aristotle approximately 2500 years ago, causal reasoning (CR) remained virtually unchanged [@isbn:9781330267608] until  significant formal and mathematical advancements in the last decades [@doi:10.1017/CBO9780511803161, @doi:10.1080/01621459.1996.10476902, @isbn:9781400880874].
+In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
 
+Randomised clinical trials show that, in a lower-dimensional context, we can achieve the high levels of confidence needed to satisfy the ethical requirements of modern medicine.
+However, translating this mode of reasoning into the high-dimensional space of modern omics is met with enormous challenges.
+The dramatically increased parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results, as well as in model explainability.
+
+With this perspective, we want to encourage and guide the use of CR to inform biomedical problems and vice versa.
+We will elaborate on three main points:
+
+- biases and what they mean for CR, particularly in the context of biomedical data
+
+- the role of prior knowledge in CR and how to translate prior knowledge into suitable biases
+
+- the role of foundation models in molecular systems biology and their relationship to CR
 
 ## Bias
 
