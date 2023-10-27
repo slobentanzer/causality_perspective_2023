@@ -15,6 +15,10 @@ content/16.background.md:28:CRISPR
 content/16.background.md:28:interventional
 content/16.background.md:38:angiotensin
 content/16.background.md:41:angiotensin
+content/20.bias.md:10:overfitting
+content/20.bias.md:10:underfitting
+content/20.bias.md:21:dimensionality
+content/20.bias.md:22:variablity
 content/30.prior_knowledge.md:5:BioCypher
 content/30.prior_knowledge.md:5:OmniPath
 content/30.prior_knowledge.md:7:Ontologies
