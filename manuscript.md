@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T14:32:59+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T14:32:59+00:00" />
+  <meta name="dc.modified" content="2023-10-27T15:29:28+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T15:29:28+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5a5c663e2fbfa33665766692876bf09d12e0e435/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5a5c663e2fbfa33665766692876bf09d12e0e435/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5a5c663e2fbfa33665766692876bf09d12e0e435/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/5a5c663e2fbfa33665766692876bf09d12e0e435/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@6b1f187](https://github.com/slobentanzer/causality_perspective_2023/tree/6b1f187d24b3dde5df2cc313446719ecb8c4371c)
+from [slobentanzer/causality_perspective_2023@5a5c663](https://github.com/slobentanzer/causality_perspective_2023/tree/5a5c663e2fbfa33665766692876bf09d12e0e435)
 on October 27, 2023.
 </em></small>
 
@@ -138,6 +138,59 @@ We will elaborate on three main points:
 - the role of prior knowledge in CR and how to translate prior knowledge into suitable biases
 
 - the role of foundation models in molecular systems biology and their relationship to CR
+
+## Motivation
+
+Should we have this?
+
+## Background
+
+To ultimately explain biases, we must briefly touch on the background of CR.
+The field of CR distinguishes between *causal discovery* - the process of building hypotheses from data on how agents interact causally - and *causal inference* - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
+In the scientific process from unknowingness to inference on a specific event, the process of causal discovery is more data-intensive than the process of inference, which almost always relies on the prior knowledge from the discovery stage.
+As a result, most inference mechanisms perform better when including prior knowledge at some point of the process.
+This has also been observed in biomedical research, for instance in the DREAM challenges [@doi:10.1038/nmeth.3773].
+
+Causal discovery is computationally and statistically very expensive because it needs to account for the variability in data generation while isolating generalisable relationships between single measured species (cite).
+For modern systems biology, this means that methods for causal discovery typically require large amounts of measurements.
+Highly parameterised models such as neural networks increase this requirement even further.
+As such, many regard causal discovery in molecular biomedicine as a scaling problem.
+
+Causal inference, on the other hand, only requires sufficient measurements (replicates) to confidently account for the state of measured species in any condition (which can still be expensive, given the many technical and biological parameters that can influence molecular biology measurements).
+However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete.
+For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
+In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the "right" biases to apply.
+
+### The Ladder of Causality
+
+Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
+The framework of the *ladder of causality* [] roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals.
+While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., "would this patient have survived if they had received this treatment?"), the data we have available is typically observational (e.g., "this patient received this treatment and survived") and sometimes interventional (e.g., clinical trials or perturbation screening).
+To generate interventional or even counterfactual inferences from observational data is a major challenge at least, and impossible at most, depending on the characteristics of the system under study.
+
+There are approaches to delineate interventional inference from observational data, such as the 'natural experiments' framework [].
+However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
+Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [].
+Current developments of CR in the biomedical field therefore mostly focus on these types of data.
+
+### Deduction and Induction
+
+Lastly, in CR, we can also distinguish between *deductive* and *inductive* reasoning.
+This is where certain biases are pivotal to the effectiveness of the CR method.
+Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
+"All men are mortal, Socrates is a man, therefore Socrates is mortal" is a classic example of deductive reasoning.
+In biomedical research, this is typically the process of deriving a conclusion from a set of prior knowledge.
+For instance, knowing about the causes of stroke (which include high blood pressure) and the consequences of an angiotensin receptor-blocking drug (lowering blood pressure) allows us to deduce that the drug can be used to prevent stroke.
+
+Inductive reasoning, on the other hand, is the process of deriving a conclusion from a set of observations; in the biomedical case, this is often measurements.
+For instance, we would conduct a clinical trial on the preventative effect of the angiotensin receptor-blocking drug on high-risk patients.
+Since we cannot feasibly test the drug on all potential patients, we instead test on a *representative* sample of the population.
+Given a statistically significant effect on stroke prevention, we can then perform the inductive step that the drug is generally effective at preventing stroke.
+
+The main difference between deduction and induction is that the former is more reliable, but also more limited in scope, than the latter.
+In biomedical research, we often have to rely on inductive reasoning because we cannot feasibly test all hypotheses in a deductive manner.
+In consequence, the *inductive* biases we introduce into our models are a pivotal part of performing CR in biomedical research.
+
 
 ## Bias
 
