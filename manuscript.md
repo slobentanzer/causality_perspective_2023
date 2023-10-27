@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T16:00:30+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T16:00:30+00:00" />
+  <meta name="dc.modified" content="2023-10-27T16:14:10+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T16:14:10+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/1256a24fe2c0e420b89f4311e5ff2c254c80e01e/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/1256a24fe2c0e420b89f4311e5ff2c254c80e01e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/1256a24fe2c0e420b89f4311e5ff2c254c80e01e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d4d35168d7415c5b8b5591e5d7d05960f30169b7/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d4d35168d7415c5b8b5591e5d7d05960f30169b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d4d35168d7415c5b8b5591e5d7d05960f30169b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/1256a24fe2c0e420b89f4311e5ff2c254c80e01e/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d4d35168d7415c5b8b5591e5d7d05960f30169b7/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@1256a24](https://github.com/slobentanzer/causality_perspective_2023/tree/1256a24fe2c0e420b89f4311e5ff2c254c80e01e)
+from [slobentanzer/causality_perspective_2023@d4d3516](https://github.com/slobentanzer/causality_perspective_2023/tree/d4d35168d7415c5b8b5591e5d7d05960f30169b7)
 on October 27, 2023.
 </em></small>
 
@@ -194,6 +194,8 @@ In consequence, the *inductive* biases we introduce into our models are a pivota
 
 Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources.
+Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age (cite).
+In fact, we may be over-eager to deduce causality from observation (i.e., “jump to conclusions”), which is indicative of a strong inductive bias.
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning (ML), we can distinguish between two types of biases: useful and harmful biases.
@@ -226,6 +228,17 @@ Some central questions then arise:
 ## Bias from prior knowledge
 
 ### Prior knowledge
+
+The human mind will be the gold standard for reasoning for the foreseeable future.
+However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive nor keep in memory thousands of agents at the same time.
+Hence, to make the most of our immense wealth of data, we must elevate our algorithms’ reasoning capabilities.
+A sensible approach is to look to our reference model, the human, to try and transfer some of our capabilities to the in silico reasoner.
+In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
+This can most likely be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359; @doi:10.1109/JPROC.2021.3058954; @doi:10.48550/arxiv.2106.12430].
+
+In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric, the so-called „bitter lesson“ [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
+It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}]; the impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases.
+Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the - still - relatively little data we generate, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 OmniPath/BioCypher
 
