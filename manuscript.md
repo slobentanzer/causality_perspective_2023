@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T13:50:15+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T13:50:15+00:00" />
+  <meta name="dc.modified" content="2023-10-27T14:32:59+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T14:32:59+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ff3b8cc09436e0ff099c82b8dd2e808310680dee/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/6b1f187d24b3dde5df2cc313446719ecb8c4371c/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@ff3b8cc](https://github.com/slobentanzer/causality_perspective_2023/tree/ff3b8cc09436e0ff099c82b8dd2e808310680dee)
+from [slobentanzer/causality_perspective_2023@6b1f187](https://github.com/slobentanzer/causality_perspective_2023/tree/6b1f187d24b3dde5df2cc313446719ecb8c4371c)
 on October 27, 2023.
 </em></small>
 
@@ -123,7 +123,7 @@ on October 27, 2023.
 
 Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
-Since being described by Aristotle approximately 2500 years ago, causal reasoning (CR) remained virtually unchanged [@isbn:9781330267608] until  significant formal and mathematical advancements in the last decades [@doi:10.1017/CBO9780511803161, @doi:10.1080/01621459.1996.10476902, @isbn:9781400880874].
+Since being described by Aristotle approximately 2500 years ago, causal reasoning (CR) remained virtually unchanged [@isbn:9781330267608] until  significant formal and mathematical advancements in the last decades [@doi:10.1017/CBO9780511803161; @doi:10.1080/01621459.1996.10476902; @isbn:9781400880874].
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
 
 Randomised clinical trials show that, in a lower-dimensional context, we can achieve the high levels of confidence needed to satisfy the ethical requirements of modern medicine.

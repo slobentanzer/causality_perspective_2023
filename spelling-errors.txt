@@ -1,5 +1,5 @@
 BioCypher
-Biomedicine
+biomedicine
 encodings
 explainability
 GPT
