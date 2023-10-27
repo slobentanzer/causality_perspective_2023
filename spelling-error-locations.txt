@@ -21,8 +21,7 @@ content/20.bias.md:23:dimensionality
 content/20.bias.md:24:variablity
 content/30.prior_knowledge.md:8:silico
 content/30.prior_knowledge.md:9:biomedicine
-content/30.prior_knowledge.md:17:BioCypher
-content/30.prior_knowledge.md:17:OmniPath
-content/30.prior_knowledge.md:19:Ontologies
+content/30.prior_knowledge.md:21:ontologies
+content/30.prior_knowledge.md:22:directionality
 content/40.foundation_models.md:7:GPT
 content/40.foundation_models.md:11:encodings

@@ -1,10 +1,10 @@
 angiotensin
-BioCypher
-biomedicine
+Biomedicine
 Cas
 counterfactuals
 CRISPR
 dimensionality
+directionality
 encodings
 explainability
 generalisable
@@ -13,8 +13,7 @@ identifiability
 interventional
 Lobentanzer
 omics
-OmniPath
-Ontologies
+ontologies
 Orthogonally
 overfitting
 Saez

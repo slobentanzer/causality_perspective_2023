@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T16:24:27+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T16:24:27+00:00" />
+  <meta name="dc.modified" content="2023-10-27T16:35:53+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T16:35:53+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/58adf5a1cec0daab4ed04e2195831a7bad4fe09f/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/58adf5a1cec0daab4ed04e2195831a7bad4fe09f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/58adf5a1cec0daab4ed04e2195831a7bad4fe09f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/58adf5a1cec0daab4ed04e2195831a7bad4fe09f/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@58adf5a](https://github.com/slobentanzer/causality_perspective_2023/tree/58adf5a1cec0daab4ed04e2195831a7bad4fe09f)
+from [slobentanzer/causality_perspective_2023@7dd9ca4](https://github.com/slobentanzer/causality_perspective_2023/tree/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5)
 on October 27, 2023.
 </em></small>
 
@@ -82,7 +82,7 @@ on October 27, 2023.
 
 
 + **Sebastian Lobentanzer**
-  <br>
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-3399-6695](https://orcid.org/0000-0003-3399-6695)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -95,7 +95,7 @@ on October 27, 2023.
   </small>
 
 + **Julio Saez-Rodriguez**
-  <br>
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-8552-8976](https://orcid.org/0000-0002-8552-8976)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -110,6 +110,10 @@ on October 27, 2023.
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/slobentanzer/causality_perspective_2023/issues)
+or email to
+Sebastian Lobentanzer \<sebastian.lobentanzer@gmail.com\>, 
+Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
+
 
 :::
 
@@ -243,9 +247,12 @@ It has been argued that the intrinsic complexity of real-world systems does not 
 The impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases [@doi:10.48550/arXiv.1706.03762].
 Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
-OmniPath/BioCypher
-
-Ontologies
+To be able to effectively use our knowledge in reasoning, we must be able to represent it robustly and in a way that is conducive to the reasoning task.
+Biomedical entities and relationships must be clearly defined and represented unambiguously.
+Additionally, the diversity in our tasks and knowledge sources requires a flexible representation that can be adapted to the task at hand.
+Knowledge representation frameworks can aid in walking the line between robust and transparent, reproducible knowledge representation on the one hand, and flexible, task-specific workflows on the other [@doi:10.1038/s41587-023-01848-y].
+In addition, they can ground the biological entities that are subject to reasoning using domain-specific ontologies, which can be another useful source of bias.
+For instance, knowing the directionality of the central dogma of biology can be a useful bias in reasoning about gene expression.
 
 ### Modelling on prior knowledge
 
@@ -264,6 +271,11 @@ Is attention (and large amounts of data) “all you need” to induce reliable b
 What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models?
 
 Latent encodings of explicit prior knowledge (GEARS)
+
+Stefan's comment: newer architectures (self-supervised) do not decode; how important is it for biological insights, particularly compared with scaling? Exploring and explaining the latent space...
+
+- https://scholar.google.de/citations?view_op=view_citation&hl=de&user=soxv0s0AAAAJ&sortby=pubdate&citation_for_view=soxv0s0AAAAJ:2osOgNQ5qMEC (decoder important)
+- https://proceedings.neurips.cc/paper_files/paper/2022/hash/87213955efbe48b46586e37bf2f1fe5b-Abstract-Conference.html (decoder not important)
 
 
 ## References {.page_break_before}
