@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T16:35:53+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T16:35:53+00:00" />
+  <meta name="dc.modified" content="2023-10-27T17:30:15+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T17:30:15+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/06c2b39596cdeb364551198da2a527fa5c97807f/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@7dd9ca4](https://github.com/slobentanzer/causality_perspective_2023/tree/7dd9ca4d6371c66095e25d44a0ad20a1321f88a5)
+from [slobentanzer/causality_perspective_2023@06c2b39](https://github.com/slobentanzer/causality_perspective_2023/tree/06c2b39596cdeb364551198da2a527fa5c97807f)
 on October 27, 2023.
 </em></small>
 
@@ -233,19 +233,19 @@ Some central questions then arise:
 
 ## Bias from prior knowledge
 
-### Prior knowledge
-
 The human mind will be the gold standard for reasoning for the foreseeable future.
 However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive nor keep in memory thousands of agents at the same time.
 Hence, to make the most of our immense wealth of data, we must elevate our algorithms’ reasoning capabilities.
 A sensible approach is to look to our reference model, the human, to try and transfer some of our capabilities to the in silico reasoner.
 In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
-This can most likely be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359; @doi:10.1109/JPROC.2021.3058954; @doi:10.48550/arxiv.2106.12430].
+This can be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359; @doi:10.1109/JPROC.2021.3058954; @doi:10.48550/arxiv.2106.12430].
 
 In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric, which is known as the „bitter lesson“ [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 The impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases [@doi:10.48550/arXiv.1706.03762].
-Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
+Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question thus is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
+
+### Prior knowledge
 
 To be able to effectively use our knowledge in reasoning, we must be able to represent it robustly and in a way that is conducive to the reasoning task.
 Biomedical entities and relationships must be clearly defined and represented unambiguously.
@@ -262,13 +262,32 @@ Why modelling needs biases and how to introduce them
 
 ## Causality in foundation models
 
-Current interest in transformers
+There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of transformers in natural language processing and the commercial acclaim of ChatGPT.
+While the high performance of Large Language Models (LLMs) is based on a myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
+This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered "GPT" models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x; @doi:10.1038/s41586-023-06139-9; @doi:10.1101/2023.04.30.538439].
 
-Recent foundation model benchmarks
+The generalist capabilities of LLMs have led to the designation of "foundation models," a term introduced by a group of Standford ML researchers.
+Foundation models are models that achieve high performance by the combination of large amounts of data and model parameters, a generic architecture without specific biases, and self-supervised training.
+They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to encapsulate the complexity of real-world systems.
+While this designation is not too far off the mark for LLMs, it is not yet clear whether the same can be said for molecular models.
 
-Is attention (and large amounts of data) “all you need” to induce reliable biases in your model? (GPT “understands” language well) [@doi:10.1038/d41586-023-02361-7]
+Recent molecular foundation model benchmarks highlight clear discrepancies between the "foundational" aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
+<Details here>
 
-What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models?
+### Attention (and large amounts of data) is all you need?
+
+Given enough data to train on - and ample funds for compute - is attention “all you need” to induce reliable biases in your model?
+While there are doubts as regards the reasoning capabilities of our most advanced LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and also synthesise information [@doi:10.1038/d41586-023-02361-7].
+This is what the term "foundation model" implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
+This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model.
+In this light, what are the reasons to be skeptical about the capacity of molecular foundation models to understand the "grammar" of the cell?
+
+For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
+As such, there is no way to scrutinise their reasoning beyond the output they produce.
+What is simple to determine in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown.
+Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
+
+What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models? How could this empirically be studied?
 
 Latent encodings of explicit prior knowledge (GEARS)
 
