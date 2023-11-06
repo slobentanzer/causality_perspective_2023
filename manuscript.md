@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-06" />
   <meta name="citation_publication_date" content="2023-11-06" />
   <meta property="article:published_time" content="2023-11-06" />
-  <meta name="dc.modified" content="2023-11-06T04:09:43+00:00" />
-  <meta property="article:modified_time" content="2023-11-06T04:09:43+00:00" />
+  <meta name="dc.modified" content="2023-11-06T04:16:32+00:00" />
+  <meta property="article:modified_time" content="2023-11-06T04:16:32+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@3beaac5](https://github.com/slobentanzer/causality_perspective_2023/tree/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8)
+from [slobentanzer/causality_perspective_2023@a21d340](https://github.com/slobentanzer/causality_perspective_2023/tree/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc)
 on November 6, 2023.
 </em></small>
 
@@ -290,7 +290,7 @@ In this light, what are the reasons to be skeptical about the capacity of molecu
 
 For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
 As such, there is no way to scrutinise their reasoning beyond the output they produce.
-What is simple to determine in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown.
+What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown [@doi:10.1038/d41586-023-02361-7].
 Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
 
 While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both result in a hypothesis on causal structure that can be formulated as a network.
