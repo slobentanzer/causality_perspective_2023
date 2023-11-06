@@ -5,7 +5,7 @@ keywords:
 - causality
 - modelling
 lang: en-UK
-date-meta: '2023-10-27'
+date-meta: '2023-11-06'
 author-meta:
 - Sebastian Lobentanzer
 - Julio Saez-Rodriguez
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Causality - Perspective" />
   <meta property="og:title" content="Causality - Perspective" />
   <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2023-10-27" />
-  <meta name="citation_publication_date" content="2023-10-27" />
-  <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T17:35:50+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T17:35:50+00:00" />
+  <meta name="dc.date" content="2023-11-06" />
+  <meta name="citation_publication_date" content="2023-11-06" />
+  <meta property="article:published_time" content="2023-11-06" />
+  <meta name="dc.modified" content="2023-11-06T04:09:43+00:00" />
+  <meta property="article:modified_time" content="2023-11-06T04:09:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/97229fb90e1e6135991ff833047b6771e1afe904/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@97229fb](https://github.com/slobentanzer/causality_perspective_2023/tree/97229fb90e1e6135991ff833047b6771e1afe904)
-on October 27, 2023.
+from [slobentanzer/causality_perspective_2023@3beaac5](https://github.com/slobentanzer/causality_perspective_2023/tree/3beaac53a0367cecd84d29e3bfaac44cc52c7bb8)
+on November 6, 2023.
 </em></small>
 
 
@@ -266,6 +266,12 @@ There has been an enormous spike of interest in attention-based neural network m
 While the high performance of Large Language Models (LLMs) is based on a myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
 This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered "GPT" models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x; @doi:10.1038/s41586-023-06139-9; @doi:10.1101/2023.04.30.538439].
 
+Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
+In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of chromosomally distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
+For example, the angiotensin converting enzyme (ACE), which is responsible of converting angiotensin I to angiotensin II, is causally responsible for the activation of the angiotensin receptor II (AGTR2).
+However, the ACE gene is located on chromosome 17, while the AGTR2 gene is located on chromosome X.
+Thus, to learn the causal relationship between ACE and AGTR2 in a self-supervised manner based purely on observational data, the model must be able to integrate information from distant genomic regions.
+
 The generalist capabilities of LLMs have led to the designation of "foundation models," a term introduced by a group of Standford ML researchers.
 Foundation models are models that achieve high performance by the combination of large amounts of data and model parameters, a generic architecture without specific biases, and self-supervised training.
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to encapsulate the complexity of real-world systems.
@@ -274,7 +280,7 @@ While this designation is not too far off the mark for LLMs, it is not yet clear
 Recent molecular foundation model benchmarks highlight clear discrepancies between the "foundational" aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
 - Details here
 
-### Attention (and large amounts of data) is all you need?
+### Attention - and large amounts of data - is all you need?
 
 Given enough data to train on - and ample funds for compute - is attention “all you need” to induce reliable biases in your model?
 While there are doubts as regards the reasoning capabilities of our most advanced LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and also synthesise information [@doi:10.1038/d41586-023-02361-7].
@@ -287,7 +293,20 @@ As such, there is no way to scrutinise their reasoning beyond the output they pr
 What is simple to determine in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown.
 Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
 
-What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models? How could this empirically be studied?
+While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both result in a hypothesis on causal structure that can be formulated as a network.
+Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model's reasoning [@doi:10.1038/s41586-023-06139-9].
+While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable.
+Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
+One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
+To determine whether molecular foundation models indeed capture generalisable causal representations of biology, dedicated benchmarks are needed.
+
+Cite some benchmarks, point out the most important aspects of benchmarking causally.
+
+What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models? How could this be studied empirically?
+
+Back-of-the-envelope data requirements for molecular foundation models (parameters, data points, comparison with LLMs).
+
+### Causal latent spaces
 
 Latent encodings of explicit prior knowledge (GEARS)
 
