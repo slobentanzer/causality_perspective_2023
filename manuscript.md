@@ -5,7 +5,7 @@ keywords:
 - causality
 - modelling
 lang: en-UK
-date-meta: '2023-11-06'
+date-meta: '2023-11-20'
 author-meta:
 - Sebastian Lobentanzer
 - Julio Saez-Rodriguez
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Causality - Perspective" />
   <meta property="og:title" content="Causality - Perspective" />
   <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2023-11-06" />
-  <meta name="citation_publication_date" content="2023-11-06" />
-  <meta property="article:published_time" content="2023-11-06" />
-  <meta name="dc.modified" content="2023-11-06T04:16:32+00:00" />
-  <meta property="article:modified_time" content="2023-11-06T04:16:32+00:00" />
+  <meta name="dc.date" content="2023-11-20" />
+  <meta name="citation_publication_date" content="2023-11-20" />
+  <meta property="article:published_time" content="2023-11-20" />
+  <meta name="dc.modified" content="2023-11-20T07:17:41+00:00" />
+  <meta property="article:modified_time" content="2023-11-20T07:17:41+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/c93e2f618f52f662de066f767ac54d4bf71661ba/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c93e2f618f52f662de066f767ac54d4bf71661ba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c93e2f618f52f662de066f767ac54d4bf71661ba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/c93e2f618f52f662de066f767ac54d4bf71661ba/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@a21d340](https://github.com/slobentanzer/causality_perspective_2023/tree/a21d3400d5b4ce59ea4f4bed896e343e3562e5fc)
-on November 6, 2023.
+from [slobentanzer/causality_perspective_2023@c93e2f6](https://github.com/slobentanzer/causality_perspective_2023/tree/c93e2f618f52f662de066f767ac54d4bf71661ba)
+on November 20, 2023.
 </em></small>
 
 
