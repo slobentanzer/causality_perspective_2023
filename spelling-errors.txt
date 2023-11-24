@@ -1,7 +1,7 @@
 AGTR
 angiotensin
 benchmarking
-Biomedicine
+biomedicine
 Cas
 ChatGPT
 chromosomally
@@ -25,7 +25,7 @@ omics
 ontologies
 Orthogonally
 overfitting
-pre
+Pre
 Saez
 saezlab
 saezrodriguez
