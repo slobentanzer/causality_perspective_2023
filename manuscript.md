@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-24" />
   <meta name="citation_publication_date" content="2023-11-24" />
   <meta property="article:published_time" content="2023-11-24" />
-  <meta name="dc.modified" content="2023-11-24T07:21:26+00:00" />
-  <meta property="article:modified_time" content="2023-11-24T07:21:26+00:00" />
+  <meta name="dc.modified" content="2023-11-24T07:22:42+00:00" />
+  <meta property="article:modified_time" content="2023-11-24T07:22:42+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/7087d6ae143176177b130dc6a961f283b9b607aa/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7087d6ae143176177b130dc6a961f283b9b607aa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/7087d6ae143176177b130dc6a961f283b9b607aa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/7087d6ae143176177b130dc6a961f283b9b607aa/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@7087d6a](https://github.com/slobentanzer/causality_perspective_2023/tree/7087d6ae143176177b130dc6a961f283b9b607aa)
+from [slobentanzer/causality_perspective_2023@175ec21](https://github.com/slobentanzer/causality_perspective_2023/tree/175ec2154d1da2e423d59098fba81c177df1139b)
 on November 24, 2023.
 </em></small>
 
@@ -312,6 +312,10 @@ Back-of-the-envelope data requirements for molecular foundation models (paramete
 ### Causal latent spaces
 
 Latent encodings of explicit prior knowledge (GEARS)
+
+Do 'causal latent spaces' exist, and how would we prove it?
+
+How do we explore these latent spaces and use them for inference?
 
 Stefan's comment: newer architectures (self-supervised) do not decode; how important is it for biological insights, particularly compared with scaling? Exploring and explaining the latent space...
 
