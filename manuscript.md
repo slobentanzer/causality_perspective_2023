@@ -5,7 +5,7 @@ keywords:
 - causality
 - modelling
 lang: en-UK
-date-meta: '2023-11-24'
+date-meta: '2023-12-11'
 author-meta:
 - Sebastian Lobentanzer
 - Julio Saez-Rodriguez
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Causality - Perspective" />
   <meta property="og:title" content="Causality - Perspective" />
   <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2023-11-24" />
-  <meta name="citation_publication_date" content="2023-11-24" />
-  <meta property="article:published_time" content="2023-11-24" />
-  <meta name="dc.modified" content="2023-11-24T07:41:41+00:00" />
-  <meta property="article:modified_time" content="2023-11-24T07:41:41+00:00" />
+  <meta name="dc.date" content="2023-12-11" />
+  <meta name="citation_publication_date" content="2023-12-11" />
+  <meta property="article:published_time" content="2023-12-11" />
+  <meta name="dc.modified" content="2023-12-11T13:42:14+00:00" />
+  <meta property="article:modified_time" content="2023-12-11T13:42:14+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/175ec2154d1da2e423d59098fba81c177df1139b/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@175ec21](https://github.com/slobentanzer/causality_perspective_2023/tree/175ec2154d1da2e423d59098fba81c177df1139b)
-on November 24, 2023.
+from [slobentanzer/causality_perspective_2023@3ea5d9f](https://github.com/slobentanzer/causality_perspective_2023/tree/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5)
+on December 11, 2023.
 </em></small>
 
 
@@ -129,12 +129,15 @@ Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
 Since being described by Aristotle approximately 2500 years ago, causal reasoning (CR) remained virtually unchanged [@isbn:9781330267608] until  significant formal and mathematical advancements in the last decades [@doi:10.1017/CBO9780511803161; @doi:10.1080/01621459.1996.10476902; @isbn:9781400880874].
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
+In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the great complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [cite (article about) human genome project (outcomes), Listgarten commentary].
 
-Randomised clinical trials show that, in a lower-dimensional context, we can achieve the high levels of confidence needed to satisfy the ethical requirements of modern medicine.
+Randomised clinical trials show that, in a lower-dimensional context, we can reliably identify causal effects.
+By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial) we isolate the causal effect of the controlled variable, i.e., the treatment.
+In the vernacular of Pearl’s Do-Calculus (cite), we measure the outcome of, for instance, do(“Inhibit COX2”) when conducting a clinical trial on a cyclooxygenase (COX)-inhibiting pain medication.
 However, translating this mode of reasoning into the high-dimensional space of modern omics is met with enormous challenges.
-The dramatically increased parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results, as well as in model explainability.
+The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results, as well as in model explainability.
 
-With this perspective, we want to encourage and guide the use of CR to inform biomedical problems and vice versa.
+With this perspective, we discuss the current connections between CR and molecular systems biology.
 We will elaborate on three main points:
 
 - biases and what they mean for CR, particularly in the context of biomedical data
@@ -147,19 +150,18 @@ We will elaborate on three main points:
 
 ### Causal Discovery and Inference
 
-To ultimately explain biases, we must briefly touch on the background of CR.
-The field of CR distinguishes between *causal discovery* - the process of building hypotheses from data on how agents interact causally - and *causal inference* - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
-In the scientific process from unknowingness to inference on a specific event, the process of causal discovery is more data-intensive than the process of inference, which almost always relies on the prior knowledge from the discovery stage.
-As a result, most inference mechanisms perform better when including prior knowledge at some point of the process.
+The field of CR distinguishes between causal discovery - the process of building hypotheses from data on how agents interact causally - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
+Causal discovery is more data-intensive than inference, which almost always relies on the prior knowledge from the discovery stage.
+As a result, most inference mechanisms perform better when including prior knowledge at some point in the process.
 This has also been observed in biomedical research, for instance in the DREAM challenges [@doi:10.1038/nmeth.3773].
 
 Causal discovery is computationally and statistically very expensive because it needs to account for the variability in data generation while isolating generalisable relationships between single measured species (cite).
 For modern systems biology, this means that methods for causal discovery typically require large amounts of measurements.
 Highly parameterised models such as neural networks increase this requirement even further.
-As such, many regard causal discovery in molecular biomedicine as a scaling problem.
+As such, many regard causal discovery in molecular biomedicine as a scaling problem (cite).
 
 Causal inference, on the other hand, only requires sufficient measurements (replicates) to confidently account for the state of measured species in any condition (which can still be expensive, given the many technical and biological parameters that can influence molecular biology measurements).
-However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete.
+However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete (cite MSB review).
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
 In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the "right" biases to apply.
 
@@ -168,7 +170,7 @@ In contrast to causal discovery, scaling therefore plays a smaller role in causa
 Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
 The framework of the *ladder of causality* [] roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals.
 While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., "would this patient have survived if they had received this treatment?"), the data we have available is typically observational (e.g., "this patient received this treatment and survived") and sometimes interventional (e.g., clinical trials or perturbation screening).
-To generate interventional or even counterfactual inferences from observational data is a major challenge at least, and impossible at most, depending on the characteristics of the system under study.
+To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study.
 
 There are approaches to delineate interventional inference from observational data, such as the 'natural experiments' framework [].
 However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
@@ -200,12 +202,12 @@ In consequence, the *inductive* biases we introduce into our models are a pivota
 
 Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources.
-Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age (cite).
+Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age [@doi:10.1037/0033-295X.111.1.3].
 In fact, we may be over-eager to deduce causality from observation (i.e., “jump to conclusions”), which is indicative of a strong inductive bias.
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
-In machine learning (ML), we can distinguish between two types of biases: useful and harmful biases.
-Harmful biases are common issues the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [].
+In machine learning (ML), we can distinguish between useful and harmful biases.
+Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [].
 While addressing harmful biases is a crucial part of ML, we will not discuss them further in this perspective.
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
@@ -217,7 +219,7 @@ Since most models developed in biomedical research and the broader ML community 
 
 In biomedical research, we operate in a space that is very constrained in the amount and quality of data we can collect.
 This is due to the high cost of experiments, the limited availability of samples, and the high dimensionality of the data.
-These issues, in combination with the naturally high variablity of biological measurements, lead to a relatively low signal-to-noise ratio of our observations.
+These issues, in combination with the naturally high variability of biological measurements, lead to a relatively low signal-to-noise ratio of our observations.
 In addition, we are often trying to "climb" the ladder of causality with our CR approaches, which comes with additional data requirements.
 Lastly, we also lack a ground truth for most contexts in which we perform measurements.
 As a result, we need to introduce biases into our models to make the most of the data we have.
@@ -240,8 +242,8 @@ A sensible approach is to look to our reference model, the human, to try and tra
 In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
 This can be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359; @doi:10.1109/JPROC.2021.3058954; @doi:10.48550/arxiv.2106.12430].
 
-In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric, which is known as the „bitter lesson“ [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
-It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
+In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
+It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 The impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases [@doi:10.48550/arXiv.1706.03762].
 Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question thus is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
@@ -275,7 +277,7 @@ For example, the angiotensin converting enzyme (ACE), which is responsible of co
 However, the ACE gene is located on chromosome 17, while the AGTR2 gene is located on chromosome X.
 Thus, to learn the causal relationship between ACE and AGTR2 in a self-supervised manner based purely on observational data, the model must be able to integrate information from distant genomic regions.
 
-The generalist capabilities of LLMs have led to the designation of "foundation models," a term introduced by a group of Standford ML researchers.
+The generalist capabilities of LLMs have led to the designation of "foundation models" (cite stanford paper).
 Foundation models are models that achieve high performance by the combination of large amounts of data and model parameters, a generic architecture without specific biases, and self-supervised training.
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to encapsulate the complexity of real-world systems.
 While this designation is not too far off the mark for LLMs, it is not yet clear whether the same can be said for molecular models.
