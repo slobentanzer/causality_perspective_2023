@@ -5,7 +5,7 @@ keywords:
 - causality
 - modelling
 lang: en-UK
-date-meta: '2023-12-11'
+date-meta: '2023-12-12'
 author-meta:
 - Sebastian Lobentanzer
 - Julio Saez-Rodriguez
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Causality - Perspective" />
   <meta property="og:title" content="Causality - Perspective" />
   <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2023-12-11" />
-  <meta name="citation_publication_date" content="2023-12-11" />
-  <meta property="article:published_time" content="2023-12-11" />
-  <meta name="dc.modified" content="2023-12-11T13:42:14+00:00" />
-  <meta property="article:modified_time" content="2023-12-11T13:42:14+00:00" />
+  <meta name="dc.date" content="2023-12-12" />
+  <meta name="citation_publication_date" content="2023-12-12" />
+  <meta property="article:published_time" content="2023-12-12" />
+  <meta name="dc.modified" content="2023-12-12T11:07:14+00:00" />
+  <meta property="article:modified_time" content="2023-12-12T11:07:14+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@3ea5d9f](https://github.com/slobentanzer/causality_perspective_2023/tree/3ea5d9fb937e1c59c491d180866c5ba7e3f23bd5)
-on December 11, 2023.
+from [slobentanzer/causality_perspective_2023@d0192a9](https://github.com/slobentanzer/causality_perspective_2023/tree/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9)
+on December 12, 2023.
 </em></small>
 
 
@@ -240,7 +240,7 @@ However, human reasoning is limited by our sensory and mnemonic capacity; we can
 Hence, to make the most of our immense wealth of data, we must elevate our algorithms’ reasoning capabilities.
 A sensible approach is to look to our reference model, the human, to try and transfer some of our capabilities to the in silico reasoner.
 In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
-This can be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359; @doi:10.1109/JPROC.2021.3058954; @doi:10.48550/arxiv.2106.12430].
+This can be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818].
 
 In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
@@ -273,7 +273,7 @@ This has led to the development of attention-based molecular models (most common
 
 Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
 In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of chromosomally distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
-For example, the angiotensin converting enzyme (ACE), which is responsible of converting angiotensin I to angiotensin II, is causally responsible for the activation of the angiotensin receptor II (AGTR2).
+For example, the angiotensin converting enzyme (ACE), which is responsible for converting angiotensin I to angiotensin II, is causally responsible for the activation of the angiotensin receptor II (AGTR2).
 However, the ACE gene is located on chromosome 17, while the AGTR2 gene is located on chromosome X.
 Thus, to learn the causal relationship between ACE and AGTR2 in a self-supervised manner based purely on observational data, the model must be able to integrate information from distant genomic regions.
 
@@ -291,7 +291,7 @@ Given enough data to train on - and ample funds for compute - is attention “al
 While there are doubts as regards the reasoning capabilities of our most advanced LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and also synthesise information [@doi:10.1038/d41586-023-02361-7].
 This is what the term "foundation model" implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
 This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model.
-In this light, what are the reasons to be skeptical about the capacity of molecular foundation models to understand the "grammar" of the cell?
+In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the "grammar" of the cell?
 
 For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
 As such, there is no way to scrutinise their reasoning beyond the output they produce.

@@ -1,7 +1,7 @@
 AGTR
 angiotensin
 benchmarking
-biomedicine
+Biomedicine
 Cas
 ChatGPT
 chromosomally
