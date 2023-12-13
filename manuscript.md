@@ -5,7 +5,7 @@ keywords:
 - causality
 - modelling
 lang: en-UK
-date-meta: '2023-12-12'
+date-meta: '2023-12-13'
 author-meta:
 - Sebastian Lobentanzer
 - Julio Saez-Rodriguez
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Causality - Perspective" />
   <meta property="og:title" content="Causality - Perspective" />
   <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2023-12-12" />
-  <meta name="citation_publication_date" content="2023-12-12" />
-  <meta property="article:published_time" content="2023-12-12" />
-  <meta name="dc.modified" content="2023-12-12T11:07:14+00:00" />
-  <meta property="article:modified_time" content="2023-12-12T11:07:14+00:00" />
+  <meta name="dc.date" content="2023-12-13" />
+  <meta name="citation_publication_date" content="2023-12-13" />
+  <meta property="article:published_time" content="2023-12-13" />
+  <meta name="dc.modified" content="2023-12-13T10:56:40+00:00" />
+  <meta property="article:modified_time" content="2023-12-13T10:56:40+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/c77403ecf56935e9c5edefd4068bfddf67e33583/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c77403ecf56935e9c5edefd4068bfddf67e33583/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c77403ecf56935e9c5edefd4068bfddf67e33583/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/c77403ecf56935e9c5edefd4068bfddf67e33583/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@d0192a9](https://github.com/slobentanzer/causality_perspective_2023/tree/d0192a99ce886d5eb87ecedca9972bfbaa28f4d9)
-on December 12, 2023.
+from [slobentanzer/causality_perspective_2023@c77403e](https://github.com/slobentanzer/causality_perspective_2023/tree/c77403ecf56935e9c5edefd4068bfddf67e33583)
+on December 13, 2023.
 </em></small>
 
 
@@ -268,7 +268,7 @@ Benchmarks
 ## Causality in foundation models
 
 There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of transformers in natural language processing and the commercial acclaim of ChatGPT.
-While the high performance of Large Language Models (LLMs) is based on a myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
+While the high performance of Large Language Models (LLMs) is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
 This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered "GPT" models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x; @doi:10.1038/s41586-023-06139-9; @doi:10.1101/2023.04.30.538439].
 
 Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
