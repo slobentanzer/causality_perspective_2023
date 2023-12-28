@@ -1,11 +1,10 @@
 content/10.introduction.md:6:biomedicine
-content/10.introduction.md:7:Listgarten
-content/10.introduction.md:7:omics
-content/10.introduction.md:10:covariates
-content/10.introduction.md:11:cyclooxygenase
-content/10.introduction.md:12:omics
-content/10.introduction.md:13:explainability
-content/10.introduction.md:13:identifiability
+content/10.introduction.md:8:omics
+content/10.introduction.md:11:covariates
+content/10.introduction.md:12:Vemurafenib
+content/10.introduction.md:13:omics
+content/10.introduction.md:14:explainability
+content/10.introduction.md:14:identifiability
 content/16.background.md:10:generalisable
 content/16.background.md:13:biomedicine
 content/16.background.md:16:MSB

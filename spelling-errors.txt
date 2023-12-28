@@ -8,7 +8,6 @@ chromosomally
 counterfactuals
 covariates
 CRISPR
-cyclooxygenase
 dimensionality
 directionality
 encodings
@@ -21,7 +20,6 @@ identifiability
 interpretable
 interventional
 linearities
-Listgarten
 LLMs
 Lobentanzer
 MSB
@@ -29,7 +27,7 @@ omics
 ontologies
 Orthogonally
 overfitting
-Pre
+pre
 Saez
 saezlab
 saezrodriguez
@@ -37,3 +35,4 @@ silico
 slobentanzer
 Theodoris
 underfitting
+Vemurafenib
