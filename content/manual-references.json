@@ -1,22 +1,47 @@
 [
-{
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
-  "issued": {
-    "date-parts": [
-      [
-        2019
+  {
+    "id": "url:https://github.com/manubot/rootstock",
+    "type": "webpage",
+    "URL": "https://github.com/manubot/rootstock",
+    "title": "manubot/rootstock GitHub repository",
+    "container-title": "GitHub",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
       ]
+    },
+    "author": [
+      {
+        "given": "Daniel",
+        "family": "Himmelstein"
+      }
     ]
   },
-  "author": [
-    {
-      "given": "Daniel",
-      "family": "Himmelstein"
-    }
-  ]
-}
+  {
+    "id": "no-free-lunch",
+    "title": "No Free Lunch Theorems for Search",
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "David H.",
+        "family": "Wolpert"
+      },
+      {
+        "given": "William G.",
+        "family": "Macready"
+      }
+    ],
+    "type": "Working Papers",
+    "URL": "https://ideas.repec.org/p/wop/safiwp/95-02-010.html",
+    "publisher": "Santa Fe Institute",
+    "number": "95-02-010"
+  }
 ]
