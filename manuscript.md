@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T14:28:39+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T14:28:39+00:00" />
+  <meta name="dc.modified" content="2024-01-04T14:42:16+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T14:42:16+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@9564490](https://github.com/slobentanzer/causality_perspective_2023/tree/9564490c47f60837b05b6292a041692fb069b35a)
+from [slobentanzer/causality_perspective_2023@233623e](https://github.com/slobentanzer/causality_perspective_2023/tree/233623e945b8b728e534b3d84c94bb91617cd0f7)
 on January 4, 2024.
 </em></small>
 
@@ -300,7 +300,7 @@ Their advantage is high efficiency in the face of scarce data, but they are high
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
 These can be simple or elaborate.
 Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
-More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.5555/3295222.3295349].
+More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.48550/arXiv.1706.03762].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
 
 As a result, choosing the best way to derive inductive biases from PK is not straightforward.
