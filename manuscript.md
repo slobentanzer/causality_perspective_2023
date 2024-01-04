@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T17:14:12+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T17:14:12+00:00" />
+  <meta name="dc.modified" content="2024-01-04T17:13:16+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T17:13:16+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -44,7 +44,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
-  <meta name="citation_author_institution" content="Helmholtz AI and TU Munich, Munich, Germany" />
+  <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-1712-060X" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@f8a0c86](https://github.com/slobentanzer/causality_perspective_2023/tree/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf)
+from [slobentanzer/causality_perspective_2023@fcf7d76](https://github.com/slobentanzer/causality_perspective_2023/tree/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330)
 on January 4, 2024.
 </em></small>
 
@@ -124,7 +124,7 @@ on January 4, 2024.
     [Vis7i](https://github.com/Vis7i)
     <br>
   <small>
-     Helmholtz AI and TU Munich, Munich, Germany
+     Helmholtz Zentrum München, -, Neuherberg, Germany
   </small>
 
 + **Julio Saez-Rodriguez**
