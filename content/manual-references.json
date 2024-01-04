@@ -43,5 +43,42 @@
     "URL": "https://ideas.repec.org/p/wop/safiwp/95-02-010.html",
     "publisher": "Santa Fe Institute",
     "number": "95-02-010"
+  },
+  {
+    "id": "causalml",
+    "title": "Causal Machine Learning: A Survey and Open Problems",
+    "author": [
+      {
+        "given": "Jean",
+        "family": "Kaddour"
+      },
+      {
+        "given": "Aengus",
+        "family": "Lynch"
+      },
+      {
+        "given": "Qi",
+        "family": "Liu"
+      },
+      {
+        "given": "Matt J.",
+        "family": "Kusner"
+      },
+      {
+        "given": "Ricardo",
+        "family": "Silva"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "type": "misc",
+    "URL": "https://arxiv.org/abs/2206.15475",
+    "archivePrefix": "arXiv",
+    "primaryClass": "cs.LG"
   }
 ]
