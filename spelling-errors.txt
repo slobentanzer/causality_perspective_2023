@@ -1,6 +1,6 @@
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -14,15 +14,14 @@ directionality
 EGFR
 embeddings
 ERK
-explainability
+Explainability
 Geneformer
 generalisable
 GPT
 identifiability
-Impactful
 interpretability
 interpretable
-Interventional
+interventional
 linearities
 LLM
 LLMs
@@ -30,8 +29,6 @@ Lobentanzer
 MAPK
 MEK
 Mier
-München
-Neuherberg
 omics
 Orthogonally
 overactivation
@@ -39,7 +36,7 @@ overfitting
 pablormier
 PCA
 phosphoproteomic
-Pre
+pre
 RAS
 RNNs
 Saez
@@ -57,4 +54,3 @@ UMAP
 underfitting
 Vemurafenib
 Vis
-Zentrum

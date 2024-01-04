@@ -1,5 +1,5 @@
 ---
-title: Molecular Causality in the Age of Foundation Models
+title: Molecular causality in the age of foundation models
 keywords:
 - systems biology
 - biomedicine
@@ -21,15 +21,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Molecular Causality in the Age of Foundation Models" />
-  <meta name="citation_title" content="Molecular Causality in the Age of Foundation Models" />
-  <meta property="og:title" content="Molecular Causality in the Age of Foundation Models" />
-  <meta property="twitter:title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta name="dc.title" content="Molecular causality in the age of foundation models" />
+  <meta name="citation_title" content="Molecular causality in the age of foundation models" />
+  <meta property="og:title" content="Molecular causality in the age of foundation models" />
+  <meta property="twitter:title" content="Molecular causality in the age of foundation models" />
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T16:44:21+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T16:44:21+00:00" />
+  <meta name="dc.modified" content="2024-01-04T17:14:12+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T17:14:12+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -44,7 +44,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
-  <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
+  <meta name="citation_author_institution" content="Helmholtz AI and TU Munich, Munich, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-1712-060X" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@07536b2](https://github.com/slobentanzer/causality_perspective_2023/tree/07536b296a724d6fb5dbfbe2c91e881ddadacc1c)
+from [slobentanzer/causality_perspective_2023@f8a0c86](https://github.com/slobentanzer/causality_perspective_2023/tree/f8a0c86262b2b8a5a1ed8f8c0174950141871aaf)
 on January 4, 2024.
 </em></small>
 
@@ -124,7 +124,7 @@ on January 4, 2024.
     [Vis7i](https://github.com/Vis7i)
     <br>
   <small>
-     Helmholtz Zentrum München, -, Neuherberg, Germany
+     Helmholtz AI and TU Munich, Munich, Germany
   </small>
 
 + **Julio Saez-Rodriguez**
@@ -176,7 +176,7 @@ We will elaborate on three main points:
 
 ## Background
 
-### Causal Discovery and Inference
+### Causal discovery and inference
 
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
 
@@ -196,7 +196,7 @@ However, inference is also very sensitive to the completeness of the PK that is 
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
 In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases to apply.
 
-### The Ladder of Causality
+### The ladder of causality
 
 Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
 Pearl’s ladder of causality roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals [@isbn:9780465097609].
@@ -208,7 +208,7 @@ However, these approaches are by their nature even more data-hungry than when us
 Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [@doi:10.1016/j.cell.2016.11.038].
 Current developments of CR in the biomedical field thus mostly focus on these types of data.
 
-### Deduction and Induction
+### Deduction and induction
 
 Lastly, in CR, we can also distinguish between deductive and inductive reasoning.
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
@@ -392,7 +392,7 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 ## Discussion / Conclusion
 
-### Dichotomy of Scaling (data-driven) and Bias Injection (knowledge-driven)
+### Dichotomy of scaling (data-driven) and bias injection (knowledge-driven)
 
 The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
@@ -401,7 +401,7 @@ Hybrid models currently represent a promising middle ground, combining the scala
 Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
 In addition, complex models often pose computational challenges; many models are limited to network sizes of <10 nodes, and feedback loops are often excluded.
 
-### Theoretical Foundations: Interventions and Inductive Biases
+### Theoretical foundations: interventions and inductive biases
 
 Theoretical work emphasises the need for interventions in causal discovery but does not yet address the influence of inductive biases [@doi:10.48550/arXiv.1207.1389].
 The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models [@doi:10.48550/arXiv.1910.01075].
@@ -410,7 +410,7 @@ The comparative effectiveness and theoretical underpinnings of explicit models v
 Foundation models have embraced causal masking as a step towards integrating causality, but this alone may be insufficient.
 Empirical studies and more robust theories are needed to understand these dynamics, including the potential existence and validation of causal latent spaces.
 
-### Data Types: Observational vs. Interventional
+### Data types: observational vs. interventional
 
 The choice between training on observational versus interventional data (or a mixture of both) is critical in the development of models.
 While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
@@ -418,13 +418,13 @@ Observational data are more readily available but may lead to confounded or bias
 Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model's understanding of underlying biological processes.
 A balanced approach, possibly incorporating both data types, might provide a more nuanced understanding and improve model robustness and interpretability.
 
-### Foundation Models: Architectural Biases and the No Free Lunch Theorems
+### Foundation models: architectural biases and the No Free Lunch theorems
 
 Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models [@doi:10.48550/arXiv.2304.05366].
 These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
 As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
 
-### Systems Biology and Implicit Causality
+### Systems biology and causality
 
 Systems biology has always engaged with causal reasoning, aiming to understand the complex mechanisms underlying biological systems.
 New methods and models offer the potential to scale this understanding to larger, more complex systems.
@@ -432,7 +432,7 @@ The impact of these methods will depend on the successful integration of appropr
 The field stands at a crossroads, determining whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
 This decision will significantly influence the direction and effectiveness of future research in systems biology.
 
-### Combining Algorithms and Biases with Data Types for Impactful Biological modelling
+### Finding a balance
 
 While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
 Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
