@@ -1,11 +1,10 @@
 Benchmarking
-Biomedicine
+biomedicine
 Cas
 corpuses
 counterfactuals
 covariates
 CRISPR
-dimensionality
 directionality
 EGFR
 encodings

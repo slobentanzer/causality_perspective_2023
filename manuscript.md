@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T09:46:18+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T09:46:18+00:00" />
+  <meta name="dc.modified" content="2024-01-04T09:58:05+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T09:58:05+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@405bd49](https://github.com/slobentanzer/causality_perspective_2023/tree/405bd499129df71b40bc57274faf6c32c2d16bfa)
+from [slobentanzer/causality_perspective_2023@31b8529](https://github.com/slobentanzer/causality_perspective_2023/tree/31b8529a15485e2992f0e22b4239e8ee63cfa095)
 on January 4, 2024.
 </em></small>
 
@@ -155,7 +155,7 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
-Since being described by Aristotle approximately 2500 years ago [@isbn:9781330267608], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161; @doi:10.1080/01621459.1996.10476902; @isbn:9781400880874] and a resurgence in the field of machine learning (ML) [@doi:​​10.48550/arxiv.2206.15475] only in recent times.
+Since being described by Aristotle approximately 2500 years ago [@isbn:9781330267608], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161;@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874] and a resurgence in the field of machine learning (ML) [@doi:​10.48550/arXiv.2206.15475] only in recent times.
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
 
 In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the great complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.48550/arXiv.2312.00818].
@@ -234,34 +234,36 @@ In consequence, the inductive biases we introduce into our models (i.e., those m
 ### Meaning and examples of biases
 
 Biases, generally, are systematic prejudices of a model towards certain outcomes.
-Humans make frequent use of biases to function in a complex world with limited cognitive resources.
-Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age [@doi:10.1037/0033-295X.111.1.3].
-In fact, we may be over-eager to deduce causality from observation (i.e., “jump to conclusions”), which is indicative of a strong inductive bias.
-A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
+Humans make frequent use of biases to function in a complex world with limited cognitive resources [@doi:10.1037/0033-295X.111.1.3].
+In fact, we often deduce causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
+A good heuristic is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning (ML), we can distinguish between useful and harmful biases.
-Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [].
+Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [@doi:10.48550/arXiv.1908.09635].
 While addressing harmful biases is a crucial part of ML, we will not discuss them further in this perspective.
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
-They can be relatively implicit, such as the choice of algorithm, architecture, or regularisation; or explicit, such as the choice of prior knowledge and how it is used.
-In the context of CR, useful biases are those that improve the performance of the model in terms of its ability to draw correct causal conclusions.
 Since most models developed in biomedical research and the broader ML community are inductive models, one of the most discussed useful biases is *inductive bias*.
+For instance, prior knowledge on protein interactions can impact inference on activation cascades; only upstream proteins can activate downstream proteins, not vice versa.
 
 ### Why do we need biases?
 
-In biomedical research, we operate in a space that is very constrained in the amount and quality of data we can collect.
-This is due to the high cost of experiments, the limited availability of samples, and the high dimensionality of the data.
-These issues, in combination with the naturally high variability of biological measurements, lead to a relatively low signal-to-noise ratio of our observations.
-In addition, we are often trying to "climb" the ladder of causality with our CR approaches, which comes with additional data requirements.
-Lastly, we also lack a ground truth for most contexts in which we perform measurements.
-As a result, we need to introduce biases into our models to make the most of the data we have.
+The human mind will be the gold standard for reasoning for the foreseeable future.
+However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive it nor keep it in memory.
+Machine learning seems like the ideal solution, but the "No Free Lunch" theorems present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch;@doi:10.1613/jair.731;@doi:10.48550/arXiv.2304.05366].
+Although they have recently been challenged [@doi:10.48550/arXiv.2304.05366], these theorems highlight the inherent difficulty in designing algorithms that generalise well from specific training data to new, unseen data.
+Inductive biases guide algorithms in making educated guesses about unseen data, thereby improving their generalisation capabilities [@doi:10.1098/rspa.2021.0068].
+
+This need for inductive biases is particularly apparent in the realm of biomedicine [@doi:10.1038/s41467-022-29268-7].
+Biomedical research operates within a framework constrained by limited and often high-dimensional data, stemming from the high costs of experiments, the scarcity of samples, and the inherent complexity of biological systems.
+Coupled with the natural variability of biological measurements, these factors result in a low signal-to-noise ratio, making it challenging to discern meaningful patterns.
+Inductive biases direct the learning process towards more relevant solutions by incorporating assumptions that enable more effective learning and interpretation, ensuring that models are not just statistically sound but also biologically meaningful.
 
 Some central questions then arise: 
 
-- How do we choose the right biases to introduce?
+- How explicit should we be in introducing biases, i.e., should the model determine its own biases, or do we force them on the model?
 
-- How explicit should we be in introducing biases (i.e., should the model determine its own biases, or do we force them on the model)?
+- How do we choose the right biases to introduce?
 
 - How do we evaluate the biases we introduce?
 
