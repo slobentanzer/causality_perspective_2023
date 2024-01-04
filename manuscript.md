@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T12:33:30+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T12:33:30+00:00" />
+  <meta name="dc.modified" content="2024-01-04T12:52:25+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T12:52:25+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@d573ea9](https://github.com/slobentanzer/causality_perspective_2023/tree/d573ea9d028e548679b75880d73004aa24f4d1fc)
+from [slobentanzer/causality_perspective_2023@f055f6b](https://github.com/slobentanzer/causality_perspective_2023/tree/f055f6b3e890550207509b18379499a833c9ccba)
 on January 4, 2024.
 </em></small>
 
@@ -187,14 +187,14 @@ For modern systems biology, this means that methods for causal discovery typical
 
 Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
 This approach leverages prior knowledge about the assumed causal links, which in the causal field are often encoded using directed graphs.
-This allows researchers to represent both the causal connections between variables and the directionality, which is required to understand how changes in one variable might lead to changes in another.
+This allows researchers to represent both the causal connections between variables and their directionality, which is required to understand how changes in one variable might lead to changes in another.
 For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
 This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
 For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
 Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
 However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete [@doi:10.15252/msb.202211036].
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
-In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the “right” biases to apply.
+In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases to apply.
 
 ### The Ladder of Causality
 
@@ -225,7 +225,7 @@ In the molecular realm, we could further infer that the inhibition of other comp
 The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
 However, deduction is also more limited in scope than induction.
 In biomedical research, we often have to rely on inductive reasoning because we cannot feasibly test all hypotheses in a deductive manner.
-In consequence, the inductive biases we introduce into our models (i.e., those mechanisms in the model that help with inductive reasoning) are a pivotal part of performing CR in biomedical research.
+In consequence, the *inductive biases* we introduce into our models (i.e., those mechanisms in the model that help with inductive reasoning) are a pivotal part of performing CR in biomedical research.
 
 
 ## Bias
@@ -273,25 +273,47 @@ The first question alone is highly debated in the wider field of ML.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
-In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of prior knowledge [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818].
+In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of prior knowledge [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
 Considering these constraints, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 ### Prior knowledge
 
-To be able to effectively use our knowledge in reasoning, we must be able to represent it robustly and in a way that is conducive to the reasoning task.
-Biomedical entities and relationships must be clearly defined and represented unambiguously.
-Additionally, the diversity in our tasks and knowledge sources requires a flexible representation that can be adapted to the task at hand.
-Knowledge representation frameworks can aid in walking the line between robust and transparent, reproducible knowledge representation on the one hand, and flexible, task-specific workflows on the other [@doi:10.1038/s41587-023-01848-y].
-In addition, they can ground the biological entities that are subject to reasoning using domain-specific ontologies, which can be another useful source of bias.
-For instance, knowing the directionality of the central dogma of biology can be a useful bias in reasoning about gene expression.
+Prior knowledge refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
+It can be used to inform the inductive biases of a model, either explicitly through the design choices and assumptions embedded into the models, or implicitly through the data and methods used in training.
+For this to be possible, biomedical entities and relationships must be clearly defined and represented unambiguously.
+Additionally, the diversity in our tasks and knowledge sources requires a flexible representation.
+Knowledge representation frameworks can aid in this process [@doi:10.1038/s41587-023-01848-y].
+
+In the biomedical field, there is a rich tradition of documenting biological knowledge at various levels of detail and focusing on different aspects of biology.
+Detailed mechanistic models, provide mathematical descriptions of the dynamic interactions at a molecular or cellular level.
+Genome-scale networks, including metabolic and gene regulatory networks, offer comprehensive views of metabolic processes and gene interactions [@doi:10.1038/nrg3885].
+Protein-protein interaction databases recapitulate either causal or non-causal interactions between proteins [@doi:10.1038/nrg3885].
+These examples of prior knowledge, from complex mechanistic mathematical descriptions of dynamical systems to undirected networks of interconnected proteins, provide useful sources of information that can be leveraged to inform models.
 
 ### Modelling on prior knowledge
 
-Statistical, causal, and mechanistic models
+The integration of prior knowledge into models is a non-trivial but essential process for moving from correlation to causation.
+Prior knowledge can be used to derive inductive biases either *explicitly* or *implicitly*.
 
-Why modelling needs biases and how to introduce them
+The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
+Ordinary Differential Equation models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935], all explicitly incorporate different types of prior knowledge, can be fitted to data, and then be used to answer different types of causal questions.
+Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying prior knowledge [@doi:10.1103/PhysRevResearch.5.043252].
 
-Benchmarks
+In contrast, implicit integration of prior knowledge in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
+These can be simple, e.g., regularisation techniques that help generalise models by preventing overfitting [@doi:10.15252/msb.201566], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
+They can also be elaborate, such as neural networks employing specific architectural designs, e.g., Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.5555/3295222.3295349].
+Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
+
+As a result, choosing the best way to derive inductive biases from prior knowledge is not straightforward.
+Models that explicitly incorporate prior knowledge are more interpretable and can generalise effectively even when data is scarce.
+However, they are constrained by the accuracy of the existing knowledge and often struggle to scale to larger datasets [@doi:10.48550/arXiv.2001.08361;@doi:10.48550/arXiv.2202.05808].
+Models with implicit biases, on the other hand, particularly those typically found in deep learning architectures, excel at learning from large, high-dimensional datasets and offer flexibility across diverse domains.
+Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.
+
+Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce [@doi:10.1038/s41592-021-01283-4;@doi:10.1038/s41467-022-30684-y;@doi:10.1038/s41467-023-40380-0;@doi:10.1038/s41587-023-01905-6;@doi:10.1186/s13059-020-02100-5;@doi:10.1038/s41556-022-01072-x;@doi:10.1016/j.cels.2020.11.013].
+While the implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from prior knowledge, while the other learns from data.
+Frequently, these learners are also coupled in an end-to-end learning process, i.e., they “learn together.” This mode of learning aims to benefit from the “bias-free” nature of neural networks while simultaneously improving model performance in the face of scarce data via the added explicit bias.
+
 
 
 ## Causality in foundation models
@@ -345,16 +367,32 @@ This fundamental difference between language and molecular models has so far not
 
 ### Causal latent spaces
 
-Latent encodings of explicit prior knowledge (GEARS)
+Due to the fundamental limitation of human perception, dimensionality reduction is a popular workflow for data interpretation, typically via methods such as PCA, t-SNE, or UMAP [@doi:10.4236/jdaip.2021.93013].
+The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions.
+However, without explicit supervision, which is rare in typical biomedical datasets, the resulting latent spaces are rarely interpretable, and do not lend themselves to causal interpretation.
+In addition, they often suffer from biases that result from technical rather than biological factors [@doi:10.1371/journal.pcbi.1011288].
+In consequence, biological insight during the exploration of these latent spaces is often challenging due to the dominance of biases over the biological generative mechanism.
 
-Do 'causal latent spaces' exist, and how would we prove it?
+Performing causal inference in latent spaces could potentially solve some of these issues.
+“Moving through the latent space” reduces the number of variables that change upon intervention, making exploration simpler in theory.
+In practice, however, ease and sensibility of exploration depend completely on whether the inductive biases in the embedding process capture the underlying biology.
+In addition, latent spaces have no trivial connection to the real-world measurements they are based on.
+Each model, and each parameterisation of a single model, generates their own, independent latent space; in consequence, the exploration of latent spaces is challenging and time-consuming.
 
-How do we explore these latent spaces and use them for inference?
+Even if a given latent space can be explored, there is often no guarantee that interpolation between sensible latent representations also leads to sensible results.
+As an example, consider a prevailing issue of visual generative models in drawing human hands: images of hands typically involve mangled anatomy and an incorrect number of digits [@{https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands}].
+Even though there is a section in the latent space that represents hands, this does not represent the concept of a hand, but rather is guided by learning on many diverse pictures of hands.
+A section of this latent space may represent only a finger, and carry some information that next to a finger there usually is another finger.
+However, when generating the image, there is no mechanism to keep track of how many digits to add to any generated hand, leading to wrong anatomy.
+Similarly, when exploring the latent space of a model of molecular signalling, there may be no guarantees that the model respects the concept of a given pathway when generating the signalling molecules involved.
 
-Stefan's comment: newer architectures (self-supervised) do not decode; how important is it for biological insights, particularly compared with scaling? Exploring and explaining the latent space...
+If mastered, exploring and performing interventions in latent spaces promises many benefits: better generalisation and improved sample efficiency [@doi:10.1109/JPROC.2021.3058954], predicting the outcomes of interventions not observed at training time [@doi:10.48550/arXiv.2310.04295], or insights into the effect of different inductive biases in the model [@doi:10.48550/arXiv.2107.00793].
+However, to achieve this, gaining a better understanding of properties of the learned embeddings and variables is essential, for instance by performing “imagined interventions” in the latent space [@doi:10.48550/arXiv.2106.16091] or by using model uncertainty for guiding the optimisation process in the latent space [@doi:10.48550/arXiv.2107.00096].
+Of note, many of the proposed solutions for more explainable latent spaces depend on architectures that may scale significantly worse than transformers [@doi:10.48550/arXiv.2001.08361;@doi:10.48550/arXiv.2202.05808].
 
-- https://scholar.google.de/citations?view_op=view_citation&hl=de&user=soxv0s0AAAAJ&sortby=pubdate&citation_for_view=soxv0s0AAAAJ:2osOgNQ5qMEC (decoder important)
-- https://proceedings.neurips.cc/paper_files/paper/2022/hash/87213955efbe48b46586e37bf2f1fe5b-Abstract-Conference.html (decoder not important)
+
+## Discussion / Conclusion
+
 
 
 ## Glossary?
