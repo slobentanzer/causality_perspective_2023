@@ -5,10 +5,12 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Sebastian Lobentanzer" />
+  <meta name="author" content="Pablo Rodriguez Mier" />
+  <meta name="author" content="Stefan Bauer" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-03" />
-  <meta name="keywords" content="biomedicine, causality, modelling" />
-  <title>Causality - Perspective</title>
+  <meta name="dcterms.date" content="2024-01-04" />
+  <meta name="keywords" content="systems biology, biomedicine, causality, modelling, machine learning, foundation models" />
+  <title>Molecular Causality in the Age of Foundation Models</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -47,15 +49,15 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Causality - Perspective" />
-  <meta name="citation_title" content="Causality - Perspective" />
-  <meta property="og:title" content="Causality - Perspective" />
-  <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2024-01-03" />
-  <meta name="citation_publication_date" content="2024-01-03" />
-  <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T09:02:54+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T09:02:54+00:00" />
+  <meta name="dc.title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta name="citation_title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta property="og:title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta property="twitter:title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta name="dc.date" content="2024-01-04" />
+  <meta name="citation_publication_date" content="2024-01-04" />
+  <meta property="article:published_time" content="2024-01-04" />
+  <meta name="dc.modified" content="2024-01-04T09:46:18+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T09:46:18+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,6 +68,12 @@
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Pablo Rodriguez Mier" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="todo" />
+  <meta name="citation_author" content="Stefan Bauer" />
+  <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
+  <meta name="citation_author_orcid" content="todo" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -76,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,14 +99,14 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Causality - Perspective</h1>
+<h1 class="title">Molecular Causality in the Age of Foundation Models</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/575af6070954f9c8cc2dbfeb650f129dea0b5582">slobentanzer/causality_perspective_2023@575af60</a>
-on January 3, 2024.
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/405bd499129df71b40bc57274faf6c32c2d16bfa">slobentanzer/causality_perspective_2023@405bd49</a>
+on January 4, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -113,6 +121,26 @@ on January 3, 2024.
 <br>
 <small>
 Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+</small></p></li>
+<li><p><strong>Pablo Rodriguez Mier</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/todo">todo</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/tbd">tbd</a>
+<br>
+<small>
+Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+</small></p></li>
+<li><p><strong>Stefan Bauer</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/todo">todo</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/tbd">tbd</a>
+<br>
+<small>
+Helmholtz Zentrum München, -, Neuherberg, Germany
 </small></p></li>
 <li><p><strong>Julio Saez-Rodriguez</strong>
 <sup><a href="#correspondence">✉</a></sup><br>
@@ -133,7 +161,6 @@ or email to
 Sebastian Lobentanzer &lt;sebastian.lobentanzer@gmail.com&gt;,
 Julio Saez-Rodriguez &lt;pub.saez@uni-heidelberg.de&gt;.</p>
 </div>
-<h2 class="page_break_before" id="abstract">Abstract</h2>
 <h2 id="introduction">Introduction</h2>
 <p>Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
@@ -154,46 +181,50 @@ We will elaborate on three main points:</p>
 </ul>
 <h2 id="background">Background</h2>
 <h3 id="causal-discovery-and-inference">Causal Discovery and Inference</h3>
-<p>The field of CR distinguishes between causal discovery - the process of building hypotheses from data on how agents interact causally - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
-Causal discovery is more data-intensive than inference, which almost always relies on the prior knowledge from the discovery stage.
-As a result, most inference mechanisms perform better when including prior knowledge at some point in the process.
-This has also been observed in biomedical research, for instance in the DREAM challenges <span class="citation" data-cites="qpg6x7P4">[<a href="#ref-qpg6x7P4" role="doc-biblioref">9</a>]</span>.</p>
-<p>Causal discovery is computationally and statistically very expensive because it needs to account for the variability in data generation while isolating generalisable relationships between single measured species (cite).
-For modern systems biology, this means that methods for causal discovery typically require large amounts of measurements.
-Highly parameterised models such as neural networks increase this requirement even further.
-As such, many regard causal discovery in molecular biomedicine as a scaling problem (cite).</p>
-<p>Causal inference, on the other hand, only requires sufficient measurements (replicates) to confidently account for the state of measured species in any condition (which can still be expensive, given the many technical and biological parameters that can influence molecular biology measurements).
-However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete (cite MSB review).
-For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown <span class="citation" data-cites="4VxTzwTj yCFobrFQ">[<a href="#ref-4VxTzwTj" role="doc-biblioref">10</a>,<a href="#ref-yCFobrFQ" role="doc-biblioref">11</a>]</span>.
+<p>The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.</p>
+<p>Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents <span class="citation" data-cites="1CPlHia5R">[<a href="#ref-1CPlHia5R" role="doc-biblioref">9</a>]</span>.
+As a result, most inference mechanisms perform better when including prior knowledge at some point in the process, as has been observed in biomedical research
+<span class="citation" data-cites="qpg6x7P4">[<a href="#ref-qpg6x7P4" role="doc-biblioref">10</a>]</span>.
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem <span class="citation" data-cites="10mjWN2op 10AL1hWhU">[<a href="#ref-10mjWN2op" role="doc-biblioref">11</a>,<a href="#ref-10AL1hWhU" role="doc-biblioref">12</a>]</span>.</p>
+<p>Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
+This approach leverages prior knowledge about the assumed causal links, which in the causal field are often encoded using directed graphs.
+This allows researchers to represent both the causal connections between variables and the directionality, which is required to understand how changes in one variable might lead to changes in another.
+For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
+This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
+For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
+Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
+However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete <span class="citation" data-cites="TUhGg6tD">[<a href="#ref-TUhGg6tD" role="doc-biblioref">13</a>]</span>.
+For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown <span class="citation" data-cites="4VxTzwTj yCFobrFQ">[<a href="#ref-4VxTzwTj" role="doc-biblioref">14</a>,<a href="#ref-yCFobrFQ" role="doc-biblioref">15</a>]</span>.
 In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the “right” biases to apply.</p>
 <h3 id="the-ladder-of-causality">The Ladder of Causality</h3>
 <p>Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
-The framework of the <em>ladder of causality</em> [] roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals.
-While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., “would this patient have survived if they had received this treatment?”), the data we have available is typically observational (e.g., “this patient received this treatment and survived”) and sometimes interventional (e.g., clinical trials or perturbation screening).
-To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study.</p>
-<p>There are approaches to delineate interventional inference from observational data, such as the ‘natural experiments’ framework [].
+Pearl’s ladder of causality roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals <span class="citation" data-cites="185mDnD0M">[<a href="#ref-185mDnD0M" role="doc-biblioref">16</a>]</span>.
+While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., “would RAF inhibition lead to decrease in ERK activation if the media contained Epidermal Growth Factors?”), the data we have available is typically observational (e.g., “the levels of RAF and MEK activity are correlated”) and sometimes interventional (e.g., “targeting RAF with CRISPR leads to a decrease in ERK activity”).
+To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study <span class="citation" data-cites="dJUlTjFg">[<a href="#ref-dJUlTjFg" role="doc-biblioref">17</a>]</span>.</p>
+<p>There are approaches to delineate interventional inference from observational data, such as the ‘natural experiments’ framework <span class="citation" data-cites="w47lt0ah 712MuGug">[<a href="#ref-w47lt0ah" role="doc-biblioref">3</a>,<a href="#ref-712MuGug" role="doc-biblioref">4</a>]</span>.
 However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
-Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [].
+Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution <span class="citation" data-cites="152yKY5w7">[<a href="#ref-152yKY5w7" role="doc-biblioref">18</a>]</span>.
 Current developments of CR in the biomedical field therefore mostly focus on these types of data.</p>
 <h3 id="deduction-and-induction">Deduction and Induction</h3>
-<p>Lastly, in CR, we can also distinguish between <em>deductive</em> and <em>inductive</em> reasoning.
+<p>Lastly, in CR, we can also distinguish between deductive and inductive reasoning.
 This is where certain biases are pivotal to the effectiveness of the CR method.
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
 “All men are mortal, Socrates is a man, therefore Socrates is mortal” is a classic example of deductive reasoning.
 In biomedical research, this is typically the process of deriving a conclusion from a set of prior knowledge.
-For instance, knowing about the causes of stroke (which include high blood pressure) and the consequences of an angiotensin receptor-blocking drug (lowering blood pressure) allows us to deduce that the drug can be used to prevent stroke.</p>
-<p>Inductive reasoning, on the other hand, is the process of deriving a conclusion from a set of observations; in the biomedical case, this is often measurements.
-For instance, we would conduct a clinical trial on the preventative effect of the angiotensin receptor-blocking drug on high-risk patients.
-Since we cannot feasibly test the drug on all potential patients, we instead test on a <em>representative</em> sample of the population.
-Given a statistically significant effect on stroke prevention, we can then perform the inductive step that the drug is generally effective at preventing stroke.</p>
-<p>The main difference between deduction and induction is that the former is more reliable, but also more limited in scope, than the latter.
+For instance, having prior knowledge of the linear activation cascade EGFR-&gt;RAS-&gt;RAF-&gt;MEK-&gt;ERK-&gt;Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">8</a>]</span>.</p>
+<p>Inductive reasoning, on the other hand, involves making generalisations from specific observations.
+Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">8</a>]</span>.
+We could now infer (via induction) that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or, further, that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation <span class="citation" data-cites="1BSi2Dk6R">[<a href="#ref-1BSi2Dk6R" role="doc-biblioref">19</a>]</span>.
+In the molecular realm, we could further infer that the inhibition of other components of the cascade, such as EGFR or MEK, may also be promising target leads <span class="citation" data-cites="ZkFzi3Xl">[<a href="#ref-ZkFzi3Xl" role="doc-biblioref">20</a>]</span>.</p>
+<p>The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
+However, deduction is also more limited in scope than induction.
 In biomedical research, we often have to rely on inductive reasoning because we cannot feasibly test all hypotheses in a deductive manner.
-In consequence, the <em>inductive</em> biases we introduce into our models are a pivotal part of performing CR in biomedical research.</p>
+In consequence, the inductive biases we introduce into our models (i.e., those mechanisms in the model that help with inductive reasoning) are a pivotal part of performing CR in biomedical research.</p>
 <h2 id="bias">Bias</h2>
 <h3 id="meaning-and-examples-of-biases">Meaning and examples of biases</h3>
 <p>Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources.
-Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age <span class="citation" data-cites="1DMQH5kzt">[<a href="#ref-1DMQH5kzt" role="doc-biblioref">12</a>]</span>.
+Our brain seems predisposed to doing causal inference, a skill which we learn and hone from a very early age <span class="citation" data-cites="1DMQH5kzt">[<a href="#ref-1DMQH5kzt" role="doc-biblioref">21</a>]</span>.
 In fact, we may be over-eager to deduce causality from observation (i.e., “jump to conclusions”), which is indicative of a strong inductive bias.
 A good <em>heuristic</em> is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.</p>
 <p>In machine learning (ML), we can distinguish between useful and harmful biases.
@@ -217,21 +248,16 @@ As a result, we need to introduce biases into our models to make the most of the
 <li><p>How do we evaluate the biases we introduce?</p></li>
 </ul>
 <h2 id="bias-from-prior-knowledge">Bias from prior knowledge</h2>
-<p>The human mind will be the gold standard for reasoning for the foreseeable future.
-However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive nor keep in memory thousands of agents at the same time.
-Hence, to make the most of our immense wealth of data, we must elevate our algorithms’ reasoning capabilities.
-A sensible approach is to look to our reference model, the human, to try and transfer some of our capabilities to the in silico reasoner.
-In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
-This can be achieved through converting the prior knowledge into suitable inductive biases <span class="citation" data-cites="URCTSFCA T7D6XA6s vm2M7mI5 11wELIlTc 17scpieH5">[<a href="#ref-17scpieH5" role="doc-biblioref">6</a>,<a href="#ref-URCTSFCA" role="doc-biblioref">13</a>,<a href="#ref-T7D6XA6s" role="doc-biblioref">14</a>,<a href="#ref-vm2M7mI5" role="doc-biblioref">15</a>,<a href="#ref-11wELIlTc" role="doc-biblioref">16</a>]</span>.</p>
-<p>In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric <span class="citation" data-cites="ydpntqD3">[<a href="#ref-ydpntqD3" role="doc-biblioref">17</a>]</span>.
-It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks <span class="citation" data-cites="eT8vyMzx AT0GCO31">[<a href="#ref-eT8vyMzx" role="doc-biblioref">18</a>,<a href="#ref-AT0GCO31" role="doc-biblioref">19</a>]</span>.
-The impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">20</a>]</span>.
-Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question thus is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how <span class="citation" data-cites="AT0GCO31">[<a href="#ref-AT0GCO31" role="doc-biblioref">19</a>]</span>.</p>
+<p>The first question alone is highly debated in the wider field of ML.
+The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth <span class="citation" data-cites="ydpntqD3">[<a href="#ref-ydpntqD3" role="doc-biblioref">22</a>]</span>.
+However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">23</a>]</span>, and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks <span class="citation" data-cites="eT8vyMzx AT0GCO31">[<a href="#ref-eT8vyMzx" role="doc-biblioref">24</a>,<a href="#ref-AT0GCO31" role="doc-biblioref">25</a>]</span>.</p>
+<p>In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of prior knowledge <span class="citation" data-cites="URCTSFCA T7D6XA6s vm2M7mI5 11wELIlTc 17scpieH5 11wELIlTc 17scpieH5">[<a href="#ref-17scpieH5" role="doc-biblioref">6</a>,<a href="#ref-17scpieH5" role="doc-biblioref">6</a>,<a href="#ref-URCTSFCA" role="doc-biblioref">26</a>,<a href="#ref-T7D6XA6s" role="doc-biblioref">27</a>,<a href="#ref-vm2M7mI5" role="doc-biblioref">28</a>,<a href="#ref-11wELIlTc" role="doc-biblioref">29</a>,<a href="#ref-11wELIlTc" role="doc-biblioref">29</a>]</span>.
+Considering these constraints, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how <span class="citation" data-cites="AT0GCO31">[<a href="#ref-AT0GCO31" role="doc-biblioref">25</a>]</span>.</p>
 <h3 id="prior-knowledge">Prior knowledge</h3>
 <p>To be able to effectively use our knowledge in reasoning, we must be able to represent it robustly and in a way that is conducive to the reasoning task.
 Biomedical entities and relationships must be clearly defined and represented unambiguously.
 Additionally, the diversity in our tasks and knowledge sources requires a flexible representation that can be adapted to the task at hand.
-Knowledge representation frameworks can aid in walking the line between robust and transparent, reproducible knowledge representation on the one hand, and flexible, task-specific workflows on the other <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">21</a>]</span>.
+Knowledge representation frameworks can aid in walking the line between robust and transparent, reproducible knowledge representation on the one hand, and flexible, task-specific workflows on the other <span class="citation" data-cites="tr1XjZ1R">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">30</a>]</span>.
 In addition, they can ground the biological entities that are subject to reasoning using domain-specific ontologies, which can be another useful source of bias.
 For instance, knowing the directionality of the central dogma of biology can be a useful bias in reasoning about gene expression.</p>
 <h3 id="modelling-on-prior-knowledge">Modelling on prior knowledge</h3>
@@ -239,39 +265,43 @@ For instance, knowing the directionality of the central dogma of biology can be 
 <p>Why modelling needs biases and how to introduce them</p>
 <p>Benchmarks</p>
 <h2 id="causality-in-foundation-models">Causality in foundation models</h2>
-<p>There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of transformers in natural language processing and the commercial acclaim of ChatGPT.
-While the high performance of Large Language Models (LLMs) is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">20</a>]</span>.
-This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered “GPT” models: Generative Pre-trained Transformers <span class="citation" data-cites="gAQyFCbW VmzWBJUJ r5y0HbhJ">[<a href="#ref-gAQyFCbW" role="doc-biblioref">22</a>,<a href="#ref-VmzWBJUJ" role="doc-biblioref">23</a>,<a href="#ref-r5y0HbhJ" role="doc-biblioref">24</a>]</span>.</p>
-<p>Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
-In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of chromosomally distant regulatory elements <span class="citation" data-cites="VmzWBJUJ">[<a href="#ref-VmzWBJUJ" role="doc-biblioref">23</a>]</span>.
-For example, the angiotensin converting enzyme (ACE), which is responsible for converting angiotensin I to angiotensin II, is causally responsible for the activation of the angiotensin receptor II (AGTR2).
-However, the ACE gene is located on chromosome 17, while the AGTR2 gene is located on chromosome X.
-Thus, to learn the causal relationship between ACE and AGTR2 in a self-supervised manner based purely on observational data, the model must be able to integrate information from distant genomic regions.</p>
-<p>The generalist capabilities of LLMs have led to the designation of “foundation models” (cite stanford paper).
-Foundation models are models that achieve high performance by the combination of large amounts of data and model parameters, a generic architecture without specific biases, and self-supervised training.
-They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to encapsulate the complexity of real-world systems.
-While this designation is not too far off the mark for LLMs, it is not yet clear whether the same can be said for molecular models.</p>
-<p>Recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance <span class="citation" data-cites="WEYqVcYG OFczH7ba">[<a href="#ref-WEYqVcYG" role="doc-biblioref">25</a>,<a href="#ref-OFczH7ba" role="doc-biblioref">26</a>]</span>.
-- Details here</p>
+<p>There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs).
+While the high performance of LLMs is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">23</a>]</span>.
+This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered “GPT” models: Generative Pre-trained Transformers <span class="citation" data-cites="gAQyFCbW VmzWBJUJ r5y0HbhJ">[<a href="#ref-gAQyFCbW" role="doc-biblioref">31</a>,<a href="#ref-VmzWBJUJ" role="doc-biblioref">32</a>,<a href="#ref-r5y0HbhJ" role="doc-biblioref">33</a>]</span>.
+Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
+In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of distant regulatory elements <span class="citation" data-cites="VmzWBJUJ">[<a href="#ref-VmzWBJUJ" role="doc-biblioref">32</a>]</span>.
+Notably, this mechanism comes with a computational cost that increases exponentially with respect to the length of the input sequence <span class="citation" data-cites="1DSO3BUly">[<a href="#ref-1DSO3BUly" role="doc-biblioref">34</a>]</span>.</p>
+<p>The generalist capabilities of LLMs have led to the designation of “foundation models” <span class="citation" data-cites="U6LC2Ufe">[<a href="#ref-U6LC2Ufe" role="doc-biblioref">35</a>]</span>.
+Foundation models are models that achieve high performance by training a generic architecture on extremely large amounts of data in an unsupervised manner.
+They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
+However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance <span class="citation" data-cites="WEYqVcYG OFczH7ba">[<a href="#ref-WEYqVcYG" role="doc-biblioref">36</a>,<a href="#ref-OFczH7ba" role="doc-biblioref">37</a>]</span>.
+Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
+State-of-the-art methods such as scVI <span class="citation" data-cites="1ELFXHA51">[<a href="#ref-1ELFXHA51" role="doc-biblioref">38</a>]</span> and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
+However, these are early models, and it could still be argued that, in line with the scaling hypothesis, models will improve via a combination of the right architecture with sufficient amounts of data.</p>
+<p>Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
+Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
+The question whether scaling will lead to the emergence of “foundational behaviour” in molecular models is still a matter of much debate.</p>
 <h3 id="attention---and-large-amounts-of-data---is-all-you-need">Attention - and large amounts of data - is all you need?</h3>
 <p>Given enough data to train on - and ample funds for compute - is attention “all you need” to induce reliable biases in your model?
-While there are doubts as regards the reasoning capabilities of our most advanced LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and also synthesise information <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">27</a>]</span>.
+While there are doubts regarding the reasoning capabilities of LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and synthesise information <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">39</a>]</span>.
 This is what the term “foundation model” implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
-This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model.
-In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the “grammar” of the cell?</p>
-<p>For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
+This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model <span class="citation" data-cites="10mjWN2op">[<a href="#ref-10mjWN2op" role="doc-biblioref">11</a>]</span>.</p>
+<p>In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the “grammar” of the cell?</p>
+<p><strong>Explainability</strong>: For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
 As such, there is no way to scrutinise their reasoning beyond the output they produce.
-What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">27</a>]</span>.
+What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are still unknown <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">39</a>]</span>.
 Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.</p>
-<p>While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both result in a hypothesis on causal structure that can be formulated as a network.
-Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model’s reasoning <span class="citation" data-cites="VmzWBJUJ">[<a href="#ref-VmzWBJUJ" role="doc-biblioref">23</a>]</span>.
-While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable.
-Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
-One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks <span class="citation" data-cites="WEYqVcYG OFczH7ba">[<a href="#ref-WEYqVcYG" role="doc-biblioref">25</a>,<a href="#ref-OFczH7ba" role="doc-biblioref">26</a>]</span>.
+<p>While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both can provide a hypothesis on causal structure that can be formulated as a network.
+Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model’s reasoning <span class="citation" data-cites="VmzWBJUJ">[<a href="#ref-VmzWBJUJ" role="doc-biblioref">32</a>]</span>.
+While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable, much less so than explicit molecular models.</p>
+<p><strong>Benchmarking</strong>: Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
+One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks <span class="citation" data-cites="WEYqVcYG OFczH7ba">[<a href="#ref-WEYqVcYG" role="doc-biblioref">36</a>,<a href="#ref-OFczH7ba" role="doc-biblioref">37</a>]</span>.
 To determine whether molecular foundation models indeed capture generalisable causal representations of biology, dedicated benchmarks are needed.</p>
-<p>Cite some benchmarks, point out the most important aspects of benchmarking causally.</p>
-<p>What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models? How could this be studied empirically?</p>
-<p>Back-of-the-envelope data requirements for molecular foundation models (parameters, data points, comparison with LLMs).</p>
+<p><strong>Causal bias</strong>: The GPT-3 architecture that led to the recent breakthrough in LLM capabilities employs “causal self-attention,” describing an implicit architectural bias that prevents the model from “looking into the future”: for predicting the next token, only the previous tokens in the sentence can be used <span class="citation" data-cites="1DSO3BUly">[<a href="#ref-1DSO3BUly" role="doc-biblioref">34</a>]</span>.
+This leverages the implicit causality present in language, which incidentally is similar to one of the earliest formal descriptions of causality, that “the effect has regularly followed the cause in the past” <span class="citation" data-cites="WmT8ZU5I">[<a href="#ref-WmT8ZU5I" role="doc-biblioref">40</a>]</span>.
+Compared to language, the data that form the input of molecular foundation models do not have an implicit form of causality.
+The individual cells are in general not on a known temporal trajectory, and the genes that are masked as part of the training objective are masked at random, not because they are downstream (in some form) of the genes used for prediction.
+This fundamental difference between language and molecular models has so far not been explored theoretically or empirically.</p>
 <h3 id="causal-latent-spaces">Causal latent spaces</h3>
 <p>Latent encodings of explicit prior knowledge (GEARS)</p>
 <p>Do ‘causal latent spaces’ exist, and how would we prove it?</p>
@@ -308,62 +338,101 @@ To determine whether molecular foundation models indeed capture generalisable ca
 <div id="ref-muFRX2ZL" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Improved Survival with Vemurafenib in Melanoma with BRAF V600E Mutation</strong> <div class="csl-block">Paul B Chapman, Axel Hauschild, Caroline Robert, John B Haanen, Paolo Ascierto, James Larkin, Reinhard Dummer, Claus Garbe, Alessandro Testori, Michele Maio, … Grant A McArthur</div> <em>New England Journal of Medicine</em> (2011-06-30) <a href="https://doi.org/dsbxxt">https://doi.org/dsbxxt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1056/nejmoa1103782">10.1056/nejmoa1103782</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21639808">21639808</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549296">PMC3549296</a></div></div>
 </div>
+<div id="ref-1CPlHia5R" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Causal Structure Learning</strong> <div class="csl-block">Christina Heinze-Deml, Marloes H Maathuis, Nicolai Meinshausen</div> <em>Annual Review of Statistics and Its Application</em> (2018-03-07) <a href="https://doi.org/ggh4pj">https://doi.org/ggh4pj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1146/annurev-statistics-031017-100630">10.1146/annurev-statistics-031017-100630</a></div></div>
+</div>
 <div id="ref-qpg6x7P4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Inferring causal molecular networks: empirical assessment through a community-based effort</strong> <div class="csl-block">Steven M Hill, Laura M Heiser, Thomas Cokelaer, Michael Unger, Nicole K Nesser, Daniel E Carlin, Yang Zhang, Artem Sokolov, Evan O Paull, … Sach Mukherjee</div> <em>Nature Methods</em> (2016-02-22) <a href="https://doi.org/f3t7t4">https://doi.org/f3t7t4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nmeth.3773">10.1038/nmeth.3773</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26901648">26901648</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4854847">PMC4854847</a></div></div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Inferring causal molecular networks: empirical assessment through a community-based effort</strong> <div class="csl-block">Steven M Hill, Laura M Heiser, Thomas Cokelaer, Michael Unger, Nicole K Nesser, Daniel E Carlin, Yang Zhang, Artem Sokolov, Evan O Paull, … Sach Mukherjee</div> <em>Nature Methods</em> (2016-02-22) <a href="https://doi.org/f3t7t4">https://doi.org/f3t7t4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nmeth.3773">10.1038/nmeth.3773</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26901648">26901648</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4854847">PMC4854847</a></div></div>
+</div>
+<div id="ref-10mjWN2op" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Can Foundation Models Talk Causality?</strong> <div class="csl-block">Moritz Willig, Matej Zečević, Devendra Singh Dhami, Kristian Kersting</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtb9wb">https://doi.org/gtb9wb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.10591">10.48550/arxiv.2206.10591</a></div></div>
+</div>
+<div id="ref-10AL1hWhU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>The Scaling Hypothesis</strong> <div class="csl-block">Gwern Branwen</div> (2020-05-28) <a href="https://gwern.net/scaling-hypothesis">https://gwern.net/scaling-hypothesis</a></div>
+</div>
+<div id="ref-TUhGg6tD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Integrating knowledge and omics to decipher mechanisms via large‐scale models of signaling networks</strong> <div class="csl-block">Martin Garrido‐Rodriguez, Katharina Zirngibl, Olga Ivanova, Sebastian Lobentanzer, Julio Saez‐Rodriguez</div> <em>Molecular Systems Biology</em> (2022-07) <a href="https://doi.org/gtb9v8">https://doi.org/gtb9v8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15252/msb.202211036">10.15252/msb.202211036</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35880747">35880747</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9316933">PMC9316933</a></div></div>
 </div>
 <div id="ref-4VxTzwTj" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Illuminating the dark phosphoproteome</strong> <div class="csl-block">Elise J Needham, Benjamin L Parker, Timur Burykin, David E James, Sean J Humphrey</div> <em>Science Signaling</em> (2019-01-22) <a href="https://doi.org/gf8c3h">https://doi.org/gf8c3h</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/scisignal.aau8645">10.1126/scisignal.aau8645</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30670635">30670635</a></div></div>
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Illuminating the dark phosphoproteome</strong> <div class="csl-block">Elise J Needham, Benjamin L Parker, Timur Burykin, David E James, Sean J Humphrey</div> <em>Science Signaling</em> (2019-01-22) <a href="https://doi.org/gf8c3h">https://doi.org/gf8c3h</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/scisignal.aau8645">10.1126/scisignal.aau8645</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30670635">30670635</a></div></div>
 </div>
 <div id="ref-yCFobrFQ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>The functional landscape of the human phosphoproteome</strong> <div class="csl-block">David Ochoa, Andrew F Jarnuczak, Cristina Viéitez, Maja Gehre, Margaret Soucheray, André Mateus, Askar A Kleefeldt, Anthony Hill, Luz Garcia-Alonso, Frank Stein, … Pedro Beltrao</div> <em>Nature Biotechnology</em> (2019-12-09) <a href="https://doi.org/ggd8n7">https://doi.org/ggd8n7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-019-0344-3">10.1038/s41587-019-0344-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31819260">31819260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7100915">PMC7100915</a></div></div>
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>The functional landscape of the human phosphoproteome</strong> <div class="csl-block">David Ochoa, Andrew F Jarnuczak, Cristina Viéitez, Maja Gehre, Margaret Soucheray, André Mateus, Askar A Kleefeldt, Anthony Hill, Luz Garcia-Alonso, Frank Stein, … Pedro Beltrao</div> <em>Nature Biotechnology</em> (2019-12-09) <a href="https://doi.org/ggd8n7">https://doi.org/ggd8n7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-019-0344-3">10.1038/s41587-019-0344-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31819260">31819260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7100915">PMC7100915</a></div></div>
+</div>
+<div id="ref-185mDnD0M" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>The book of why: the new science of cause and effect</strong> <div class="csl-block">Judea Pearl, Dana Mackenzie</div> <em>Basic Books</em> (2018) <div class="csl-block">ISBN: 9780465097616</div></div>
+</div>
+<div id="ref-dJUlTjFg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Causal inference in statistics: An overview</strong> <div class="csl-block">Judea Pearl</div> <em>Statistics Surveys</em> (2009-01-01) <a href="https://doi.org/drt748">https://doi.org/drt748</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1214/09-ss057">10.1214/09-ss057</a></div></div>
+</div>
+<div id="ref-152yKY5w7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens</strong> <div class="csl-block">Atray Dixit, Oren Parnas, Biyu Li, Jenny Chen, Charles P Fulco, Livnat Jerby-Arnon, Nemanja D Marjanovic, Danielle Dionne, Tyler Burks, Raktima Raychowdhury, … Aviv Regev</div> <em>Cell</em> (2016-12) <a href="https://doi.org/f9prjd">https://doi.org/f9prjd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.cell.2016.11.038">10.1016/j.cell.2016.11.038</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27984732">27984732</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5181115">PMC5181115</a></div></div>
+</div>
+<div id="ref-1BSi2Dk6R" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Vemurafenib: the first drug approved for BRAF-mutant cancer</strong> <div class="csl-block">Gideon Bollag, James Tsai, Jiazhong Zhang, Chao Zhang, Prabha Ibrahim, Keith Nolop, Peter Hirth</div> <em>Nature Reviews Drug Discovery</em> (2012-10-12) <a href="https://doi.org/f4b975">https://doi.org/f4b975</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nrd3847">10.1038/nrd3847</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23060265">23060265</a></div></div>
+</div>
+<div id="ref-ZkFzi3Xl" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Targeting the ERK Signaling Pathway in Melanoma</strong> <div class="csl-block">Paola Savoia, Paolo Fava, Filippo Casoni, Ottavio Cremona</div> <em>International Journal of Molecular Sciences</em> (2019-03-25) <a href="https://doi.org/gtb9v9">https://doi.org/gtb9v9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3390/ijms20061483">10.3390/ijms20061483</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30934534">30934534</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6472057">PMC6472057</a></div></div>
 </div>
 <div id="ref-1DMQH5kzt" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>A Theory of Causal Learning in Children: Causal Maps and Bayes Nets.</strong> <div class="csl-block">Alison Gopnik, Clark Glymour, David M Sobel, Laura E Schulz, Tamar Kushnir, David Danks</div> <em>Psychological Review</em> (2004) <a href="https://doi.org/fkj59s">https://doi.org/fkj59s</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1037/0033-295x.111.1.3">10.1037/0033-295x.111.1.3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14756583">14756583</a></div></div>
-</div>
-<div id="ref-URCTSFCA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations</strong> <div class="csl-block">Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Rätsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem</div> <em>arXiv</em> (2018) <a href="https://doi.org/grx79c">https://doi.org/grx79c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1811.12359">10.48550/arxiv.1811.12359</a></div></div>
-</div>
-<div id="ref-T7D6XA6s" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Toward Causal Representation Learning</strong> <div class="csl-block">Bernhard Scholkopf, Francesco Locatello, Stefan Bauer, Nan Rosemary Ke, Nal Kalchbrenner, Anirudh Goyal, Yoshua Bengio</div> <em>Proceedings of the IEEE</em> (2021-05) <a href="https://doi.org/gjhqrh">https://doi.org/gjhqrh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/jproc.2021.3058954">10.1109/jproc.2021.3058954</a></div></div>
-</div>
-<div id="ref-vm2M7mI5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Beyond Predictions in Neural ODEs: Identification and Interventions</strong> <div class="csl-block">Hananeh Aliee, Fabian J Theis, Niki Kilbertus</div> <em>arXiv</em> (2021) <a href="https://doi.org/gszw4d">https://doi.org/gszw4d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2106.12430">10.48550/arxiv.2106.12430</a></div></div>
-</div>
-<div id="ref-11wELIlTc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Inductive biases for deep learning of higher-level cognition</strong> <div class="csl-block">Anirudh Goyal, Yoshua Bengio</div> <em>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> (2022-10) <a href="https://doi.org/gs39f8">https://doi.org/gs39f8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rspa.2021.0068">10.1098/rspa.2021.0068</a></div></div>
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>A Theory of Causal Learning in Children: Causal Maps and Bayes Nets.</strong> <div class="csl-block">Alison Gopnik, Clark Glymour, David M Sobel, Laura E Schulz, Tamar Kushnir, David Danks</div> <em>Psychological Review</em> (2004) <a href="https://doi.org/fkj59s">https://doi.org/fkj59s</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1037/0033-295x.111.1.3">10.1037/0033-295x.111.1.3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14756583">14756583</a></div></div>
 </div>
 <div id="ref-ydpntqD3" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>The Bitter Lesson</strong> <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">http://www.incompleteideas.net/IncIdeas/BitterLesson.html</a></div>
-</div>
-<div id="ref-eT8vyMzx" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>A Better Lesson – Rodney Brooks</strong> (2019-03-19) <a href="https://rodneybrooks.com/a-better-lesson/">https://rodneybrooks.com/a-better-lesson/</a></div>
-</div>
-<div id="ref-AT0GCO31" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Thread by @shimon8282: "Rich Sutton has a new blog post entitled “The Bitter Lesson” (incompleteideas.net/IncIdeas/Bitte…) that I strongly disagree with. In it, he […]"</strong> <div class="csl-block">https://twitter.com/shimon8282</div> <a href="https://threadreaderapp.com/thread/1106534178676506624.html">https://threadreaderapp.com/thread/1106534178676506624.html</a></div>
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>The Bitter Lesson</strong> <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">http://www.incompleteideas.net/IncIdeas/BitterLesson.html</a></div>
 </div>
 <div id="ref-rh7nCPVE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Attention Is All You Need</strong> <div class="csl-block">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, Illia Polosukhin</div> <em>arXiv</em> (2017) <a href="https://doi.org/gpnmtv">https://doi.org/gpnmtv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1706.03762">10.48550/arxiv.1706.03762</a></div></div>
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Attention Is All You Need</strong> <div class="csl-block">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, Illia Polosukhin</div> <em>arXiv</em> (2017) <a href="https://doi.org/gpnmtv">https://doi.org/gpnmtv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1706.03762">10.48550/arxiv.1706.03762</a></div></div>
+</div>
+<div id="ref-eT8vyMzx" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>A Better Lesson – Rodney Brooks</strong> (2019-03-19) <a href="https://rodneybrooks.com/a-better-lesson/">https://rodneybrooks.com/a-better-lesson/</a></div>
+</div>
+<div id="ref-AT0GCO31" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Thread by @shimon8282: "Rich Sutton has a new blog post entitled “The Bitter Lesson” (incompleteideas.net/IncIdeas/Bitte…) that I strongly disagree with. In it, he […]"</strong> <div class="csl-block">https://twitter.com/shimon8282</div> <a href="https://threadreaderapp.com/thread/1106534178676506624.html">https://threadreaderapp.com/thread/1106534178676506624.html</a></div>
+</div>
+<div id="ref-URCTSFCA" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations</strong> <div class="csl-block">Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Rätsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem</div> <em>arXiv</em> (2018) <a href="https://doi.org/grx79c">https://doi.org/grx79c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1811.12359">10.48550/arxiv.1811.12359</a></div></div>
+</div>
+<div id="ref-T7D6XA6s" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Toward Causal Representation Learning</strong> <div class="csl-block">Bernhard Scholkopf, Francesco Locatello, Stefan Bauer, Nan Rosemary Ke, Nal Kalchbrenner, Anirudh Goyal, Yoshua Bengio</div> <em>Proceedings of the IEEE</em> (2021-05) <a href="https://doi.org/gjhqrh">https://doi.org/gjhqrh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/jproc.2021.3058954">10.1109/jproc.2021.3058954</a></div></div>
+</div>
+<div id="ref-vm2M7mI5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Beyond Predictions in Neural ODEs: Identification and Interventions</strong> <div class="csl-block">Hananeh Aliee, Fabian J Theis, Niki Kilbertus</div> <em>arXiv</em> (2021) <a href="https://doi.org/gszw4d">https://doi.org/gszw4d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2106.12430">10.48550/arxiv.2106.12430</a></div></div>
+</div>
+<div id="ref-11wELIlTc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Inductive biases for deep learning of higher-level cognition</strong> <div class="csl-block">Anirudh Goyal, Yoshua Bengio</div> <em>Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> (2022-10) <a href="https://doi.org/gs39f8">https://doi.org/gs39f8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rspa.2021.0068">10.1098/rspa.2021.0068</a></div></div>
 </div>
 <div id="ref-tr1XjZ1R" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Democratizing knowledge representation with BioCypher</strong> <div class="csl-block">Sebastian Lobentanzer, Patrick Aloy, Jan Baumbach, Balazs Bohar, Vincent J Carey, Pornpimol Charoentong, Katharina Danhauser, Tunca Doğan, Johann Dreo, Ian Dunham, … Julio Saez-Rodriguez</div> <em>Nature Biotechnology</em> (2023-06-19) <a href="https://doi.org/gszqjr">https://doi.org/gszqjr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-023-01848-y">10.1038/s41587-023-01848-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37337100">37337100</a></div></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Democratizing knowledge representation with BioCypher</strong> <div class="csl-block">Sebastian Lobentanzer, Patrick Aloy, Jan Baumbach, Balazs Bohar, Vincent J Carey, Pornpimol Charoentong, Katharina Danhauser, Tunca Doğan, Johann Dreo, Ian Dunham, … Julio Saez-Rodriguez</div> <em>Nature Biotechnology</em> (2023-06-19) <a href="https://doi.org/gszqjr">https://doi.org/gszqjr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-023-01848-y">10.1038/s41587-023-01848-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37337100">37337100</a></div></div>
 </div>
 <div id="ref-gAQyFCbW" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Effective gene expression prediction from sequence by integrating long-range interactions</strong> <div class="csl-block">Žiga Avsec, Vikram Agarwal, Daniel Visentin, Joseph R Ledsam, Agnieszka Grabska-Barwinska, Kyle R Taylor, Yannis Assael, John Jumper, Pushmeet Kohli, David R Kelley</div> <em>Nature Methods</em> (2021-10) <a href="https://doi.org/gm2wv4">https://doi.org/gm2wv4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01252-x">10.1038/s41592-021-01252-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34608324">34608324</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8490152">PMC8490152</a></div></div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Effective gene expression prediction from sequence by integrating long-range interactions</strong> <div class="csl-block">Žiga Avsec, Vikram Agarwal, Daniel Visentin, Joseph R Ledsam, Agnieszka Grabska-Barwinska, Kyle R Taylor, Yannis Assael, John Jumper, Pushmeet Kohli, David R Kelley</div> <em>Nature Methods</em> (2021-10) <a href="https://doi.org/gm2wv4">https://doi.org/gm2wv4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-021-01252-x">10.1038/s41592-021-01252-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34608324">34608324</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8490152">PMC8490152</a></div></div>
 </div>
 <div id="ref-VmzWBJUJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Transfer learning enables predictions in network biology</strong> <div class="csl-block">Christina V Theodoris, Ling Xiao, Anant Chopra, Mark D Chaffin, Zeina R Al Sayed, Matthew C Hill, Helene Mantineo, Elizabeth M Brydon, Zexian Zeng, XShirley Liu, Patrick T Ellinor</div> <em>Nature</em> (2023-05-31) <a href="https://doi.org/gr9x63">https://doi.org/gr9x63</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-06139-9">10.1038/s41586-023-06139-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37258680">37258680</a></div></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Transfer learning enables predictions in network biology</strong> <div class="csl-block">Christina V Theodoris, Ling Xiao, Anant Chopra, Mark D Chaffin, Zeina R Al Sayed, Matthew C Hill, Helene Mantineo, Elizabeth M Brydon, Zexian Zeng, XShirley Liu, Patrick T Ellinor</div> <em>Nature</em> (2023-05-31) <a href="https://doi.org/gr9x63">https://doi.org/gr9x63</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-06139-9">10.1038/s41586-023-06139-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37258680">37258680</a></div></div>
 </div>
 <div id="ref-r5y0HbhJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI</strong> <div class="csl-block">Haotian Cui, Chloe Wang, Hassaan Maan, Kuan Pang, Fengning Luo, Bo Wang</div> <em>Cold Spring Harbor Laboratory</em> (2023-05-01) <a href="https://doi.org/gshk6p">https://doi.org/gshk6p</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.04.30.538439">10.1101/2023.04.30.538439</a></div></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI</strong> <div class="csl-block">Haotian Cui, Chloe Wang, Hassaan Maan, Kuan Pang, Fengning Luo, Bo Wang</div> <em>Cold Spring Harbor Laboratory</em> (2023-05-01) <a href="https://doi.org/gshk6p">https://doi.org/gshk6p</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.04.30.538439">10.1101/2023.04.30.538439</a></div></div>
+</div>
+<div id="ref-1DSO3BUly" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>HyperAttention: Long-context Attention in Near-Linear Time</strong> <div class="csl-block">Insu Han, Rajesh Jayaram, Amin Karbasi, Vahab Mirrokni, David P Woodruff, Amir Zandieh</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtb9wc">https://doi.org/gtb9wc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.05869">10.48550/arxiv.2310.05869</a></div></div>
+</div>
+<div id="ref-U6LC2Ufe" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Stanford CRFM</strong> <a href="https://crfm.stanford.edu/">https://crfm.stanford.edu/</a></div>
 </div>
 <div id="ref-WEYqVcYG" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Assessing the limits of zero-shot foundation models in single-cell biology</strong> <div class="csl-block">Kasia Z Kedzierska, Lorin Crawford, Ava P Amini, Alex X Lu</div> <em>Cold Spring Harbor Laboratory</em> (2023-10-17) <a href="https://doi.org/gszxk9">https://doi.org/gszxk9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.16.561085">10.1101/2023.10.16.561085</a></div></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Assessing the limits of zero-shot foundation models in single-cell biology</strong> <div class="csl-block">Kasia Z Kedzierska, Lorin Crawford, Ava P Amini, Alex X Lu</div> <em>Cold Spring Harbor Laboratory</em> (2023-10-17) <a href="https://doi.org/gszxk9">https://doi.org/gszxk9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.16.561085">10.1101/2023.10.16.561085</a></div></div>
 </div>
 <div id="ref-OFczH7ba" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>A Deep Dive into Single-Cell RNA Sequencing Foundation Models</strong> <div class="csl-block">Rebecca Boiarsky, Nalini Singh, Alejandro Buendia, Gad Getz, David Sontag</div> <em>Cold Spring Harbor Laboratory</em> (2023-10-23) <a href="https://doi.org/gszxmb">https://doi.org/gszxmb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.19.563100">10.1101/2023.10.19.563100</a></div></div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>A Deep Dive into Single-Cell RNA Sequencing Foundation Models</strong> <div class="csl-block">Rebecca Boiarsky, Nalini Singh, Alejandro Buendia, Gad Getz, David Sontag</div> <em>Cold Spring Harbor Laboratory</em> (2023-10-23) <a href="https://doi.org/gszxmb">https://doi.org/gszxmb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.19.563100">10.1101/2023.10.19.563100</a></div></div>
+</div>
+<div id="ref-1ELFXHA51" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Deep generative modeling for single-cell transcriptomics</strong> <div class="csl-block">Romain Lopez, Jeffrey Regier, Michael B Cole, Michael I Jordan, Nir Yosef</div> <em>Nature Methods</em> (2018-11-30) <a href="https://doi.org/gfkw5z">https://doi.org/gfkw5z</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0229-2">10.1038/s41592-018-0229-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30504886">30504886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6289068">PMC6289068</a></div></div>
 </div>
 <div id="ref-19EQh1DNG" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>ChatGPT broke the Turing test — the race is on for new ways to assess AI</strong> <div class="csl-block">Celeste Biever</div> <em>Nature</em> (2023-07-25) <a href="https://doi.org/gskd92">https://doi.org/gskd92</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-02361-7">10.1038/d41586-023-02361-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37491395">37491395</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>ChatGPT broke the Turing test — the race is on for new ways to assess AI</strong> <div class="csl-block">Celeste Biever</div> <em>Nature</em> (2023-07-25) <a href="https://doi.org/gskd92">https://doi.org/gskd92</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-02361-7">10.1038/d41586-023-02361-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37491395">37491395</a></div></div>
+</div>
+<div id="ref-WmT8ZU5I" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>An enquiry concerning human understanding</strong> <div class="csl-block">David Hume, PF Millican</div> <em>Oxford University Press</em> (2007) <div class="csl-block">ISBN: 9780199211586</div></div>
 </div>
 </div>
 <!-- default theme -->
