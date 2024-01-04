@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T15:24:20+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T15:24:20+00:00" />
+  <meta name="dc.modified" content="2024-01-04T15:27:35+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T15:27:35+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d99702721d457dde1a2b001c63fb60314418fb23/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d99702721d457dde1a2b001c63fb60314418fb23/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d99702721d457dde1a2b001c63fb60314418fb23/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d99702721d457dde1a2b001c63fb60314418fb23/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@d997027](https://github.com/slobentanzer/causality_perspective_2023/tree/d99702721d457dde1a2b001c63fb60314418fb23)
+from [slobentanzer/causality_perspective_2023@cb0ffc9](https://github.com/slobentanzer/causality_perspective_2023/tree/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c)
 on January 4, 2024.
 </em></small>
 
@@ -420,9 +420,9 @@ A balanced approach, possibly incorporating both data types, might provide a mor
 
 ### Foundation Models: Architectural Biases and the No Free Lunch Theorems
 
-Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models.
+Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models [@doi:10.48550/arXiv.2304.05366].
 These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
-As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.48550/arXiv.2304.05366;@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
+As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
 
 ### Systems Biology and Implicit Causality
 
