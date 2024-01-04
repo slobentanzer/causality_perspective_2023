@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T14:42:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T14:42:27+00:00" />
+  <meta name="dc.modified" content="2024-01-04T14:59:58+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T14:59:58+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/0bd437b5fe3db8b477383e39614659fb7e404651/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/0bd437b5fe3db8b477383e39614659fb7e404651/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/0bd437b5fe3db8b477383e39614659fb7e404651/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/233623e945b8b728e534b3d84c94bb91617cd0f7/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/0bd437b5fe3db8b477383e39614659fb7e404651/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@233623e](https://github.com/slobentanzer/causality_perspective_2023/tree/233623e945b8b728e534b3d84c94bb91617cd0f7)
+from [slobentanzer/causality_perspective_2023@0bd437b](https://github.com/slobentanzer/causality_perspective_2023/tree/0bd437b5fe3db8b477383e39614659fb7e404651)
 on January 4, 2024.
 </em></small>
 
@@ -396,14 +396,14 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
-Conversely, explicitly injecting biases from PK can lead to more specialized and efficient models that can generalise using relatively little training data, but may not scale.
+Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
 Hybrid models currently represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
-Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalization through scaling and specialization through bias injection might provide a robust framework for tackling complex biomedical challenges.
+Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
 In addition, complex models often pose computational challenges; many models are limited to network sizes of <10 nodes, and feedback loops are often excluded.
 
 ### Theoretical Foundations: Interventions and Inductive Biases
 
-Theoretical work emphasizes the need for interventions in causal discovery but does not yet address the influence of inductive biases [@doi:10.48550/arXiv.1207.1389].
+Theoretical work emphasises the need for interventions in causal discovery but does not yet address the influence of inductive biases [@doi:10.48550/arXiv.1207.1389].
 The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models [@doi:10.48550/arXiv.1910.01075].
 However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
 The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
@@ -414,13 +414,13 @@ Empirical studies and more robust theories are needed to understand these dynami
 
 The choice between training on observational versus interventional data (or a mixture of both) is critical in the development of models.
 While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
-Observational data are more readily available but may lead to confounded or biased insights.
+Observational data are more readily available but may lead to confounded or biassed insights.
 Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model's understanding of underlying biological processes.
 A balanced approach, possibly incorporating both data types, might provide a more nuanced understanding and improve model robustness and interpretability.
 
 ### Foundation Models: Architectural Biases and the No Free Lunch Theorems
 
-Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalizable and high-performing models.
+Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models.
 These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
 As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
 
@@ -435,8 +435,8 @@ This decision will significantly influence the direction and effectiveness of fu
 ### Combining Algorithms and Biases with Data Types for Impactful Biological Modeling
 
 While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
-Including explicit favorable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
-The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realize the full potential of modern systems biology.
+Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
+The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.
 
 
 ## Glossary?

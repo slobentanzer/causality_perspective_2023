@@ -93,9 +93,10 @@ content/40.foundation_models.md:72:embeddings
 content/50.discussion.md:8:scalability
 content/50.discussion.md:21:Interventional
 content/50.discussion.md:23:interventional
+content/50.discussion.md:25:biassed
 content/50.discussion.md:26:Interventional
 content/50.discussion.md:27:interpretability
-content/50.discussion.md:31:generalizable
+content/50.discussion.md:31:generalisable
 content/50.discussion.md:32:LLMs
 content/50.discussion.md:40:datasets
 content/50.discussion.md:43:Impactful

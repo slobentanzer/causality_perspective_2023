@@ -1,5 +1,6 @@
 Benchmarking
-Biomedicine
+biassed
+biomedicine
 Cas
 CNNs
 Convolutional
@@ -16,13 +17,12 @@ ERK
 explainability
 Geneformer
 generalisable
-generalizable
 GPT
 identifiability
 Impactful
 interpretability
 interpretable
-interventional
+Interventional
 linearities
 LLM
 LLMs
@@ -39,7 +39,7 @@ overfitting
 pablormier
 PCA
 phosphoproteomic
-Pre
+pre
 RAS
 RNNs
 Saez
