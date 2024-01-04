@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T12:12:40+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T12:12:40+00:00" />
+  <meta name="dc.modified" content="2024-01-04T12:33:30+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T12:33:30+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d573ea9d028e548679b75880d73004aa24f4d1fc/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@b3b30a1](https://github.com/slobentanzer/causality_perspective_2023/tree/b3b30a12330f2e1e8a6e1997371e5647526df243)
+from [slobentanzer/causality_perspective_2023@d573ea9](https://github.com/slobentanzer/causality_perspective_2023/tree/d573ea9d028e548679b75880d73004aa24f4d1fc)
 on January 4, 2024.
 </em></small>
 
@@ -155,18 +155,17 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
-Since being described by Aristotle approximately 2500 years ago [@isbn:9781330267608], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161;@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874] and a resurgence in the field of machine learning (ML) [@doi:​10.48550/arXiv.2206.15475] only in recent times.
+Since being described by Aristotle approximately 2500 years ago [@isbn:9781330267608], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161;@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874] and a resurgence in the field of machine learning (ML) [@causalml] only in recent times.
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
 
-In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the great complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.48550/arXiv.2312.00818].
+In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.48550/arXiv.2312.00818].
 
 Randomised clinical trials show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial) we isolate the causal effect of the controlled variable, i.e., the treatment.
-In the vernacular of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852], we measure the outcome of, for instance, *do(“Treat with Vemurafenib”)* when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
-However, translating this mode of reasoning into the high-dimensional space of modern omics is met with enormous challenges.
-The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results, as well as in model explainability.
-
-With this perspective, we discuss the current connections between CR and molecular systems biology.
+In the language of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852], we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
+However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
+The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results [@doi:10.1038/s41540-023-00310-8;@doi:10.1371/journal.pone.0027755], as well as in model explainability [@doi:10.48550/arXiv.2309.09901].
+With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.
 We will elaborate on three main points:
 
 - biases and what they mean for CR, particularly in the context of biomedical data
