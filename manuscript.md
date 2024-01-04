@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T09:58:05+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T09:58:05+00:00" />
+  <meta name="dc.modified" content="2024-01-04T11:41:07+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T11:41:07+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,7 +42,7 @@ header-includes: |
   <meta name="twitter:creator" content="@slobentanzer" />
   <meta name="citation_author" content="Pablo Rodriguez Mier" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
-  <meta name="citation_author_orcid" content="todo" />
+  <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
   <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
   <meta name="citation_author_orcid" content="todo" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/31b8529a15485e2992f0e22b4239e8ee63cfa095/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b3b30a12330f2e1e8a6e1997371e5647526df243/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@31b8529](https://github.com/slobentanzer/causality_perspective_2023/tree/31b8529a15485e2992f0e22b4239e8ee63cfa095)
+from [slobentanzer/causality_perspective_2023@b3b30a1](https://github.com/slobentanzer/causality_perspective_2023/tree/b3b30a12330f2e1e8a6e1997371e5647526df243)
 on January 4, 2024.
 </em></small>
 
@@ -108,9 +108,9 @@ on January 4, 2024.
 + **Pablo Rodriguez Mier**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [todo](https://orcid.org/todo)
+    [0000-0002-4938-4418](https://orcid.org/0000-0002-4938-4418)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [tbd](https://github.com/tbd)
+    [pablormier](https://github.com/pablormier)
     <br>
   <small>
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
@@ -357,6 +357,8 @@ Stefan's comment: newer architectures (self-supervised) do not decode; how impor
 - https://scholar.google.de/citations?view_op=view_citation&hl=de&user=soxv0s0AAAAJ&sortby=pubdate&citation_for_view=soxv0s0AAAAJ:2osOgNQ5qMEC (decoder important)
 - https://proceedings.neurips.cc/paper_files/paper/2022/hash/87213955efbe48b46586e37bf2f1fe5b-Abstract-Conference.html (decoder not important)
 
+
+## Glossary?
 
 ## References {.page_break_before}
 

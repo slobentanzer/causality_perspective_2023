@@ -1,5 +1,5 @@
 Benchmarking
-biomedicine
+Biomedicine
 Cas
 corpuses
 counterfactuals
@@ -9,7 +9,7 @@ directionality
 EGFR
 encodings
 ERK
-Explainability
+explainability
 Geneformer
 generalisable
 GPT
@@ -30,6 +30,7 @@ ontologies
 Orthogonally
 overactivation
 overfitting
+pablormier
 phosphoproteomic
 pre
 RAS
