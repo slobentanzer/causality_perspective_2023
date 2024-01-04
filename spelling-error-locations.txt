@@ -92,5 +92,16 @@ content/40.foundation_models.md:54:datasets
 content/40.foundation_models.md:54:interpretable
 content/40.foundation_models.md:62:parameterisation
 content/40.foundation_models.md:72:embeddings
+content/50.discussion.md:8:scalability
+content/50.discussion.md:21:Interventional
+content/50.discussion.md:23:interventional
+content/50.discussion.md:26:Interventional
+content/50.discussion.md:27:interpretability
+content/50.discussion.md:31:generalizable
+content/50.discussion.md:32:LLMs
+content/50.discussion.md:40:datasets
+content/50.discussion.md:43:Impactful
+content/50.discussion.md:45:datasets
+content/50.discussion.md:46:interventional
 content/XX.potential_references.md:1:LLMs
 content/XX.potential_references.md:3:LLM

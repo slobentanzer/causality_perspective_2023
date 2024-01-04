@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T12:52:25+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T12:52:25+00:00" />
+  <meta name="dc.modified" content="2024-01-04T13:42:37+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T13:42:37+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/d907781458f7ed9896df75467d09c8914483ce53/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d907781458f7ed9896df75467d09c8914483ce53/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/d907781458f7ed9896df75467d09c8914483ce53/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/f055f6b3e890550207509b18379499a833c9ccba/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/d907781458f7ed9896df75467d09c8914483ce53/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@f055f6b](https://github.com/slobentanzer/causality_perspective_2023/tree/f055f6b3e890550207509b18379499a833c9ccba)
+from [slobentanzer/causality_perspective_2023@d907781](https://github.com/slobentanzer/causality_perspective_2023/tree/d907781458f7ed9896df75467d09c8914483ce53)
 on January 4, 2024.
 </em></small>
 
@@ -170,7 +170,7 @@ We will elaborate on three main points:
 
 - biases and what they mean for CR, particularly in the context of biomedical data
 
-- the role of prior knowledge in CR and how to translate prior knowledge into suitable biases
+- the role of prior knowledge (PK) in CR and how to translate PK into suitable biases
 
 - the role of foundation models in molecular systems biology and their relationship to CR
 
@@ -181,18 +181,18 @@ We will elaborate on three main points:
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
 
 Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
-As a result, most inference mechanisms perform better when including prior knowledge at some point in the process, as has been observed in biomedical research
+As a result, most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research
  [@doi:10.1038/nmeth.3773].
 For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}].
 
 Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
-This approach leverages prior knowledge about the assumed causal links, which in the causal field are often encoded using directed graphs.
+This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
 This allows researchers to represent both the causal connections between variables and their directionality, which is required to understand how changes in one variable might lead to changes in another.
 For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
 This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
 For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
 Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
-However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete [@doi:10.15252/msb.202211036].
+However, inference is also very sensitive to the completeness of the PK that is applied; most biomedical PK is far from complete [@doi:10.15252/msb.202211036].
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
 In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases to apply.
 
@@ -214,8 +214,8 @@ Lastly, in CR, we can also distinguish between deductive and inductive reasoning
 This is where certain biases are pivotal to the effectiveness of the CR method.
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
 “All men are mortal, Socrates is a man, therefore Socrates is mortal” is a classic example of deductive reasoning.
-In biomedical research, this is typically the process of deriving a conclusion from a set of prior knowledge.
-For instance, having prior knowledge of the linear activation cascade EGFR->RAS->RAF->MEK->ERK->Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells [@doi:10.1056/NEJMoa1103782].
+In biomedical research, this is typically the process of deriving a conclusion from a set of PK.
+For instance, having PK of the linear activation cascade EGFR->RAS->RAF->MEK->ERK->Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells [@doi:10.1056/NEJMoa1103782].
 
 Inductive reasoning, on the other hand, involves making generalisations from specific observations.
 Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious [@doi:10.1056/NEJMoa1103782].
@@ -243,7 +243,7 @@ While addressing harmful biases is a crucial part of ML, we will not discuss the
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
 Since most models developed in biomedical research and the broader ML community are inductive models, one of the most discussed useful biases is *inductive bias*.
-For instance, prior knowledge on protein interactions can impact inference on activation cascades; only upstream proteins can activate downstream proteins, not vice versa.
+For instance, PK on protein interactions can impact inference on activation cascades; only upstream proteins can activate downstream proteins, not vice versa.
 
 ### Why do we need biases?
 
@@ -273,12 +273,12 @@ The first question alone is highly debated in the wider field of ML.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
-In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of prior knowledge [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
-Considering these constraints, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
+In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
+Considering these constraints, the question is not whether to include PK in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 ### Prior knowledge
 
-Prior knowledge refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
+PK refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
 It can be used to inform the inductive biases of a model, either explicitly through the design choices and assumptions embedded into the models, or implicitly through the data and methods used in training.
 For this to be possible, biomedical entities and relationships must be clearly defined and represented unambiguously.
 Additionally, the diversity in our tasks and knowledge sources requires a flexible representation.
@@ -288,30 +288,30 @@ In the biomedical field, there is a rich tradition of documenting biological kno
 Detailed mechanistic models, provide mathematical descriptions of the dynamic interactions at a molecular or cellular level.
 Genome-scale networks, including metabolic and gene regulatory networks, offer comprehensive views of metabolic processes and gene interactions [@doi:10.1038/nrg3885].
 Protein-protein interaction databases recapitulate either causal or non-causal interactions between proteins [@doi:10.1038/nrg3885].
-These examples of prior knowledge, from complex mechanistic mathematical descriptions of dynamical systems to undirected networks of interconnected proteins, provide useful sources of information that can be leveraged to inform models.
+These examples of PK, from complex mechanistic mathematical descriptions of dynamical systems to undirected networks of interconnected proteins, provide useful sources of information that can be leveraged to inform models.
 
 ### Modelling on prior knowledge
 
-The integration of prior knowledge into models is a non-trivial but essential process for moving from correlation to causation.
-Prior knowledge can be used to derive inductive biases either *explicitly* or *implicitly*.
+The integration of PK into models is a non-trivial but essential process for moving from correlation to causation.
+PK can be used to derive inductive biases either *explicitly* or *implicitly*.
 
 The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
-Ordinary Differential Equation models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935], all explicitly incorporate different types of prior knowledge, can be fitted to data, and then be used to answer different types of causal questions.
-Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying prior knowledge [@doi:10.1103/PhysRevResearch.5.043252].
+Ordinary Differential Equation models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935], all explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
+Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
-In contrast, implicit integration of prior knowledge in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
+In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
 These can be simple, e.g., regularisation techniques that help generalise models by preventing overfitting [@doi:10.15252/msb.201566], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
 They can also be elaborate, such as neural networks employing specific architectural designs, e.g., Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.5555/3295222.3295349].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
 
-As a result, choosing the best way to derive inductive biases from prior knowledge is not straightforward.
-Models that explicitly incorporate prior knowledge are more interpretable and can generalise effectively even when data is scarce.
+As a result, choosing the best way to derive inductive biases from PK is not straightforward.
+Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce.
 However, they are constrained by the accuracy of the existing knowledge and often struggle to scale to larger datasets [@doi:10.48550/arXiv.2001.08361;@doi:10.48550/arXiv.2202.05808].
 Models with implicit biases, on the other hand, particularly those typically found in deep learning architectures, excel at learning from large, high-dimensional datasets and offer flexibility across diverse domains.
 Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.
 
 Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce [@doi:10.1038/s41592-021-01283-4;@doi:10.1038/s41467-022-30684-y;@doi:10.1038/s41467-023-40380-0;@doi:10.1038/s41587-023-01905-6;@doi:10.1186/s13059-020-02100-5;@doi:10.1038/s41556-022-01072-x;@doi:10.1016/j.cels.2020.11.013].
-While the implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from prior knowledge, while the other learns from data.
+While the implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from PK, while the other learns from data.
 Frequently, these learners are also coupled in an end-to-end learning process, i.e., they “learn together.” This mode of learning aims to benefit from the “bias-free” nature of neural networks while simultaneously improving model performance in the face of scarce data via the added explicit bias.
 
 
@@ -393,6 +393,51 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 ## Discussion / Conclusion
 
+### Dichotomy of Scaling (data-driven) and Bias Injection (knowledge-driven)
+
+The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
+The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
+Conversely, explicitly injecting biases from PK can lead to more specialized and efficient models that can generalise using relatively little training data, but may not scale.
+Hybrid models currently represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
+Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalization through scaling and specialization through bias injection might provide a robust framework for tackling complex biomedical challenges.
+In addition, complex models often pose computational challenges; many models are limited to network sizes of <10 nodes, and feedback loops are often excluded.
+
+### Theoretical Foundations: Interventions and Inductive Biases
+
+Theoretical work emphasizes the need for interventions in causal discovery but does not yet address the influence of inductive biases [@doi:10.48550/arXiv.1207.1389].
+The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models [@doi:10.48550/arXiv.1910.01075].
+However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
+The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
+Foundation models have embraced causal masking as a step towards integrating causality, but this alone may be insufficient.
+Empirical studies and more robust theories are needed to understand these dynamics, including the potential existence and validation of causal latent spaces.
+
+### Data Types: Observational vs. Interventional
+
+The choice between training on observational versus interventional data (or a mixture of both) is critical in the development of models.
+While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
+Observational data are more readily available but may lead to confounded or biased insights.
+Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model's understanding of underlying biological processes.
+A balanced approach, possibly incorporating both data types, might provide a more nuanced understanding and improve model robustness and interpretability.
+
+### Foundation Models: Architectural Biases and the No Free Lunch Theorems
+
+Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalizable and high-performing models.
+These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
+As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
+
+### Systems Biology and Implicit Causality
+
+Systems biology has always engaged with causal reasoning, aiming to understand the complex mechanisms underlying biological systems.
+New methods and models offer the potential to scale this understanding to larger, more complex systems.
+The impact of these methods will depend on the successful integration of appropriate algorithms, biases, and data types.
+The field stands at a crossroads, determining whether the future of biological modeling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
+This decision will significantly influence the direction and effectiveness of future research in systems biology.
+
+### Combining Algorithms and Biases with Data Types for Impactful Biological Modeling
+
+While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
+Including explicit favorable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
+The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realize the full potential of modern systems biology.
 
 
 ## Glossary?

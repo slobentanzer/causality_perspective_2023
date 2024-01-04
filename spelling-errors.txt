@@ -1,5 +1,5 @@
 Benchmarking
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -13,11 +13,13 @@ directionality
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 Geneformer
 generalisable
+generalizable
 GPT
 identifiability
+Impactful
 interpretability
 interpretable
 interventional
@@ -44,6 +46,7 @@ RNNs
 Saez
 saezlab
 saezrodriguez
+scalability
 scGPT
 SCMs
 scVI
