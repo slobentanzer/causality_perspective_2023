@@ -1,13 +1,18 @@
 ---
-title: Causality - Perspective
+title: Molecular Causality in the Age of Foundation Models
 keywords:
+- systems biology
 - biomedicine
 - causality
 - modelling
+- machine learning
+- foundation models
 lang: en-UK
-date-meta: '2024-01-03'
+date-meta: '2024-01-04'
 author-meta:
 - Sebastian Lobentanzer
+- Pablo Rodriguez Mier
+- Stefan Bauer
 - Julio Saez-Rodriguez
 header-includes: |
   <!--
@@ -16,15 +21,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Causality - Perspective" />
-  <meta name="citation_title" content="Causality - Perspective" />
-  <meta property="og:title" content="Causality - Perspective" />
-  <meta property="twitter:title" content="Causality - Perspective" />
-  <meta name="dc.date" content="2024-01-03" />
-  <meta name="citation_publication_date" content="2024-01-03" />
-  <meta property="article:published_time" content="2024-01-03" />
-  <meta name="dc.modified" content="2024-01-03T09:02:54+00:00" />
-  <meta property="article:modified_time" content="2024-01-03T09:02:54+00:00" />
+  <meta name="dc.title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta name="citation_title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta property="og:title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta property="twitter:title" content="Molecular Causality in the Age of Foundation Models" />
+  <meta name="dc.date" content="2024-01-04" />
+  <meta name="citation_publication_date" content="2024-01-04" />
+  <meta property="article:published_time" content="2024-01-04" />
+  <meta name="dc.modified" content="2024-01-04T09:46:18+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T09:46:18+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,6 +40,12 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
+  <meta name="citation_author" content="Pablo Rodriguez Mier" />
+  <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
+  <meta name="citation_author_orcid" content="todo" />
+  <meta name="citation_author" content="Stefan Bauer" />
+  <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
+  <meta name="citation_author_orcid" content="todo" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -45,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/575af6070954f9c8cc2dbfeb650f129dea0b5582/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/405bd499129df71b40bc57274faf6c32c2d16bfa/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@575af60](https://github.com/slobentanzer/causality_perspective_2023/tree/575af6070954f9c8cc2dbfeb650f129dea0b5582)
-on January 3, 2024.
+from [slobentanzer/causality_perspective_2023@405bd49](https://github.com/slobentanzer/causality_perspective_2023/tree/405bd499129df71b40bc57274faf6c32c2d16bfa)
+on January 4, 2024.
 </em></small>
 
 
@@ -92,6 +103,28 @@ on January 3, 2024.
     <br>
   <small>
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  </small>
+
++ **Pablo Rodriguez Mier**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [todo](https://orcid.org/todo)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [tbd](https://github.com/tbd)
+    <br>
+  <small>
+     Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  </small>
+
++ **Stefan Bauer**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [todo](https://orcid.org/todo)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [tbd](https://github.com/tbd)
+    <br>
+  <small>
+     Helmholtz Zentrum München, -, Neuherberg, Germany
   </small>
 
 + **Julio Saez-Rodriguez**
@@ -116,11 +149,6 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 
 :::
-
-
-## Abstract {.page_break_before}
-
-
 
 
 ## Introduction
@@ -151,50 +179,54 @@ We will elaborate on three main points:
 
 ### Causal Discovery and Inference
 
-The field of CR distinguishes between causal discovery - the process of building hypotheses from data on how agents interact causally - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
-Causal discovery is more data-intensive than inference, which almost always relies on the prior knowledge from the discovery stage.
-As a result, most inference mechanisms perform better when including prior knowledge at some point in the process.
-This has also been observed in biomedical research, for instance in the DREAM challenges [@doi:10.1038/nmeth.3773].
+The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
 
-Causal discovery is computationally and statistically very expensive because it needs to account for the variability in data generation while isolating generalisable relationships between single measured species (cite).
-For modern systems biology, this means that methods for causal discovery typically require large amounts of measurements.
-Highly parameterised models such as neural networks increase this requirement even further.
-As such, many regard causal discovery in molecular biomedicine as a scaling problem (cite).
+Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
+As a result, most inference mechanisms perform better when including prior knowledge at some point in the process, as has been observed in biomedical research
+ [@doi:10.1038/nmeth.3773].
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}].
 
-Causal inference, on the other hand, only requires sufficient measurements (replicates) to confidently account for the state of measured species in any condition (which can still be expensive, given the many technical and biological parameters that can influence molecular biology measurements).
-However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete (cite MSB review).
+Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
+This approach leverages prior knowledge about the assumed causal links, which in the causal field are often encoded using directed graphs.
+This allows researchers to represent both the causal connections between variables and the directionality, which is required to understand how changes in one variable might lead to changes in another.
+For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
+This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
+For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
+Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
+However, inference is also very sensitive to the completeness of the prior knowledge that is applied; most biomedical prior knowledge is far from complete [@doi:10.15252/msb.202211036].
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
-In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the "right" biases to apply.
+In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problem is incompleteness and identifying the “right” biases to apply.
 
 ### The Ladder of Causality
 
 Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
-The framework of the *ladder of causality* [] roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals.
-While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., "would this patient have survived if they had received this treatment?"), the data we have available is typically observational (e.g., "this patient received this treatment and survived") and sometimes interventional (e.g., clinical trials or perturbation screening).
-To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study.
+Pearl’s ladder of causality roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals [@isbn:9780465097609].
+While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., “would RAF inhibition lead to decrease in ERK activation if the media contained Epidermal Growth Factors?”), the data we have available is typically observational (e.g., “the levels of RAF and MEK activity are correlated”) and sometimes interventional (e.g., “targeting RAF with CRISPR leads to a decrease in ERK activity”).
+To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study [@doi:10.1214/09-SS057].
 
-There are approaches to delineate interventional inference from observational data, such as the 'natural experiments' framework [].
+There are approaches to delineate interventional inference from observational data, such as the ‘natural experiments’ framework [@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874].
 However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
-Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [].
+Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [@doi:10.1016/j.cell.2016.11.038].
 Current developments of CR in the biomedical field therefore mostly focus on these types of data.
 
 ### Deduction and Induction
 
-Lastly, in CR, we can also distinguish between *deductive* and *inductive* reasoning.
+Lastly, in CR, we can also distinguish between deductive and inductive reasoning.
 This is where certain biases are pivotal to the effectiveness of the CR method.
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
-"All men are mortal, Socrates is a man, therefore Socrates is mortal" is a classic example of deductive reasoning.
+“All men are mortal, Socrates is a man, therefore Socrates is mortal” is a classic example of deductive reasoning.
 In biomedical research, this is typically the process of deriving a conclusion from a set of prior knowledge.
-For instance, knowing about the causes of stroke (which include high blood pressure) and the consequences of an angiotensin receptor-blocking drug (lowering blood pressure) allows us to deduce that the drug can be used to prevent stroke.
+For instance, having prior knowledge of the linear activation cascade EGFR->RAS->RAF->MEK->ERK->Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells [@doi:10.1056/NEJMoa1103782].
 
-Inductive reasoning, on the other hand, is the process of deriving a conclusion from a set of observations; in the biomedical case, this is often measurements.
-For instance, we would conduct a clinical trial on the preventative effect of the angiotensin receptor-blocking drug on high-risk patients.
-Since we cannot feasibly test the drug on all potential patients, we instead test on a *representative* sample of the population.
-Given a statistically significant effect on stroke prevention, we can then perform the inductive step that the drug is generally effective at preventing stroke.
+Inductive reasoning, on the other hand, involves making generalisations from specific observations.
+Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious [@doi:10.1056/NEJMoa1103782].
+We could now infer (via induction) that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or, further, that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation [@doi:10.1038/nrd3847].
+In the molecular realm, we could further infer that the inhibition of other components of the cascade, such as EGFR or MEK, may also be promising target leads [@doi:10.3390/ijms20061483].
 
-The main difference between deduction and induction is that the former is more reliable, but also more limited in scope, than the latter.
+The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
+However, deduction is also more limited in scope than induction.
 In biomedical research, we often have to rely on inductive reasoning because we cannot feasibly test all hypotheses in a deductive manner.
-In consequence, the *inductive* biases we introduce into our models are a pivotal part of performing CR in biomedical research.
+In consequence, the inductive biases we introduce into our models (i.e., those mechanisms in the model that help with inductive reasoning) are a pivotal part of performing CR in biomedical research.
 
 
 ## Bias
@@ -236,17 +268,12 @@ Some central questions then arise:
 
 ## Bias from prior knowledge
 
-The human mind will be the gold standard for reasoning for the foreseeable future.
-However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive nor keep in memory thousands of agents at the same time.
-Hence, to make the most of our immense wealth of data, we must elevate our algorithms’ reasoning capabilities.
-A sensible approach is to look to our reference model, the human, to try and transfer some of our capabilities to the in silico reasoner.
-In particular, to be successful in developing algorithms which we can trust to reason in the high-dimensional space of molecular biomedicine, they must use the available prior knowledge effectively.
-This can be achieved through converting the prior knowledge into suitable inductive biases [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818].
+The first question alone is highly debated in the wider field of ML.
+The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
+However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
-In combining prior knowledge with reasoning algorithms, we need to remain mindful that the aim is not just to increase performance based on some metric [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
-It has been argued that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
-The impressive performance of recent deep learning models is only made possible by the introduction of attention or convolution as architectural inductive biases [@doi:10.48550/arXiv.1706.03762].
-Considering the shortcomings of prior knowledge on biomedical molecular interactions as well as the constraints on available data, the question thus is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
+In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of prior knowledge [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818].
+Considering these constraints, the question is not whether to include prior knowledge in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 ### Prior knowledge
 
@@ -268,49 +295,52 @@ Benchmarks
 
 ## Causality in foundation models
 
-There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of transformers in natural language processing and the commercial acclaim of ChatGPT.
-While the high performance of Large Language Models (LLMs) is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
-This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered "GPT" models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x; @doi:10.1038/s41586-023-06139-9; @doi:10.1101/2023.04.30.538439].
-
+There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs).
+While the high performance of LLMs is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
+This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered “GPT” models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x;@doi:10.1038/s41586-023-06139-9;@doi:10.1101/2023.04.30.538439].
 Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
-In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of chromosomally distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
-For example, the angiotensin converting enzyme (ACE), which is responsible for converting angiotensin I to angiotensin II, is causally responsible for the activation of the angiotensin receptor II (AGTR2).
-However, the ACE gene is located on chromosome 17, while the AGTR2 gene is located on chromosome X.
-Thus, to learn the causal relationship between ACE and AGTR2 in a self-supervised manner based purely on observational data, the model must be able to integrate information from distant genomic regions.
+In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
+Notably, this mechanism comes with a computational cost that increases exponentially with respect to the length of the input sequence [@doi:10.48550/arXiv.2310.05869].
 
-The generalist capabilities of LLMs have led to the designation of "foundation models" (cite stanford paper).
-Foundation models are models that achieve high performance by the combination of large amounts of data and model parameters, a generic architecture without specific biases, and self-supervised training.
-They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to encapsulate the complexity of real-world systems.
-While this designation is not too far off the mark for LLMs, it is not yet clear whether the same can be said for molecular models.
+The generalist capabilities of LLMs have led to the designation of “foundation models” [@{https://crfm.stanford.edu/}].
+Foundation models are models that achieve high performance by training a generic architecture on extremely large amounts of data in an unsupervised manner.
+They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
+However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085;@doi:10.1101/2023.10.19.563100].
+Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
+State-of-the-art methods such as scVI [@doi:10.1038/s41592-018-0229-2] and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
+However, these are early models, and it could still be argued that, in line with the scaling hypothesis, models will improve via a combination of the right architecture with sufficient amounts of data.
 
-Recent molecular foundation model benchmarks highlight clear discrepancies between the "foundational" aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
-- Details here
+Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
+Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
+The question whether scaling will lead to the emergence of “foundational behaviour” in molecular models is still a matter of much debate.
 
 ### Attention - and large amounts of data - is all you need?
 
 Given enough data to train on - and ample funds for compute - is attention “all you need” to induce reliable biases in your model?
-While there are doubts as regards the reasoning capabilities of our most advanced LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and also synthesise information [@doi:10.1038/d41586-023-02361-7].
-This is what the term "foundation model" implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
-This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model.
-In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the "grammar" of the cell?
+While there are doubts regarding the reasoning capabilities of LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and synthesise information [@doi:10.1038/d41586-023-02361-7].
+This is what the term “foundation model” implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
+This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model [@doi:10.48550/arXiv.2206.10591].
 
-For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
+In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the “grammar” of the cell?
+
+**Explainability**: For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
 As such, there is no way to scrutinise their reasoning beyond the output they produce.
-What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are yet unknown [@doi:10.1038/d41586-023-02361-7].
+What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are still unknown [@doi:10.1038/d41586-023-02361-7].
 Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
 
-While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both result in a hypothesis on causal structure that can be formulated as a network.
-Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model's reasoning [@doi:10.1038/s41586-023-06139-9].
-While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable.
-Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
+While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both can provide a hypothesis on causal structure that can be formulated as a network.
+Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model’s reasoning [@doi:10.1038/s41586-023-06139-9].
+While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable, much less so than explicit molecular models.
+
+**Benchmarking**: Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
 One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
 To determine whether molecular foundation models indeed capture generalisable causal representations of biology, dedicated benchmarks are needed.
 
-Cite some benchmarks, point out the most important aspects of benchmarking causally.
-
-What is the mathematical relationship between explicit (e.g. ODE) and implicit (transformers) models? How could this be studied empirically?
-
-Back-of-the-envelope data requirements for molecular foundation models (parameters, data points, comparison with LLMs).
+**Causal bias**: The GPT-3 architecture that led to the recent breakthrough in LLM capabilities employs “causal self-attention,” describing an implicit architectural bias that prevents the model from “looking into the future”: for predicting the next token, only the previous tokens in the sentence can be used [@doi:10.48550/arXiv.2310.05869].
+This leverages the implicit causality present in language, which incidentally is similar to one of the earliest formal descriptions of causality, that “the effect has regularly followed the cause in the past” [@isbn:9780199211586].
+Compared to language, the data that form the input of molecular foundation models do not have an implicit form of causality.
+The individual cells are in general not on a known temporal trajectory, and the genes that are masked as part of the training objective are masked at random, not because they are downstream (in some form) of the genes used for prediction.
+This fundamental difference between language and molecular models has so far not been explored theoretically or empirically.
 
 ### Causal latent spaces
 
