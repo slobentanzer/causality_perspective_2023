@@ -19,6 +19,18 @@ authors:
     affiliations:
       - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
     corresponding: true
+  - github: -
+    name: Pablo Rodriguez Mier
+    initials: PRM
+    orcid: -
+    affiliations:
+      - Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+  - github: -
+    name: Stefan Bauer
+    initials: SB
+    orcid: -
+    affiliations:
+      - Helmholtz Zentrum München, -, Neuherberg, Germany
   - github: saezrodriguez
     name: Julio Saez-Rodriguez
     initials: JSR
