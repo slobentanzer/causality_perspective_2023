@@ -1,10 +1,13 @@
 ---
-title: "Causality - Perspective"
-date: null  # Defaults to date generated, but can specify like '2022-10-31'.
+title: Molecular Causality in the Age of Foundation Models
+date: null # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
+  - systems biology
   - biomedicine
   - causality
   - modelling
+  - machine learning
+  - foundation models
 lang: en-UK
 authors:
   - github: slobentanzer
