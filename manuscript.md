@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T15:27:35+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T15:27:35+00:00" />
+  <meta name="dc.modified" content="2024-01-04T16:44:21+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T16:44:21+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,7 +45,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
   <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
-  <meta name="citation_author_orcid" content="todo" />
+  <meta name="citation_author_orcid" content="0000-0003-1712-060X" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-8552-8976" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/07536b296a724d6fb5dbfbe2c91e881ddadacc1c/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@cb0ffc9](https://github.com/slobentanzer/causality_perspective_2023/tree/cb0ffc9eebaff2cafa82c945dbe4fef5c879538c)
+from [slobentanzer/causality_perspective_2023@07536b2](https://github.com/slobentanzer/causality_perspective_2023/tree/07536b296a724d6fb5dbfbe2c91e881ddadacc1c)
 on January 4, 2024.
 </em></small>
 
@@ -119,9 +119,9 @@ on January 4, 2024.
 + **Stefan Bauer**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [todo](https://orcid.org/todo)
+    [0000-0003-1712-060X](https://orcid.org/0000-0003-1712-060X)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [tbd](https://github.com/tbd)
+    [Vis7i](https://github.com/Vis7i)
     <br>
   <small>
      Helmholtz Zentrum München, -, Neuherberg, Germany
@@ -429,10 +429,10 @@ As the biomedical field looks to these models for answers, it becomes crucial to
 Systems biology has always engaged with causal reasoning, aiming to understand the complex mechanisms underlying biological systems.
 New methods and models offer the potential to scale this understanding to larger, more complex systems.
 The impact of these methods will depend on the successful integration of appropriate algorithms, biases, and data types.
-The field stands at a crossroads, determining whether the future of biological modeling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
+The field stands at a crossroads, determining whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
 This decision will significantly influence the direction and effectiveness of future research in systems biology.
 
-### Combining Algorithms and Biases with Data Types for Impactful Biological Modeling
+### Combining Algorithms and Biases with Data Types for Impactful Biological modelling
 
 While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
 Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.

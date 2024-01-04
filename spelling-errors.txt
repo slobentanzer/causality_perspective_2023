@@ -1,6 +1,6 @@
 Benchmarking
 biassed
-Biomedicine
+biomedicine
 Cas
 CNNs
 Convolutional
@@ -14,7 +14,7 @@ directionality
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 Geneformer
 generalisable
 GPT
@@ -39,7 +39,7 @@ overfitting
 pablormier
 PCA
 phosphoproteomic
-pre
+Pre
 RAS
 RNNs
 Saez
@@ -51,11 +51,10 @@ SCMs
 scVI
 slobentanzer
 SNE
-tbd
 Theodoris
-todo
 tradeoff
 UMAP
 underfitting
 Vemurafenib
+Vis
 Zentrum
