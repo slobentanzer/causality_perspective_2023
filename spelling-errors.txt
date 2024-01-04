@@ -1,6 +1,6 @@
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -14,7 +14,7 @@ directionality
 EGFR
 embeddings
 ERK
-explainability
+Explainability
 Geneformer
 generalisable
 GPT
@@ -22,7 +22,7 @@ identifiability
 Impactful
 interpretability
 interpretable
-Interventional
+interventional
 linearities
 LLM
 LLMs
