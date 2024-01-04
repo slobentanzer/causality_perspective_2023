@@ -1,5 +1,5 @@
 Benchmarking
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -13,7 +13,7 @@ directionality
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 Geneformer
 generalisable
 generalizable
@@ -39,7 +39,7 @@ overfitting
 pablormier
 PCA
 phosphoproteomic
-pre
+Pre
 RAS
 RNNs
 Saez
