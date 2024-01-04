@@ -13,7 +13,7 @@ directionality
 EGFR
 embeddings
 ERK
-explainability
+Explainability
 Geneformer
 generalisable
 GPT
