@@ -1,5 +1,5 @@
 Benchmarking
-Biomedicine
+biomedicine
 Cas
 CNNs
 Convolutional
@@ -13,7 +13,7 @@ directionality
 EGFR
 embeddings
 ERK
-explainability
+Explainability
 Geneformer
 generalisable
 generalizable
@@ -37,7 +37,6 @@ Orthogonally
 overactivation
 overfitting
 pablormier
-parameterisation
 PCA
 phosphoproteomic
 pre
@@ -58,6 +57,5 @@ todo
 tradeoff
 UMAP
 underfitting
-undirected
 Vemurafenib
 Zentrum

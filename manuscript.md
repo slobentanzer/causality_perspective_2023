@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-04" />
   <meta name="citation_publication_date" content="2024-01-04" />
   <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T13:52:03+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T13:52:03+00:00" />
+  <meta name="dc.modified" content="2024-01-04T14:28:25+00:00" />
+  <meta property="article:modified_time" content="2024-01-04T14:28:25+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b81de8cfc0279fdd8b6514c28d3f36d6bf511f85/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b81de8cfc0279fdd8b6514c28d3f36d6bf511f85/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b81de8cfc0279fdd8b6514c28d3f36d6bf511f85/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b81de8cfc0279fdd8b6514c28d3f36d6bf511f85/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/9564490c47f60837b05b6292a041692fb069b35a/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@b81de8c](https://github.com/slobentanzer/causality_perspective_2023/tree/b81de8cfc0279fdd8b6514c28d3f36d6bf511f85)
+from [slobentanzer/causality_perspective_2023@9564490](https://github.com/slobentanzer/causality_perspective_2023/tree/9564490c47f60837b05b6292a041692fb069b35a)
 on January 4, 2024.
 </em></small>
 
@@ -206,12 +206,11 @@ To generate interventional or even counterfactual inferences from observational 
 There are approaches to delineate interventional inference from observational data, such as the ‘natural experiments’ framework [@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874].
 However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
 Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [@doi:10.1016/j.cell.2016.11.038].
-Current developments of CR in the biomedical field therefore mostly focus on these types of data.
+Current developments of CR in the biomedical field thus mostly focus on these types of data.
 
 ### Deduction and Induction
 
 Lastly, in CR, we can also distinguish between deductive and inductive reasoning.
-This is where certain biases are pivotal to the effectiveness of the CR method.
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
 “All men are mortal, Socrates is a man, therefore Socrates is mortal” is a classic example of deductive reasoning.
 In biomedical research, this is typically the process of deriving a conclusion from a set of PK.
@@ -235,7 +234,7 @@ In consequence, the *inductive biases* we introduce into our models (i.e., those
 Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources [@doi:10.1037/0033-295X.111.1.3].
 In fact, we often deduce causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
-A good heuristic is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
+A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning (ML), we can distinguish between useful and harmful biases.
 Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [@doi:10.48550/arXiv.1908.09635].
@@ -273,7 +272,7 @@ The first question alone is highly debated in the wider field of ML.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
-In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.1098/rspa.2021.0068;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
+In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
 Considering these constraints, the question is not whether to include PK in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 ### Prior knowledge
@@ -285,10 +284,9 @@ Additionally, the diversity in our tasks and knowledge sources requires a flexib
 Knowledge representation frameworks can aid in this process [@doi:10.1038/s41587-023-01848-y].
 
 In the biomedical field, there is a rich tradition of documenting biological knowledge at various levels of detail and focusing on different aspects of biology.
-Detailed mechanistic models, provide mathematical descriptions of the dynamic interactions at a molecular or cellular level.
+Detailed mechanistic models provide mathematical descriptions of the dynamic interactions at a molecular or cellular level.
 Genome-scale networks, including metabolic and gene regulatory networks, offer comprehensive views of metabolic processes and gene interactions [@doi:10.1038/nrg3885].
 Protein-protein interaction databases recapitulate either causal or non-causal interactions between proteins [@doi:10.1038/nrg3885].
-These examples of PK, from complex mechanistic mathematical descriptions of dynamical systems to undirected networks of interconnected proteins, provide useful sources of information that can be leveraged to inform models.
 
 ### Modelling on prior knowledge
 
@@ -296,12 +294,13 @@ The integration of PK into models is a non-trivial but essential process for mov
 PK can be used to derive inductive biases either *explicitly* or *implicitly*.
 
 The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
-Ordinary Differential Equation models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935], all explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
+Ordinary Differential Equation (ODE) models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935]: all explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
 Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
-These can be simple, e.g., regularisation techniques that help generalise models by preventing overfitting [@doi:10.15252/msb.201566], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
-They can also be elaborate, such as neural networks employing specific architectural designs, e.g., Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.5555/3295222.3295349].
+These can be simple or elaborate.
+Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
+More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.5555/3295222.3295349].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
 
 As a result, choosing the best way to derive inductive biases from PK is not straightforward.
@@ -311,7 +310,7 @@ Models with implicit biases, on the other hand, particularly those typically fou
 Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.
 
 Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce [@doi:10.1038/s41592-021-01283-4;@doi:10.1038/s41467-022-30684-y;@doi:10.1038/s41467-023-40380-0;@doi:10.1038/s41587-023-01905-6;@doi:10.1186/s13059-020-02100-5;@doi:10.1038/s41556-022-01072-x;@doi:10.1016/j.cels.2020.11.013].
-While the implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from PK, while the other learns from data.
+While their implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from PK, while the other learns from data.
 Frequently, these learners are also coupled in an end-to-end learning process, i.e., they “learn together.” This mode of learning aims to benefit from the “bias-free” nature of neural networks while simultaneously improving model performance in the face of scarce data via the added explicit bias.
 
 
@@ -377,7 +376,7 @@ Performing causal inference in latent spaces could potentially solve some of the
 “Moving through the latent space” reduces the number of variables that change upon intervention, making exploration simpler in theory.
 In practice, however, ease and sensibility of exploration depend completely on whether the inductive biases in the embedding process capture the underlying biology.
 In addition, latent spaces have no trivial connection to the real-world measurements they are based on.
-Each model, and each parameterisation of a single model, generates their own, independent latent space; in consequence, the exploration of latent spaces is challenging and time-consuming.
+Each model instance generates its own, independent latent space; in consequence, the exploration of latent spaces is challenging and time-consuming.
 
 Even if a given latent space can be explored, there is often no guarantee that interpolation between sensible latent representations also leads to sensible results.
 As an example, consider a prevailing issue of visual generative models in drawing human hands: images of hands typically involve mangled anatomy and an incorrect number of digits [@{https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands}].
