@@ -1,5 +1,5 @@
 ---
-title: Molecular causality in the age of foundation models
+title: Molecular causality in the advent of foundation models
 keywords:
 - systems biology
 - biomedicine
@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-04'
+date-meta: '2024-01-05'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez Mier
@@ -21,15 +21,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Molecular causality in the age of foundation models" />
-  <meta name="citation_title" content="Molecular causality in the age of foundation models" />
-  <meta property="og:title" content="Molecular causality in the age of foundation models" />
-  <meta property="twitter:title" content="Molecular causality in the age of foundation models" />
-  <meta name="dc.date" content="2024-01-04" />
-  <meta name="citation_publication_date" content="2024-01-04" />
-  <meta property="article:published_time" content="2024-01-04" />
-  <meta name="dc.modified" content="2024-01-04T17:13:16+00:00" />
-  <meta property="article:modified_time" content="2024-01-04T17:13:16+00:00" />
+  <meta name="dc.title" content="Molecular causality in the advent of foundation models" />
+  <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
+  <meta property="og:title" content="Molecular causality in the advent of foundation models" />
+  <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
+  <meta name="dc.date" content="2024-01-05" />
+  <meta name="citation_publication_date" content="2024-01-05" />
+  <meta property="article:published_time" content="2024-01-05" />
+  <meta name="dc.modified" content="2024-01-05T13:33:43+00:00" />
+  <meta property="article:modified_time" content="2024-01-05T13:33:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -44,7 +44,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
-  <meta name="citation_author_institution" content="Helmholtz Zentrum München, -, Neuherberg, Germany" />
+  <meta name="citation_author_institution" content="Helmholtz AI and TU Munich, Munich, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-1712-060X" />
   <meta name="citation_author" content="Julio Saez-Rodriguez" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@fcf7d76](https://github.com/slobentanzer/causality_perspective_2023/tree/fcf7d7667cfe2a7eeb3334cf6fe4dc54ebbe4330)
-on January 4, 2024.
+from [slobentanzer/causality_perspective_2023@70e6c73](https://github.com/slobentanzer/causality_perspective_2023/tree/70e6c73a1be3e74d840bb080cfd974090f1d1a39)
+on January 5, 2024.
 </em></small>
 
 
@@ -124,7 +124,7 @@ on January 4, 2024.
     [Vis7i](https://github.com/Vis7i)
     <br>
   <small>
-     Helmholtz Zentrum München, -, Neuherberg, Germany
+     Helmholtz AI and TU Munich, Munich, Germany
   </small>
 
 + **Julio Saez-Rodriguez**
@@ -155,10 +155,10 @@ Julio Saez-Rodriguez \<pub.saez@uni-heidelberg.de\>.
 
 Correlation is not causation.
 As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
-Since being described by Aristotle approximately 2500 years ago [@isbn:9781372537233], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161;@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874] and a resurgence in the field of machine learning (ML) [@causalml] only in recent times.
+Since being described by Aristotle approximately 2500 years ago [@isbn:9781372537233], causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements [@doi:10.1017/CBO9780511803161;@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874] and a resurgence in the field of machine learning [@causalml;@doi:10.48550/arxiv.2310.14935] only in recent times.
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
 
-In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.48550/arXiv.2312.00818].
+In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.1038/s41467-021-25743-9;@doi:10.48550/arXiv.2312.00818].
 
 Randomised clinical trials show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial) we isolate the causal effect of the controlled variable, i.e., the treatment.
@@ -236,19 +236,19 @@ Humans make frequent use of biases to function in a complex world with limited c
 In fact, we often deduce causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
-In machine learning (ML), we can distinguish between useful and harmful biases.
+In machine learning, we can distinguish between useful and harmful biases.
 Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [@doi:10.48550/arXiv.1908.09635].
-While addressing harmful biases is a crucial part of ML, we will not discuss them further in this perspective.
+While addressing harmful biases is a crucial part of machine learning, we will not discuss them further in this perspective.
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
-Since most models developed in biomedical research and the broader ML community are inductive models, one of the most discussed useful biases is *inductive bias*.
+Since most models developed in biomedical research and the broader machine learning community are inductive models, one of the most discussed useful biases is *inductive bias* [@doi:10.1613/jair.731].
 For instance, PK on protein interactions can impact inference on activation cascades; only upstream proteins can activate downstream proteins, not vice versa.
 
 ### Why do we need biases?
 
 The human mind will be the gold standard for reasoning for the foreseeable future.
 However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive it nor keep it in memory.
-Machine learning seems like the ideal solution, but the "No Free Lunch" theorems present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch;@doi:10.1613/jair.731;@doi:10.48550/arXiv.2304.05366].
+Machine learning seems like the ideal solution, but the "No Free Lunch" theorems present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch].
 Although they have recently been challenged [@doi:10.48550/arXiv.2304.05366], these theorems highlight the inherent difficulty in designing algorithms that generalise well from specific training data to new, unseen data.
 Inductive biases guide algorithms in making educated guesses about unseen data, thereby improving their generalisation capabilities [@doi:10.1098/rspa.2021.0068].
 
@@ -268,7 +268,7 @@ Some central questions then arise:
 
 ## Bias from prior knowledge
 
-The first question alone is highly debated in the wider field of ML.
+The first question alone is highly debated in the wider field of machine learning.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
@@ -294,7 +294,8 @@ The integration of PK into models is a non-trivial but essential process for mov
 PK can be used to derive inductive biases either *explicitly* or *implicitly*.
 
 The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
-Ordinary Differential Equation (ODE) models [@doi:10.1007/978-3-642-38874-3_2], logic-based models [@doi:10.1021/bi902202q], rule-based models [@doi:10.1002/wsbm.1245], constraint-based models [@doi:10.1038/nrg3643], and Structural Causal Models (SCMs) [@doi:10.48550/arXiv.2310.14935]: all explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
+Ordinary Differential Equation (ODE) models, logic-based models, rule-based models, and constraint-based models [@doi:10.1038/nrg3643], all of which are commonly used in systems biology, explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
+In the field of CR, Structural Causal Models (SCMs) can be used when mechanisms are unknown [@doi:10.48550/arXiv.2310.14935].
 Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
@@ -397,9 +398,9 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
 Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
-Hybrid models currently represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
+Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
 Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
-In addition, complex models often pose computational challenges; many models are limited to network sizes of <10 nodes, and feedback loops are often excluded.
+In addition, complex models often pose computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
 
 ### Theoretical foundations: interventions and inductive biases
 
@@ -407,32 +408,32 @@ Theoretical work emphasises the need for interventions in causal discovery but d
 The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models [@doi:10.48550/arXiv.1910.01075].
 However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
 The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
-Foundation models have embraced causal masking as a step towards integrating causality, but this alone may be insufficient.
+Foundation models have embraced causal self-attention as a step towards integrating causality, but this alone may be insufficient.
 Empirical studies and more robust theories are needed to understand these dynamics, including the potential existence and validation of causal latent spaces.
 
 ### Data types: observational vs. interventional
 
 The choice between training on observational versus interventional data (or a mixture of both) is critical in the development of models.
 While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
+The complexity and high cost of collecting data requires an efficient experimental design to maximise causal discovery with limited resources.
 Observational data are more readily available but may lead to confounded or biassed insights.
-Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model's understanding of underlying biological processes.
-A balanced approach, possibly incorporating both data types, might provide a more nuanced understanding and improve model robustness and interpretability.
+Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model’s understanding of underlying biological processes [@discobax;@doi:10.48550/arXiv.2203.02016].
+A balanced approach, possibly incorporating both observational and interventional data, coupled with mechanisms for deciding the right number and type of interventions, might provide a more nuanced understanding and improve model robustness and interpretability.
 
 ### Foundation models: architectural biases and the No Free Lunch theorems
 
 Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models [@doi:10.48550/arXiv.2304.05366].
 These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
 As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
+A crucial aspect of these frameworks will be establishing benchmarks in the face of missing biological ground truth.
 
-### Systems biology and causality
+### Systems biology and causality - finding a balance
 
-Systems biology has always engaged with causal reasoning, aiming to understand the complex mechanisms underlying biological systems.
-New methods and models offer the potential to scale this understanding to larger, more complex systems.
-The impact of these methods will depend on the successful integration of appropriate algorithms, biases, and data types.
-The field stands at a crossroads, determining whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
-This decision will significantly influence the direction and effectiveness of future research in systems biology.
-
-### Finding a balance
+Systems biology has historically followed both knowledge-driven (bottom-up) and data-driven (top-down) approaches.
+Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has de facto been doing CR, despite both fields being largely disconnected.
+Meanwhile, top-down systems biology, inspired more by machine learning principles, has struggled with moving from correlation to causality.
+New methods and models offer the potential to converge these complementary approaches and scale our understanding to larger, more complex systems.
+However, it remains to be seen whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
 
 While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
 Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
@@ -440,6 +441,16 @@ The field must explore these possibilities, balancing the drive for large-scale 
 
 
 ## Glossary?
+
+## Acknowledgements {.page_break_before}
+
+## Funding
+
+This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).
+
+## Conflict of Interest
+
+JSR reports funding from GSK, Pfizer and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer and Grunenthal.
 
 ## References {.page_break_before}
 
