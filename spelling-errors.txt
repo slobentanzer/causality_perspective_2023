@@ -1,7 +1,7 @@
 Astex
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -43,7 +43,7 @@ pablormier
 PCA
 PerMedCoE
 phosphoproteomic
-pre
+Pre
 Programme
 RAS
 RNNs
