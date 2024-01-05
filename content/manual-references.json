@@ -80,5 +80,48 @@
     "URL": "https://arxiv.org/abs/2206.15475",
     "archivePrefix": "arXiv",
     "primaryClass": "cs.LG"
+  },
+  {
+    "id": "discobax",
+    "title": "DiscoBAX - Discovery of optimal intervention sets in genomic experiment design",
+    "author": [
+      {
+        "given": "Clare",
+        "family": "Lyle"
+      },
+      {
+        "given": "Arash",
+        "family": "Mehrjou"
+      },
+      {
+        "given": "Pascal",
+        "family": "Notin"
+      },
+      {
+        "given": "Andrew",
+        "family": "Jesson"
+      },
+      {
+        "given": "Stefan",
+        "family": "Bauer"
+      },
+      {
+        "given": "Yarin",
+        "family": "Gal"
+      },
+      {
+        "given": "Patrick",
+        "family": "Schwab"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "type": "misc",
+    "URL": "https://openreview.net/forum?id=mBkUeW8rpD6"
   }
 ]
