@@ -8,10 +8,10 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-05'
+date-meta: '2024-01-11'
 author-meta:
 - Sebastian Lobentanzer
-- Pablo Rodriguez Mier
+- Pablo Rodriguez-Mier
 - Stefan Bauer
 - Julio Saez-Rodriguez
 header-includes: |
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-05" />
-  <meta name="citation_publication_date" content="2024-01-05" />
-  <meta property="article:published_time" content="2024-01-05" />
-  <meta name="dc.modified" content="2024-01-05T13:34:39+00:00" />
-  <meta property="article:modified_time" content="2024-01-05T13:34:39+00:00" />
+  <meta name="dc.date" content="2024-01-11" />
+  <meta name="citation_publication_date" content="2024-01-11" />
+  <meta property="article:published_time" content="2024-01-11" />
+  <meta name="dc.modified" content="2024-01-11T10:51:02+00:00" />
+  <meta property="article:modified_time" content="2024-01-11T10:51:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,7 +40,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0003-3399-6695" />
   <meta name="twitter:creator" content="@slobentanzer" />
-  <meta name="citation_author" content="Pablo Rodriguez Mier" />
+  <meta name="citation_author" content="Pablo Rodriguez-Mier" />
   <meta name="citation_author_institution" content="Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany" />
   <meta name="citation_author_orcid" content="0000-0002-4938-4418" />
   <meta name="citation_author" content="Stefan Bauer" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/70e6c73a1be3e74d840bb080cfd974090f1d1a39/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@70e6c73](https://github.com/slobentanzer/causality_perspective_2023/tree/70e6c73a1be3e74d840bb080cfd974090f1d1a39)
-on January 5, 2024.
+from [slobentanzer/causality_perspective_2023@91f8408](https://github.com/slobentanzer/causality_perspective_2023/tree/91f8408a6193bac9a8cd66593d54fa87f2fc8e06)
+on January 11, 2024.
 </em></small>
 
 
@@ -105,7 +105,7 @@ on January 5, 2024.
      Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
   </small>
 
-+ **Pablo Rodriguez Mier**
++ **Pablo Rodriguez-Mier**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-4938-4418](https://orcid.org/0000-0002-4938-4418)

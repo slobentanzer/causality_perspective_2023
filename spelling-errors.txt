@@ -15,7 +15,7 @@ directionality
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 facto
 Geneformer
 generalisable
