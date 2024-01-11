@@ -1,4 +1,5 @@
 Astex
+Aurelien
 Benchmarking
 biassed
 Biomedicine
@@ -12,10 +13,11 @@ CRISPR
 datasets
 dimensionality
 directionality
+Dugourd
 EGFR
 embeddings
 ERK
-explainability
+Explainability
 facto
 Geneformer
 generalisable
@@ -43,7 +45,8 @@ pablormier
 PCA
 PerMedCoE
 phosphoproteomic
-Pre
+pre
+priori
 Programme
 RAS
 RNNs

@@ -56,8 +56,8 @@
   <meta name="dc.date" content="2024-01-11" />
   <meta name="citation_publication_date" content="2024-01-11" />
   <meta property="article:published_time" content="2024-01-11" />
-  <meta name="dc.modified" content="2024-01-11T10:51:02+00:00" />
-  <meta property="article:modified_time" content="2024-01-11T10:51:02+00:00" />
+  <meta name="dc.modified" content="2024-01-11T14:19:07+00:00" />
+  <meta property="article:modified_time" content="2024-01-11T14:19:07+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/91f8408a6193bac9a8cd66593d54fa87f2fc8e06">slobentanzer/causality_perspective_2023@91f8408</a>
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/10c143d2187d13305c327bee4c4c8f681d1a5dd5">slobentanzer/causality_perspective_2023@10c143d</a>
 on January 11, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -181,7 +181,7 @@ We will elaborate on three main points:</p>
 </ul>
 <h2 id="background">Background</h2>
 <h3 id="causal-discovery-and-inference">Causal discovery and inference</h3>
-<p>The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.</p>
+<p>The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system <em>a priori</em>.</p>
 <p>Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents <span class="citation" data-cites="1CPlHia5R">[<a href="#ref-1CPlHia5R" role="doc-biblioref">15</a>]</span>.
 As a result, most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research
 <span class="citation" data-cites="qpg6x7P4">[<a href="#ref-qpg6x7P4" role="doc-biblioref">16</a>]</span>.
@@ -213,7 +213,8 @@ In biomedical research, this is typically the process of deriving a conclusion f
 For instance, having PK of the linear activation cascade EGFR-&gt;RAS-&gt;RAF-&gt;MEK-&gt;ERK-&gt;Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">11</a>]</span>.</p>
 <p>Inductive reasoning, on the other hand, involves making generalisations from specific observations.
 Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">11</a>]</span>.
-We could now infer (via induction) that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or, further, that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation <span class="citation" data-cites="1BSi2Dk6R">[<a href="#ref-1BSi2Dk6R" role="doc-biblioref">25</a>]</span>.
+Commonly, we then use induction to infer from this limited cohort that the treatment may be effective in the entire population.
+We could further infer that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation <span class="citation" data-cites="1BSi2Dk6R">[<a href="#ref-1BSi2Dk6R" role="doc-biblioref">25</a>]</span>.
 In the molecular realm, we could further infer that the inhibition of other components of the cascade, such as EGFR or MEK, may also be promising target leads <span class="citation" data-cites="ZkFzi3Xl">[<a href="#ref-ZkFzi3Xl" role="doc-biblioref">26</a>]</span>.</p>
 <p>The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
 However, deduction is also more limited in scope than induction.
@@ -223,7 +224,7 @@ In consequence, the <em>inductive biases</em> we introduce into our models (i.e.
 <h3 id="meaning-and-examples-of-biases">Meaning and examples of biases</h3>
 <p>Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources <span class="citation" data-cites="1DMQH5kzt">[<a href="#ref-1DMQH5kzt" role="doc-biblioref">27</a>]</span>.
-In fact, we often deduce causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias <span class="citation" data-cites="iWcDZtHu">[<a href="#ref-iWcDZtHu" role="doc-biblioref">28</a>]</span>.
+In fact, we often presume causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias <span class="citation" data-cites="iWcDZtHu">[<a href="#ref-iWcDZtHu" role="doc-biblioref">28</a>]</span>.
 A good <em>heuristic</em> is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.</p>
 <p>In machine learning, we can distinguish between useful and harmful biases.
 Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting <span class="citation" data-cites="B5WSzZkm">[<a href="#ref-B5WSzZkm" role="doc-biblioref">29</a>]</span>.
@@ -273,10 +274,10 @@ Their advantage is high efficiency in the face of scarce data, but they are high
 <p>In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
 These can be simple or elaborate.
 Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting <span class="citation" data-cites="kX2zf6UE">[<a href="#ref-kX2zf6UE" role="doc-biblioref">46</a>]</span>, or decisions about the types of prior distributions in bayesian models <span class="citation" data-cites="cKqFMtL2">[<a href="#ref-cKqFMtL2" role="doc-biblioref">47</a>]</span>.
-More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) <span class="citation" data-cites="bZ3hxYDX">[<a href="#ref-bZ3hxYDX" role="doc-biblioref">48</a>, ​]</span>, Recurrent Neural Networks (RNNs) <span class="citation" data-cites="x4dbEYer">[<a href="#ref-x4dbEYer" role="doc-biblioref">49</a>]</span>, or Transformers <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">36</a>]</span>.
+More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) <span class="citation" data-cites="bZ3hxYDX">[<a href="#ref-bZ3hxYDX" role="doc-biblioref">48</a>]</span>, Recurrent Neural Networks (RNNs) <span class="citation" data-cites="x4dbEYer">[<a href="#ref-x4dbEYer" role="doc-biblioref">49</a>]</span>, or Transformers <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">36</a>]</span>.
 Their advantages and disadvantages are inverse to those of explicit models <span class="citation" data-cites="xjVh8IQ5">[<a href="#ref-xjVh8IQ5" role="doc-biblioref">45</a>]</span>.</p>
 <p>As a result, choosing the best way to derive inductive biases from PK is not straightforward.
-Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce.
+Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce <span class="citation" data-cites="xjVh8IQ5">[<a href="#ref-xjVh8IQ5" role="doc-biblioref">45</a>]</span>.
 However, they are constrained by the accuracy of the existing knowledge and often struggle to scale to larger datasets <span class="citation" data-cites="6W1y3ZrT OlEfQKqu">[<a href="#ref-6W1y3ZrT" role="doc-biblioref">50</a>,<a href="#ref-OlEfQKqu" role="doc-biblioref">51</a>]</span>.
 Models with implicit biases, on the other hand, particularly those typically found in deep learning architectures, excel at learning from large, high-dimensional datasets and offer flexibility across diverse domains.
 Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.</p>
@@ -323,9 +324,9 @@ The individual cells are in general not on a known temporal trajectory, and the 
 This fundamental difference between language and molecular models has so far not been explored theoretically or empirically.</p>
 <h3 id="causal-latent-spaces">Causal latent spaces</h3>
 <p>Due to the fundamental limitation of human perception, dimensionality reduction is a popular workflow for data interpretation, typically via methods such as PCA, t-SNE, or UMAP <span class="citation" data-cites="13qoNo4Fj">[<a href="#ref-13qoNo4Fj" role="doc-biblioref">69</a>]</span>.
-The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions.
+The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions <span class="citation" data-cites="AO84A4MA">[<a href="#ref-AO84A4MA" role="doc-biblioref">70</a>]</span>.
 However, without explicit supervision, which is rare in typical biomedical datasets, the resulting latent spaces are rarely interpretable, and do not lend themselves to causal interpretation.
-In addition, they often suffer from biases that result from technical rather than biological factors <span class="citation" data-cites="6McXkHVo">[<a href="#ref-6McXkHVo" role="doc-biblioref">70</a>]</span>.
+In addition, they often suffer from biases that result from technical rather than biological factors <span class="citation" data-cites="6McXkHVo">[<a href="#ref-6McXkHVo" role="doc-biblioref">71</a>]</span>.
 In consequence, biological insight during the exploration of these latent spaces is often challenging due to the dominance of biases over the biological generative mechanism.</p>
 <p>Performing causal inference in latent spaces could potentially solve some of these issues.
 “Moving through the latent space” reduces the number of variables that change upon intervention, making exploration simpler in theory.
@@ -333,25 +334,25 @@ In practice, however, ease and sensibility of exploration depend completely on w
 In addition, latent spaces have no trivial connection to the real-world measurements they are based on.
 Each model instance generates its own, independent latent space; in consequence, the exploration of latent spaces is challenging and time-consuming.</p>
 <p>Even if a given latent space can be explored, there is often no guarantee that interpolation between sensible latent representations also leads to sensible results.
-As an example, consider a prevailing issue of visual generative models in drawing human hands: images of hands typically involve mangled anatomy and an incorrect number of digits <span class="citation" data-cites="iE5sGWcB">[<a href="#ref-iE5sGWcB" role="doc-biblioref">71</a>]</span>.
+As an example, consider a prevailing issue of visual generative models in drawing human hands: images of hands typically involve mangled anatomy and an incorrect number of digits <span class="citation" data-cites="iE5sGWcB">[<a href="#ref-iE5sGWcB" role="doc-biblioref">72</a>]</span>.
 Even though there is a section in the latent space that represents hands, this does not represent the concept of a hand, but rather is guided by learning on many diverse pictures of hands.
 A section of this latent space may represent only a finger, and carry some information that next to a finger there usually is another finger.
 However, when generating the image, there is no mechanism to keep track of how many digits to add to any generated hand, leading to wrong anatomy.
 Similarly, when exploring the latent space of a model of molecular signalling, there may be no guarantees that the model respects the concept of a given pathway when generating the signalling molecules involved.</p>
-<p>If mastered, exploring and performing interventions in latent spaces promises many benefits: better generalisation and improved sample efficiency <span class="citation" data-cites="T7D6XA6s">[<a href="#ref-T7D6XA6s" role="doc-biblioref">40</a>]</span>, predicting the outcomes of interventions not observed at training time <span class="citation" data-cites="MhOZ3PWC">[<a href="#ref-MhOZ3PWC" role="doc-biblioref">72</a>]</span>, or insights into the effect of different inductive biases in the model <span class="citation" data-cites="FVLAWGsX">[<a href="#ref-FVLAWGsX" role="doc-biblioref">73</a>]</span>.
-However, to achieve this, gaining a better understanding of properties of the learned embeddings and variables is essential, for instance by performing “imagined interventions” in the latent space <span class="citation" data-cites="r5mjeIhV">[<a href="#ref-r5mjeIhV" role="doc-biblioref">74</a>]</span> or by using model uncertainty for guiding the optimisation process in the latent space <span class="citation" data-cites="eEfUqiI4">[<a href="#ref-eEfUqiI4" role="doc-biblioref">75</a>]</span>.
+<p>If mastered, exploring and performing interventions in latent spaces promises many benefits: better generalisation and improved sample efficiency <span class="citation" data-cites="T7D6XA6s">[<a href="#ref-T7D6XA6s" role="doc-biblioref">40</a>]</span>, predicting the outcomes of interventions not observed at training time <span class="citation" data-cites="MhOZ3PWC">[<a href="#ref-MhOZ3PWC" role="doc-biblioref">73</a>]</span>, or insights into the effect of different inductive biases in the model <span class="citation" data-cites="FVLAWGsX">[<a href="#ref-FVLAWGsX" role="doc-biblioref">74</a>]</span>.
+However, to achieve this, gaining a better understanding of properties of the learned embeddings and variables is essential, for instance by performing “imagined interventions” in the latent space <span class="citation" data-cites="r5mjeIhV">[<a href="#ref-r5mjeIhV" role="doc-biblioref">75</a>]</span> or by using model uncertainty for guiding the optimisation process in the latent space <span class="citation" data-cites="eEfUqiI4">[<a href="#ref-eEfUqiI4" role="doc-biblioref">76</a>]</span>.
 Of note, many of the proposed solutions for more explainable latent spaces depend on architectures that may scale significantly worse than transformers <span class="citation" data-cites="6W1y3ZrT OlEfQKqu">[<a href="#ref-6W1y3ZrT" role="doc-biblioref">50</a>,<a href="#ref-OlEfQKqu" role="doc-biblioref">51</a>]</span>.</p>
 <h2 id="discussion-conclusion">Discussion / Conclusion</h2>
 <h3 id="dichotomy-of-scaling-data-driven-and-bias-injection-knowledge-driven">Dichotomy of scaling (data-driven) and bias injection (knowledge-driven)</h3>
 <p>The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
 The “Bitter Lesson” suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
+However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
 Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
 Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
-Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the “No Free Lunch” theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
-In addition, complex models often pose computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.</p>
+Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the “No Free Lunch” theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.</p>
 <h3 id="theoretical-foundations-interventions-and-inductive-biases">Theoretical foundations: interventions and inductive biases</h3>
-<p>Theoretical work emphasises the need for interventions in causal discovery but does not yet address the influence of inductive biases <span class="citation" data-cites="S1VP202R">[<a href="#ref-S1VP202R" role="doc-biblioref">76</a>]</span>.
-The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models <span class="citation" data-cites="7HxYpmt4">[<a href="#ref-7HxYpmt4" role="doc-biblioref">77</a>]</span>.
+<p>Theoretical work emphasises the need for interventions in causal discovery but does not yet address the influence of inductive biases <span class="citation" data-cites="S1VP202R">[<a href="#ref-S1VP202R" role="doc-biblioref">77</a>]</span>.
+The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models <span class="citation" data-cites="7HxYpmt4">[<a href="#ref-7HxYpmt4" role="doc-biblioref">78</a>]</span>.
 However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
 The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
 Foundation models have embraced causal self-attention as a step towards integrating causality, but this alone may be insufficient.
@@ -361,16 +362,16 @@ Empirical studies and more robust theories are needed to understand these dynami
 While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
 The complexity and high cost of collecting data requires an efficient experimental design to maximise causal discovery with limited resources.
 Observational data are more readily available but may lead to confounded or biassed insights.
-Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model’s understanding of underlying biological processes <span class="citation" data-cites="3MP7gokd zXrfFfft">[<a href="#ref-3MP7gokd" role="doc-biblioref">78</a>,<a href="#ref-zXrfFfft" role="doc-biblioref">79</a>]</span>.
+Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model’s understanding of underlying biological processes <span class="citation" data-cites="3MP7gokd zXrfFfft">[<a href="#ref-3MP7gokd" role="doc-biblioref">79</a>,<a href="#ref-zXrfFfft" role="doc-biblioref">80</a>]</span>.
 A balanced approach, possibly incorporating both observational and interventional data, coupled with mechanisms for deciding the right number and type of interventions, might provide a more nuanced understanding and improve model robustness and interpretability.</p>
 <h3 id="foundation-models-architectural-biases-and-the-no-free-lunch-theorems">Foundation models: architectural biases and the No Free Lunch theorems</h3>
 <p>Foundation models challenge the “No Free Lunch” theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models <span class="citation" data-cites="D3JIQ7Oe">[<a href="#ref-D3JIQ7Oe" role="doc-biblioref">32</a>]</span>.
 These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
-As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas <span class="citation" data-cites="tr1XjZ1R Ex1JrMxh">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">42</a>,<a href="#ref-Ex1JrMxh" role="doc-biblioref">80</a>]</span>.
+As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas <span class="citation" data-cites="tr1XjZ1R Ex1JrMxh">[<a href="#ref-tr1XjZ1R" role="doc-biblioref">42</a>,<a href="#ref-Ex1JrMxh" role="doc-biblioref">81</a>]</span>.
 A crucial aspect of these frameworks will be establishing benchmarks in the face of missing biological ground truth.</p>
 <h3 id="systems-biology-and-causality---finding-a-balance">Systems biology and causality - finding a balance</h3>
 <p>Systems biology has historically followed both knowledge-driven (bottom-up) and data-driven (top-down) approaches.
-Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has de facto been doing CR, despite both fields being largely disconnected.
+Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has <em>de facto</em> been doing CR, despite both fields being largely disconnected.
 Meanwhile, top-down systems biology, inspired more by machine learning principles, has struggled with moving from correlation to causality.
 New methods and models offer the potential to converge these complementary approaches and scale our understanding to larger, more complex systems.
 However, it remains to be seen whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.</p>
@@ -379,6 +380,7 @@ Including explicit favourable biases, informed by deep domain knowledge and spec
 The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.</p>
 <h2 id="glossary">Glossary?</h2>
 <h2 class="page_break_before" id="acknowledgements">Acknowledgements</h2>
+<p>We thank Aurelien Dugourd for his helpful comments on the manuscript.</p>
 <h2 id="funding">Funding</h2>
 <p>This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).</p>
 <h2 id="conflict-of-interest">Conflict of Interest</h2>
@@ -593,38 +595,41 @@ The field must explore these possibilities, balancing the drive for large-scale 
 <div id="ref-13qoNo4Fj" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>Review of Dimension Reduction Methods</strong> <div class="csl-block">Salifu Nanga, Ahmed Tijani Bawah, Benjamin Ansah Acquaye, Mac-Issaka Billa, Francis Delali Baeta, Nii Afotey Odai, Samuel Kwaku Obeng, Ampem Darko Nsiah</div> <em>Journal of Data Analysis and Information Processing</em> (2021) <a href="https://doi.org/gtb96v">https://doi.org/gtb96v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.4236/jdaip.2021.93013">10.4236/jdaip.2021.93013</a></div></div>
 </div>
+<div id="ref-AO84A4MA" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>Why the simplest explanation isn’t always the best</strong> <div class="csl-block">Eva L Dyer, Konrad Kording</div> <em>Proceedings of the National Academy of Sciences</em> (2023-12-20) <a href="https://doi.org/gtbqms">https://doi.org/gtbqms</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.2319169120">10.1073/pnas.2319169120</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38117857">38117857</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10756184">PMC10756184</a></div></div>
+</div>
 <div id="ref-6McXkHVo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>The specious art of single-cell genomics</strong> <div class="csl-block">Tara Chari, Lior Pachter</div> <em>PLOS Computational Biology</em> (2023-08-17) <a href="https://doi.org/gtb96t">https://doi.org/gtb96t</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1011288">10.1371/journal.pcbi.1011288</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37590228">37590228</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10434946">PMC10434946</a></div></div>
+<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>The specious art of single-cell genomics</strong> <div class="csl-block">Tara Chari, Lior Pachter</div> <em>PLOS Computational Biology</em> (2023-08-17) <a href="https://doi.org/gtb96t">https://doi.org/gtb96t</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1011288">10.1371/journal.pcbi.1011288</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37590228">37590228</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10434946">PMC10434946</a></div></div>
 </div>
 <div id="ref-iE5sGWcB" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>The Uncanny Failure of A.I.-Generated Hands</strong> <div class="csl-block">Kyle Chayka</div> <em>The New Yorker</em> (2023-03-10) <a href="https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands">https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands</a></div>
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>The Uncanny Failure of A.I.-Generated Hands</strong> <div class="csl-block">Kyle Chayka</div> <em>The New Yorker</em> (2023-03-10) <a href="https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands">https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands</a></div>
 </div>
 <div id="ref-MhOZ3PWC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>Identifying Representations for Intervention Extrapolation</strong> <div class="csl-block">Sorawit Saengkyongam, Elan Rosenfeld, Pradeep Ravikumar, Niklas Pfister, Jonas Peters</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtb97m">https://doi.org/gtb97m</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.04295">10.48550/arxiv.2310.04295</a></div></div>
+<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>Identifying Representations for Intervention Extrapolation</strong> <div class="csl-block">Sorawit Saengkyongam, Elan Rosenfeld, Pradeep Ravikumar, Niklas Pfister, Jonas Peters</div> <em>arXiv</em> (2023) <a href="https://doi.org/gtb97m">https://doi.org/gtb97m</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2310.04295">10.48550/arxiv.2310.04295</a></div></div>
 </div>
 <div id="ref-FVLAWGsX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>The Causal-Neural Connection: Expressiveness, Learnability, and Inference</strong> <div class="csl-block">Kevin Xia, Kai-Zhan Lee, Yoshua Bengio, Elias Bareinboim</div> <em>arXiv</em> (2021) <a href="https://doi.org/grw6m7">https://doi.org/grw6m7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2107.00793">10.48550/arxiv.2107.00793</a></div></div>
+<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>The Causal-Neural Connection: Expressiveness, Learnability, and Inference</strong> <div class="csl-block">Kevin Xia, Kai-Zhan Lee, Yoshua Bengio, Elias Bareinboim</div> <em>arXiv</em> (2021) <a href="https://doi.org/grw6m7">https://doi.org/grw6m7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2107.00793">10.48550/arxiv.2107.00793</a></div></div>
 </div>
 <div id="ref-r5mjeIhV" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>Exploring the Latent Space of Autoencoders with Interventional Assays</strong> <div class="csl-block">Felix Leeb, Stefan Bauer, Michel Besserve, Bernhard Schölkopf</div> <em>arXiv</em> (2021) <a href="https://doi.org/gtb96x">https://doi.org/gtb96x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2106.16091">10.48550/arxiv.2106.16091</a></div></div>
+<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Exploring the Latent Space of Autoencoders with Interventional Assays</strong> <div class="csl-block">Felix Leeb, Stefan Bauer, Michel Besserve, Bernhard Schölkopf</div> <em>arXiv</em> (2021) <a href="https://doi.org/gtb96x">https://doi.org/gtb96x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2106.16091">10.48550/arxiv.2106.16091</a></div></div>
 </div>
 <div id="ref-eEfUqiI4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Improving black-box optimization in VAE latent space using decoder uncertainty</strong> <div class="csl-block">Pascal Notin, José Miguel Hernández-Lobato, Yarin Gal</div> <em>arXiv</em> (2021) <a href="https://doi.org/gtb962">https://doi.org/gtb962</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2107.00096">10.48550/arxiv.2107.00096</a></div></div>
+<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>Improving black-box optimization in VAE latent space using decoder uncertainty</strong> <div class="csl-block">Pascal Notin, José Miguel Hernández-Lobato, Yarin Gal</div> <em>arXiv</em> (2021) <a href="https://doi.org/gtb962">https://doi.org/gtb962</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2107.00096">10.48550/arxiv.2107.00096</a></div></div>
 </div>
 <div id="ref-S1VP202R" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>On the Number of Experiments Sufficient and in the Worst Case Necessary to Identify All Causal Relations Among N Variables</strong> <div class="csl-block">Frederick Eberhardt, Clark Glymour, Richard Scheines</div> <em>arXiv</em> (2012) <a href="https://doi.org/gtb997">https://doi.org/gtb997</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1207.1389">10.48550/arxiv.1207.1389</a></div></div>
+<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>On the Number of Experiments Sufficient and in the Worst Case Necessary to Identify All Causal Relations Among N Variables</strong> <div class="csl-block">Frederick Eberhardt, Clark Glymour, Richard Scheines</div> <em>arXiv</em> (2012) <a href="https://doi.org/gtb997">https://doi.org/gtb997</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1207.1389">10.48550/arxiv.1207.1389</a></div></div>
 </div>
 <div id="ref-7HxYpmt4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>Learning Neural Causal Models from Unknown Interventions</strong> <div class="csl-block">Nan Rosemary Ke, Olexa Bilaniuk, Anirudh Goyal, Stefan Bauer, Hugo Larochelle, Bernhard Schölkopf, Michael C Mozer, Chris Pal, Yoshua Bengio</div> <em>arXiv</em> (2019) <a href="https://doi.org/grw6nc">https://doi.org/grw6nc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1910.01075">10.48550/arxiv.1910.01075</a></div></div>
+<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>Learning Neural Causal Models from Unknown Interventions</strong> <div class="csl-block">Nan Rosemary Ke, Olexa Bilaniuk, Anirudh Goyal, Stefan Bauer, Hugo Larochelle, Bernhard Schölkopf, Michael C Mozer, Chris Pal, Yoshua Bengio</div> <em>arXiv</em> (2019) <a href="https://doi.org/grw6nc">https://doi.org/grw6nc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1910.01075">10.48550/arxiv.1910.01075</a></div></div>
 </div>
 <div id="ref-3MP7gokd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>DiscoBAX - Discovery of optimal intervention sets in genomic experiment design</strong> <div class="csl-block">Clare Lyle, Arash Mehrjou, Pascal Notin, Andrew Jesson, Stefan Bauer, Yarin Gal, Patrick Schwab</div> (2023) <a href="https://openreview.net/forum?id=mBkUeW8rpD6">https://openreview.net/forum?id=mBkUeW8rpD6</a></div>
+<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>DiscoBAX - Discovery of optimal intervention sets in genomic experiment design</strong> <div class="csl-block">Clare Lyle, Arash Mehrjou, Pascal Notin, Andrew Jesson, Stefan Bauer, Yarin Gal, Patrick Schwab</div> (2023) <a href="https://openreview.net/forum?id=mBkUeW8rpD6">https://openreview.net/forum?id=mBkUeW8rpD6</a></div>
 </div>
 <div id="ref-zXrfFfft" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>Interventions, Where and How? Experimental Design for Causal Models at Scale</strong> <div class="csl-block">Panagiotis Tigas, Yashas Annadani, Andrew Jesson, Bernhard Schölkopf, Yarin Gal, Stefan Bauer</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtcfvk">https://doi.org/gtcfvk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2203.02016">10.48550/arxiv.2203.02016</a></div></div>
+<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>Interventions, Where and How? Experimental Design for Causal Models at Scale</strong> <div class="csl-block">Panagiotis Tigas, Yashas Annadani, Andrew Jesson, Bernhard Schölkopf, Yarin Gal, Stefan Bauer</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtcfvk">https://doi.org/gtcfvk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2203.02016">10.48550/arxiv.2203.02016</a></div></div>
 </div>
 <div id="ref-Ex1JrMxh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>CausalBench: A Large-scale Benchmark for Network Inference from Single-cell Perturbation Data</strong> <div class="csl-block">Mathieu Chevalley, Yusuf Roohani, Arash Mehrjou, Jure Leskovec, Patrick Schwab</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtcbbc">https://doi.org/gtcbbc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2210.17283">10.48550/arxiv.2210.17283</a></div></div>
+<div class="csl-left-margin">81. </div><div class="csl-right-inline"><strong>CausalBench: A Large-scale Benchmark for Network Inference from Single-cell Perturbation Data</strong> <div class="csl-block">Mathieu Chevalley, Yusuf Roohani, Arash Mehrjou, Jure Leskovec, Patrick Schwab</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtcbbc">https://doi.org/gtcbbc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2210.17283">10.48550/arxiv.2210.17283</a></div></div>
 </div>
 </div>
 <!-- default theme -->

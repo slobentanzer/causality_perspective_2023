@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-11" />
   <meta name="citation_publication_date" content="2024-01-11" />
   <meta property="article:published_time" content="2024-01-11" />
-  <meta name="dc.modified" content="2024-01-11T10:51:02+00:00" />
-  <meta property="article:modified_time" content="2024-01-11T10:51:02+00:00" />
+  <meta name="dc.modified" content="2024-01-11T14:19:07+00:00" />
+  <meta property="article:modified_time" content="2024-01-11T14:19:07+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/91f8408a6193bac9a8cd66593d54fa87f2fc8e06/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@91f8408](https://github.com/slobentanzer/causality_perspective_2023/tree/91f8408a6193bac9a8cd66593d54fa87f2fc8e06)
+from [slobentanzer/causality_perspective_2023@10c143d](https://github.com/slobentanzer/causality_perspective_2023/tree/10c143d2187d13305c327bee4c4c8f681d1a5dd5)
 on January 11, 2024.
 </em></small>
 
@@ -178,7 +178,7 @@ We will elaborate on three main points:
 
 ### Causal discovery and inference
 
-The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting how a specific situation will turn out given data and the causal relationships known about the system.
+The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system *a priori*.
 
 Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
 As a result, most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research
@@ -218,7 +218,8 @@ For instance, having PK of the linear activation cascade EGFR->RAS->RAF->MEK->ER
 
 Inductive reasoning, on the other hand, involves making generalisations from specific observations.
 Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious [@doi:10.1056/NEJMoa1103782].
-We could now infer (via induction) that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or, further, that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation [@doi:10.1038/nrd3847].
+Commonly, we then use induction to infer from this limited cohort that the treatment may be effective in the entire population.
+We could further infer that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation [@doi:10.1038/nrd3847].
 In the molecular realm, we could further infer that the inhibition of other components of the cascade, such as EGFR or MEK, may also be promising target leads [@doi:10.3390/ijms20061483].
 
 The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
@@ -233,7 +234,7 @@ In consequence, the *inductive biases* we introduce into our models (i.e., those
 
 Biases, generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources [@doi:10.1037/0033-295X.111.1.3].
-In fact, we often deduce causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
+In fact, we often presume causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning, we can distinguish between useful and harmful biases.
@@ -301,11 +302,11 @@ Their advantage is high efficiency in the face of scarce data, but they are high
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
 These can be simple or elaborate.
 Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
-More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541​], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.48550/arXiv.1706.03762].
+More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.48550/arXiv.1706.03762].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
 
 As a result, choosing the best way to derive inductive biases from PK is not straightforward.
-Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce.
+Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce [@doi:10.1103/PhysRevResearch.5.043252].
 However, they are constrained by the accuracy of the existing knowledge and often struggle to scale to larger datasets [@doi:10.48550/arXiv.2001.08361;@doi:10.48550/arXiv.2202.05808].
 Models with implicit biases, on the other hand, particularly those typically found in deep learning architectures, excel at learning from large, high-dimensional datasets and offer flexibility across diverse domains.
 Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.
@@ -368,7 +369,7 @@ This fundamental difference between language and molecular models has so far not
 ### Causal latent spaces
 
 Due to the fundamental limitation of human perception, dimensionality reduction is a popular workflow for data interpretation, typically via methods such as PCA, t-SNE, or UMAP [@doi:10.4236/jdaip.2021.93013].
-The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions.
+The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions [@doi:10.1073/pnas.2319169120].
 However, without explicit supervision, which is rare in typical biomedical datasets, the resulting latent spaces are rarely interpretable, and do not lend themselves to causal interpretation.
 In addition, they often suffer from biases that result from technical rather than biological factors [@doi:10.1371/journal.pcbi.1011288].
 In consequence, biological insight during the exploration of these latent spaces is often challenging due to the dominance of biases over the biological generative mechanism.
@@ -397,10 +398,10 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
+However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
 Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
 Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
 Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
-In addition, complex models often pose computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
 
 ### Theoretical foundations: interventions and inductive biases
 
@@ -430,7 +431,7 @@ A crucial aspect of these frameworks will be establishing benchmarks in the face
 ### Systems biology and causality - finding a balance
 
 Systems biology has historically followed both knowledge-driven (bottom-up) and data-driven (top-down) approaches.
-Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has de facto been doing CR, despite both fields being largely disconnected.
+Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has *de facto* been doing CR, despite both fields being largely disconnected.
 Meanwhile, top-down systems biology, inspired more by machine learning principles, has struggled with moving from correlation to causality.
 New methods and models offer the potential to converge these complementary approaches and scale our understanding to larger, more complex systems.
 However, it remains to be seen whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
@@ -443,6 +444,8 @@ The field must explore these possibilities, balancing the drive for large-scale 
 ## Glossary?
 
 ## Acknowledgements {.page_break_before}
+
+We thank Aurelien Dugourd for his helpful comments on the manuscript.
 
 ## Funding
 
