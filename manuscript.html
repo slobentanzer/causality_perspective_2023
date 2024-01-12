@@ -8,7 +8,7 @@
   <meta name="author" content="Pablo Rodriguez-Mier" />
   <meta name="author" content="Stefan Bauer" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-11" />
+  <meta name="dcterms.date" content="2024-01-12" />
   <meta name="keywords" content="systems biology, biomedicine, causality, modelling, machine learning, foundation models" />
   <title>Molecular causality in the advent of foundation models</title>
   <style>
@@ -53,11 +53,11 @@
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-11" />
-  <meta name="citation_publication_date" content="2024-01-11" />
-  <meta property="article:published_time" content="2024-01-11" />
-  <meta name="dc.modified" content="2024-01-11T14:19:07+00:00" />
-  <meta property="article:modified_time" content="2024-01-11T14:19:07+00:00" />
+  <meta name="dc.date" content="2024-01-12" />
+  <meta name="citation_publication_date" content="2024-01-12" />
+  <meta property="article:published_time" content="2024-01-12" />
+  <meta name="dc.modified" content="2024-01-12T12:39:43+00:00" />
+  <meta property="article:modified_time" content="2024-01-12T12:39:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/10c143d2187d13305c327bee4c4c8f681d1a5dd5">slobentanzer/causality_perspective_2023@10c143d</a>
-on January 11, 2024.
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/5b8f04e461556552b666b8aa726d540259325b57">slobentanzer/causality_perspective_2023@5b8f04e</a>
+on January 12, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -183,11 +183,10 @@ We will elaborate on three main points:</p>
 <h3 id="causal-discovery-and-inference">Causal discovery and inference</h3>
 <p>The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system <em>a priori</em>.</p>
 <p>Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents <span class="citation" data-cites="1CPlHia5R">[<a href="#ref-1CPlHia5R" role="doc-biblioref">15</a>]</span>.
-As a result, most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research
-<span class="citation" data-cites="qpg6x7P4">[<a href="#ref-qpg6x7P4" role="doc-biblioref">16</a>]</span>.
-For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem <span class="citation" data-cites="10mjWN2op 10AL1hWhU">[<a href="#ref-10mjWN2op" role="doc-biblioref">17</a>,<a href="#ref-10AL1hWhU" role="doc-biblioref">18</a>]</span>.</p>
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem <span class="citation" data-cites="10mjWN2op 10AL1hWhU">[<a href="#ref-10mjWN2op" role="doc-biblioref">16</a>,<a href="#ref-10AL1hWhU" role="doc-biblioref">17</a>]</span>.</p>
 <p>Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
 This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
+Most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research <span class="citation" data-cites="qpg6x7P4">[<a href="#ref-qpg6x7P4" role="doc-biblioref">18</a>]</span>.
 This allows researchers to represent both the causal connections between variables and their directionality, which is required to understand how changes in one variable might lead to changes in another.
 For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
 This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
@@ -305,7 +304,7 @@ The question whether scaling will lead to the emergence of “foundational behav
 <p>Given enough data to train on - and ample funds for compute - is attention “all you need” to induce reliable biases in your model?
 While there are doubts regarding the reasoning capabilities of LLMs, GPT arguably “understands” language very well already, to the point where it can flawlessly communicate and synthesise information <span class="citation" data-cites="19EQh1DNG">[<a href="#ref-19EQh1DNG" role="doc-biblioref">67</a>]</span>.
 This is what the term “foundation model” implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
-This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model <span class="citation" data-cites="10mjWN2op">[<a href="#ref-10mjWN2op" role="doc-biblioref">17</a>]</span>.</p>
+This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model <span class="citation" data-cites="10mjWN2op">[<a href="#ref-10mjWN2op" role="doc-biblioref">16</a>]</span>.</p>
 <p>In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the “grammar” of the cell?</p>
 <p><strong>Explainability</strong>: For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
 As such, there is no way to scrutinise their reasoning beyond the output they produce.
@@ -433,14 +432,14 @@ The field must explore these possibilities, balancing the drive for large-scale 
 <div id="ref-1CPlHia5R" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Causal Structure Learning</strong> <div class="csl-block">Christina Heinze-Deml, Marloes H Maathuis, Nicolai Meinshausen</div> <em>Annual Review of Statistics and Its Application</em> (2018-03-07) <a href="https://doi.org/ggh4pj">https://doi.org/ggh4pj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1146/annurev-statistics-031017-100630">10.1146/annurev-statistics-031017-100630</a></div></div>
 </div>
-<div id="ref-qpg6x7P4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Inferring causal molecular networks: empirical assessment through a community-based effort</strong> <div class="csl-block">Steven M Hill, Laura M Heiser, Thomas Cokelaer, Michael Unger, Nicole K Nesser, Daniel E Carlin, Yang Zhang, Artem Sokolov, Evan O Paull, … Sach Mukherjee</div> <em>Nature Methods</em> (2016-02-22) <a href="https://doi.org/f3t7t4">https://doi.org/f3t7t4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nmeth.3773">10.1038/nmeth.3773</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26901648">26901648</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4854847">PMC4854847</a></div></div>
-</div>
 <div id="ref-10mjWN2op" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Can Foundation Models Talk Causality?</strong> <div class="csl-block">Moritz Willig, Matej Zečević, Devendra Singh Dhami, Kristian Kersting</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtb9wb">https://doi.org/gtb9wb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.10591">10.48550/arxiv.2206.10591</a></div></div>
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Can Foundation Models Talk Causality?</strong> <div class="csl-block">Moritz Willig, Matej Zečević, Devendra Singh Dhami, Kristian Kersting</div> <em>arXiv</em> (2022) <a href="https://doi.org/gtb9wb">https://doi.org/gtb9wb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.10591">10.48550/arxiv.2206.10591</a></div></div>
 </div>
 <div id="ref-10AL1hWhU" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>The Scaling Hypothesis</strong> <div class="csl-block">Gwern Branwen</div> (2020-05-28) <a href="https://gwern.net/scaling-hypothesis">https://gwern.net/scaling-hypothesis</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>The Scaling Hypothesis</strong> <div class="csl-block">Gwern Branwen</div> (2020-05-28) <a href="https://gwern.net/scaling-hypothesis">https://gwern.net/scaling-hypothesis</a></div>
+</div>
+<div id="ref-qpg6x7P4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Inferring causal molecular networks: empirical assessment through a community-based effort</strong> <div class="csl-block">Steven M Hill, Laura M Heiser, Thomas Cokelaer, Michael Unger, Nicole K Nesser, Daniel E Carlin, Yang Zhang, Artem Sokolov, Evan O Paull, … Sach Mukherjee</div> <em>Nature Methods</em> (2016-02-22) <a href="https://doi.org/f3t7t4">https://doi.org/f3t7t4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nmeth.3773">10.1038/nmeth.3773</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26901648">26901648</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4854847">PMC4854847</a></div></div>
 </div>
 <div id="ref-TUhGg6tD" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Integrating knowledge and omics to decipher mechanisms via large‐scale models of signaling networks</strong> <div class="csl-block">Martin Garrido‐Rodriguez, Katharina Zirngibl, Olga Ivanova, Sebastian Lobentanzer, Julio Saez‐Rodriguez</div> <em>Molecular Systems Biology</em> (2022-07) <a href="https://doi.org/gtb9v8">https://doi.org/gtb9v8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15252/msb.202211036">10.15252/msb.202211036</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35880747">35880747</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9316933">PMC9316933</a></div></div>

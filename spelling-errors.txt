@@ -28,7 +28,7 @@ honoraria
 identifiability
 interpretability
 interpretable
-interventional
+Interventional
 JSR
 linearities
 LLM

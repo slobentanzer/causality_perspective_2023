@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-11'
+date-meta: '2024-01-12'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez-Mier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-11" />
-  <meta name="citation_publication_date" content="2024-01-11" />
-  <meta property="article:published_time" content="2024-01-11" />
-  <meta name="dc.modified" content="2024-01-11T14:19:07+00:00" />
-  <meta property="article:modified_time" content="2024-01-11T14:19:07+00:00" />
+  <meta name="dc.date" content="2024-01-12" />
+  <meta name="citation_publication_date" content="2024-01-12" />
+  <meta property="article:published_time" content="2024-01-12" />
+  <meta name="dc.modified" content="2024-01-12T12:39:43+00:00" />
+  <meta property="article:modified_time" content="2024-01-12T12:39:43+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/10c143d2187d13305c327bee4c4c8f681d1a5dd5/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@10c143d](https://github.com/slobentanzer/causality_perspective_2023/tree/10c143d2187d13305c327bee4c4c8f681d1a5dd5)
-on January 11, 2024.
+from [slobentanzer/causality_perspective_2023@5b8f04e](https://github.com/slobentanzer/causality_perspective_2023/tree/5b8f04e461556552b666b8aa726d540259325b57)
+on January 12, 2024.
 </em></small>
 
 
@@ -181,12 +181,11 @@ We will elaborate on three main points:
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system *a priori*.
 
 Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
-As a result, most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research
- [@doi:10.1038/nmeth.3773].
 For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}].
 
 Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
 This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
+Most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research [@doi:10.1038/nmeth.3773].
 This allows researchers to represent both the causal connections between variables and their directionality, which is required to understand how changes in one variable might lead to changes in another.
 For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
 This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
