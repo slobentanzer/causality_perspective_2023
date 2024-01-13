@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-12'
+date-meta: '2024-01-13'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez-Mier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-12" />
-  <meta name="citation_publication_date" content="2024-01-12" />
-  <meta property="article:published_time" content="2024-01-12" />
-  <meta name="dc.modified" content="2024-01-12T12:39:43+00:00" />
-  <meta property="article:modified_time" content="2024-01-12T12:39:43+00:00" />
+  <meta name="dc.date" content="2024-01-13" />
+  <meta name="citation_publication_date" content="2024-01-13" />
+  <meta property="article:published_time" content="2024-01-13" />
+  <meta name="dc.modified" content="2024-01-13T14:06:47+00:00" />
+  <meta property="article:modified_time" content="2024-01-13T14:06:47+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/5b8f04e461556552b666b8aa726d540259325b57/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@5b8f04e](https://github.com/slobentanzer/causality_perspective_2023/tree/5b8f04e461556552b666b8aa726d540259325b57)
-on January 12, 2024.
+from [slobentanzer/causality_perspective_2023@ad2850c](https://github.com/slobentanzer/causality_perspective_2023/tree/ad2850cce9b931ad0e5763a3f56ea49926f6a731)
+on January 13, 2024.
 </em></small>
 
 
@@ -237,7 +237,7 @@ In fact, we often presume causality from observation (i.e., we “jump to conclu
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning, we can distinguish between useful and harmful biases.
-Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, confirmation bias, overfitting, and underfitting [@doi:10.48550/arXiv.1908.09635].
+Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, and confirmation bias [@doi:10.48550/arXiv.1908.09635].
 While addressing harmful biases is a crucial part of machine learning, we will not discuss them further in this perspective.
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
@@ -246,7 +246,7 @@ For instance, PK on protein interactions can impact inference on activation casc
 
 ### Why do we need biases?
 
-The human mind will be the gold standard for reasoning for the foreseeable future.
+Humans will be the gold standard for common-sense reasoning for the foreseeable future.
 However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive it nor keep it in memory.
 Machine learning seems like the ideal solution, but the "No Free Lunch" theorems present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch].
 Although they have recently been challenged [@doi:10.48550/arXiv.2304.05366], these theorems highlight the inherent difficulty in designing algorithms that generalise well from specific training data to new, unseen data.
@@ -299,7 +299,7 @@ In the field of CR, Structural Causal Models (SCMs) can be used when mechanisms 
 Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
-These can be simple or elaborate.
+Learning mechanisms intruduced as implicit biases can be simple (e.g., sparsity) or elaborate.
 Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
 More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.48550/arXiv.1706.03762].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
@@ -319,7 +319,7 @@ Frequently, these learners are also coupled in an end-to-end learning process, i
 ## Causality in foundation models
 
 There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs).
-While the high performance of LLMs is based on myriad architectural improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
+While the high performance of LLMs is based on myriad technical improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
 This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered “GPT” models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x;@doi:10.1038/s41586-023-06139-9;@doi:10.1101/2023.04.30.538439].
 Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
 In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
@@ -331,7 +331,7 @@ They can be fine-tuned for more specific tasks, because they are thought to deri
 However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085;@doi:10.1101/2023.10.19.563100].
 Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
 State-of-the-art methods such as scVI [@doi:10.1038/s41592-018-0229-2] and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
-However, these are early models, and it could still be argued that, in line with the scaling hypothesis, models will improve via a combination of the right architecture with sufficient amounts of data.
+However, these are early models, and it could still be argued that, in line with the scaling hypothesis, models may improve via a combination of the right architecture with sufficient amounts of data [@doi:10.48550/arXiv.2401.04720].
 
 Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
 Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
@@ -346,8 +346,8 @@ This behaviour is not possible without assuming some form of causality, even if 
 
 In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the “grammar” of the cell?
 
-**Explainability**: For one, large transformer models are not explainable due to their large number of parameters and non-linearities.
-As such, there is no way to scrutinise their reasoning beyond the output they produce.
+**Explainability**: For one, large transformer models (i.e., billions of parameters) are not explainable due to their high complexity.
+As such, there is often no way to scrutinise their reasoning beyond the output they produce [@doi:10.48550/arXiv.2108.07258;@doi:10.3390/diagnostics12071557].
 What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are still unknown [@doi:10.1038/d41586-023-02361-7].
 Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
 
@@ -361,8 +361,8 @@ To determine whether molecular foundation models indeed capture generalisable ca
 
 **Causal bias**: The GPT-3 architecture that led to the recent breakthrough in LLM capabilities employs “causal self-attention,” describing an implicit architectural bias that prevents the model from “looking into the future”: for predicting the next token, only the previous tokens in the sentence can be used [@doi:10.48550/arXiv.2310.05869].
 This leverages the implicit causality present in language, which incidentally is similar to one of the earliest formal descriptions of causality, that “the effect has regularly followed the cause in the past” [@isbn:9780199211586].
-Compared to language, the data that form the input of molecular foundation models do not have an implicit form of causality.
-The individual cells are in general not on a known temporal trajectory, and the genes that are masked as part of the training objective are masked at random, not because they are downstream (in some form) of the genes used for prediction.
+Compared to language, the data that form the input of molecular foundation models do not implicitly contain causal information.
+The individual cells are in general not on a known trajectory, and the genes that are masked as part of the training objective are masked at random, not because they are downstream (in some form) of the genes used for prediction.
 This fundamental difference between language and molecular models has so far not been explored theoretically or empirically.
 
 ### Causal latent spaces
@@ -440,11 +440,82 @@ Including explicit favourable biases, informed by deep domain knowledge and spec
 The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.
 
 
-## Glossary?
+## Glossary
+
+Attention (deep learning): a mechanism in deep learning that allows the model to focus on specific parts of the input data.
+Attention mechanisms are often used in natural language processing to focus on specific words in a sentence, but can also be used in other domains.
+
+Bias (machine learning): Bias can be understood in two ways in the context of machine learning.
+
+1. The first definition, and the one predominantly used in this Perspective, is also referred to as statistical bias; a technical term referring to the assumptions made by a model to make predictions.
+This bias is a necessary part of any machine learning model.
+A model with high bias (low variance) pays very little attention to the training data and oversimplifies the model, which can lead to underfitting.
+This means it does not capture the complexity of the data and fails to learn the underlying patterns effectively.
+Conversely, a model with low bias (high variance) makes complex assumptions to fit the data closely, which can lead to overfitting, where the model captures noise in the data as if it were a true pattern.
+
+2. The second definition is also known as algorithmic bias, and refers to the systematic and repeatable errors in a model due to faulty assumptions or data.
+It often reflect existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
+As such, algorithmic bias can result from any stage in model training, from data collection to model deployment.
+
+Bias-variance tradeoff: the concept in machine learning that bias and variance of a model are inversely related.
+The term implies that an optimal model finds a balance between bias (impact of the model on predictions) and variance (impact of the data on predictions).
+This balance depends on the complexity of model and data.
+
+Deductive vs. Inductive Reasoning: Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
+Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.
+
+Do-Calculus: see Pearl’s Do-Calculus.
+
+Foundation model: a model that is trained on a large amount of data and can be used as a starting point for further model development (also referred to as fine-tuning).
+Foundation models are assumed to have learned generalisable patterns from their input data.
+To achieve this, they require large amounts of data and compute power.
+
+Large Language Models: Large Language Models are advanced AI models trained on extensive text data.
+They are capable of understanding and generating human-like text, making them useful in various applications like translation, summarization, and conversation.
+LLMs leverage vast amounts of training data to grasp nuances of language, context, and even some elements of human communication.
+They are the first commercially successful example of foundation models.
+
+'No Free Lunch' Theorems: These theorems in optimization and machine learning suggest that no single algorithm is best for every problem.
+The performance of an algorithm is contingent on the specificities of the task and data at hand.
+This highlights the importance of choosing or designing algorithms that are well-suited to the particular characteristics of the problem being addressed.
+Related to the bias-variance tradeoff, partly opposed to the scaling hypothesis and foundation models.
+
+Overfitting: a technical term referring to a model that captures noise in the data as if it were a true pattern.
+Overfitting tends to lead to high performance on the training data but poor performance on the test data.
+If a model has overfitted also to the test data, it will also perform poorly on new data, i.e., it will not generalise well.
+This is a common occurrence if there has been data leakage between training, validation, and test data.
+
+Pearl’s Do-Calculus: Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
+It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.
+
+Prior knowledge: a term referring to information that is available to inform a learning process.
+Often, this is the result of previous research.
+The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.
+
+Randomized Clinical Trials: Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
+Participants are randomly assigned to groups receiving different treatments, including a control group.
+To further minimise confounding factors, participants and administering doctors are often blinded to the treatment given.
+This method is considered the gold standard in clinical research for its ability to minimize bias and establish causality between a treatment and its outcomes.
+
+Scaling hypothesis: The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
+Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
+The enormous success of current Large Language Models has been attributed to scaling, with emergence of human-like language capabilities around the time of GPT-3.
+
+Structural Causal Models (SCMs): SCMs are a type of statistical model used to represent and analyze causal relationships.
+They consist of variables and equations that describe how these variables interact causally.
+SCMs are particularly useful in causal inference as they allow for the analysis of how changes in one variable may cause changes in another.
+
+Underfitting: a technical term referring to a model that does not capture the complexity of the data.
+Underfitting tends to lead to poor performance on both the training and test data.
+
+Variance (machine learning): a technical term referring to the sensitivity of a model to the training data.
+Describes how much the predictions of a model vary given different training data.
+High variance (low bias) in a model can lead to overfitting and thus harm generalisation.
+Conversely, low variance (high bias) can lead to underfitting and thus to a model that does not capture the complexity of the data.
 
 ## Acknowledgements {.page_break_before}
 
-We thank Aurelien Dugourd for his helpful comments on the manuscript.
+We thank Aurelien Dugourd, Philipp Schäfer, and Loan Vulliard for their helpful comments on the manuscript.
 
 ## Funding
 

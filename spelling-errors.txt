@@ -2,7 +2,7 @@ Astex
 Aurelien
 Benchmarking
 biassed
-Biomedicine
+biomedicine
 Cas
 CNNs
 Convolutional
@@ -17,7 +17,7 @@ Dugourd
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 facto
 Geneformer
 generalisable
@@ -28,9 +28,9 @@ honoraria
 identifiability
 interpretability
 interpretable
-Interventional
+interventional
+intruduced
 JSR
-linearities
 LLM
 LLMs
 Lobentanzer
@@ -40,10 +40,12 @@ Mier
 omics
 Orthogonally
 overactivation
+overfitted
 overfitting
 pablormier
 PCA
 PerMedCoE
+Philipp
 phosphoproteomic
 pre
 priori
@@ -56,11 +58,14 @@ saezrodriguez
 Sanofi
 scalability
 scGPT
+Schäfer
 SCMs
 scVI
 slobentanzer
 SNE
+specificities
 Stadapharm
+summarization
 Theodoris
 tradeoff
 Travere
@@ -69,3 +74,4 @@ underfitting
 unfeasibly
 Vemurafenib
 Vis
+Vulliard
