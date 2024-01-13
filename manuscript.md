@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-13" />
   <meta name="citation_publication_date" content="2024-01-13" />
   <meta property="article:published_time" content="2024-01-13" />
-  <meta name="dc.modified" content="2024-01-13T14:06:47+00:00" />
-  <meta property="article:modified_time" content="2024-01-13T14:06:47+00:00" />
+  <meta name="dc.modified" content="2024-01-13T14:10:34+00:00" />
+  <meta property="article:modified_time" content="2024-01-13T14:10:34+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ad2850cce9b931ad0e5763a3f56ea49926f6a731/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@ad2850c](https://github.com/slobentanzer/causality_perspective_2023/tree/ad2850cce9b931ad0e5763a3f56ea49926f6a731)
+from [slobentanzer/causality_perspective_2023@8c8ec57](https://github.com/slobentanzer/causality_perspective_2023/tree/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1)
 on January 13, 2024.
 </em></small>
 
@@ -500,6 +500,7 @@ This method is considered the gold standard in clinical research for its ability
 Scaling hypothesis: The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
 Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
 The enormous success of current Large Language Models has been attributed to scaling, with emergence of human-like language capabilities around the time of GPT-3.
+The ability to scale depends on several factors: the availability of data, parallelisation of training, adequate compute power with a parallel architecture, and a model architecture that can digest large amounts of data effectively.
 
 Structural Causal Models (SCMs): SCMs are a type of statistical model used to represent and analyze causal relationships.
 They consist of variables and equations that describe how these variables interact causally.

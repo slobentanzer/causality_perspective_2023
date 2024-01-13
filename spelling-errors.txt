@@ -43,6 +43,7 @@ overactivation
 overfitted
 overfitting
 pablormier
+parallelisation
 PCA
 PerMedCoE
 Philipp
@@ -70,7 +71,7 @@ Theodoris
 tradeoff
 Travere
 UMAP
-underfitting
+Underfitting
 unfeasibly
 Vemurafenib
 Vis
