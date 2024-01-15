@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:17:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:17:27+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:25:21+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:25:21+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@777eb73](https://github.com/slobentanzer/causality_perspective_2023/tree/777eb73928e901f13fcc036bc3be436abb99cd2d)
+from [slobentanzer/causality_perspective_2023@ad5677f](https://github.com/slobentanzer/causality_perspective_2023/tree/ad5677f0aa3b886528cd1b40bfcd686c81ebca45)
 on January 15, 2024.
 </em></small>
 
@@ -329,7 +329,7 @@ The generalist capabilities of LLMs have led to the designation of “foundation
 Foundation models ([Glossary][Foundation model]) are models that achieve high performance by training a generic architecture on extremely large amounts of data in a self-supervised manner ([Glossary][Self-supervised learning]).
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
 However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085;@doi:10.1101/2023.10.19.563100].
-Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
+Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently when applied "zero-shot," i.e., without fine-tuning.
 State-of-the-art methods such as scVI [@doi:10.1038/s41592-018-0229-2] and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
 However, these are early models, and it could still be argued that, in line with the scaling hypothesis ([Glossary][Scaling hypothesis]), models may improve via a combination of the right architecture with sufficient amounts of data [@doi:10.48550/arXiv.2401.04720].
 
