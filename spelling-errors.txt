@@ -2,7 +2,7 @@ Astex
 Aurelien
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -29,7 +29,7 @@ honoraria
 identifiability
 interpretability
 interpretable
-Interventional
+interventional
 intruduced
 JSR
 Lanzer
@@ -50,7 +50,7 @@ PCA
 PerMedCoE
 Philipp
 phosphoproteomic
-pre
+Pre
 priori
 Programme
 RAS

@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T18:23:10+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T18:23:10+00:00" />
+  <meta name="dc.modified" content="2024-01-15T18:31:59+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T18:31:59+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@5f53994](https://github.com/slobentanzer/causality_perspective_2023/tree/5f53994cc618a7f8532702ec47627385e0a8defa)
+from [slobentanzer/causality_perspective_2023@87770c7](https://github.com/slobentanzer/causality_perspective_2023/tree/87770c7000b52697503e84194db45aba3c9b0ee1)
 on January 15, 2024.
 </em></small>
 
@@ -326,7 +326,7 @@ In a molecular model that reasons about gene expression, such as Geneformer, att
 Notably, this mechanism comes with a computational cost that increases exponentially with respect to the length of the input sequence [@doi:10.48550/arXiv.2310.05869].
 
 The generalist capabilities of LLMs have led to the designation of “foundation models” [@{https://crfm.stanford.edu/}].
-Foundation models ([Glossary][Foundation model]) are models that achieve high performance by training a generic architecture on extremely large amounts of data in an unsupervised manner.
+Foundation models ([Glossary][Foundation model]) are models that achieve high performance by training a generic architecture on extremely large amounts of data in a self-supervised manner ([Glossary][Self-supervised learning]).
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
 However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085;@doi:10.1101/2023.10.19.563100].
 Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
@@ -528,6 +528,13 @@ The scaling hypothesis posits that the performance of a model increases with the
 Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
 The enormous success of current Large Language Models has been attributed to scaling, with emergence of human-like language capabilities around the time of GPT-3.
 The ability to scale depends on several factors: the availability of data, parallelisation of training, adequate compute power with a parallel architecture, and a model architecture that can digest large amounts of data effectively.
+
+### Self-supervised learning
+
+A type of machine learning where the model learns from the data itself, without the need for human labelling.
+This is achieved by training the model to predict certain properties of the data, such as the next word in a sentence, or the next frame in a video.
+Self-supervised learning is often used in the pre-training of [foundation models][Foundation model].
+It typically requires a specific mechanism in the model to account for the lack of labelled data, such as the masking applied in the training of [Large Language Models][Large Language Models].
 
 ### Structural Causal Models (SCMs)
 
