@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:32:45+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:32:45+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:47:31+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:47:31+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@b08a453](https://github.com/slobentanzer/causality_perspective_2023/tree/b08a453a12793c803b1547131ed5ee06bd159ab0)
+from [slobentanzer/causality_perspective_2023@c9eb90b](https://github.com/slobentanzer/causality_perspective_2023/tree/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb)
 on January 15, 2024.
 </em></small>
 
@@ -421,6 +421,7 @@ The complexity and high cost of collecting data requires an efficient experiment
 Observational data are more readily available but may lead to confounded or biassed insights.
 Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model’s understanding of underlying biological processes [@discobax;@doi:10.48550/arXiv.2203.02016].
 A balanced approach, possibly incorporating both observational and interventional data, coupled with mechanisms for deciding the right number and type of interventions, might provide a more nuanced understanding and improve model robustness and interpretability.
+In addition, experimental design decisions such as the inclusion of a temporal axis can improve the amenability of observational data to causal inference.
 
 ### Foundation models: architectural biases and the No Free Lunch theorems
 
