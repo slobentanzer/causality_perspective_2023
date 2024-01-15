@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T12:05:26+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T12:05:26+00:00" />
+  <meta name="dc.modified" content="2024-01-15T18:04:14+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T18:04:14+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@7163957](https://github.com/slobentanzer/causality_perspective_2023/tree/71639572619edd1c3910c4c14f81e68328923817)
+from [slobentanzer/causality_perspective_2023@909bf68](https://github.com/slobentanzer/causality_perspective_2023/tree/909bf6834a50f804b75b07a4640b351916a6e850)
 on January 15, 2024.
 </em></small>
 
@@ -160,17 +160,17 @@ In parallel, biomedicine has made major leaps in the past century, in particular
 
 In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.1038/s41467-021-25743-9;@doi:10.48550/arXiv.2312.00818].
 
-Randomised clinical trials show that, in a lower-dimensional context, we can reliably identify causal effects.
-By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial) we isolate the causal effect of the controlled variable, i.e., the treatment.
-In the language of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852], we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
+Randomised clinical trials ([Glossary][Randomized Clinical Trials]) show that, in a lower-dimensional context, we can reliably identify causal effects.
+By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
+In the language of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852] ([Glossary][Pearl’s Do-Calculus]), we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
 The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results [@doi:10.1038/s41540-023-00310-8;@doi:10.1371/journal.pone.0027755], as well as in model explainability [@doi:10.48550/arXiv.2309.09901].
 With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.
 We will elaborate on three main points:
 
-- biases and what they mean for CR, particularly in the context of biomedical data
+- biases ([Glossary][Bias (machine learning)]) and what they mean for CR, particularly in the context of biomedical data
 
-- the role of prior knowledge (PK) in CR and how to translate PK into suitable biases
+- the role of prior knowledge (PK, [Glossary][Prior knowledge]) in CR and how to translate PK into suitable biases
 
 - the role of foundation models in molecular systems biology and their relationship to CR
 
@@ -181,7 +181,7 @@ We will elaborate on three main points:
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system *a priori*.
 
 Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
-For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}].
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}] ([Glossary][Scaling hypothesis]).
 
 Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
 This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
@@ -193,7 +193,7 @@ For example, in analysing phosphoproteomic data to assess the impact of inhibiti
 Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
 However, inference is also very sensitive to the completeness of the PK that is applied; most biomedical PK is far from complete [@doi:10.15252/msb.202211036].
 For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
-In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases to apply.
+In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases ([Glossary][Bias (machine learning)]) to apply.
 
 ### The ladder of causality
 
@@ -209,7 +209,7 @@ Current developments of CR in the biomedical field thus mostly focus on these ty
 
 ### Deduction and induction
 
-Lastly, in CR, we can also distinguish between deductive and inductive reasoning.
+Lastly, in CR, we can also distinguish between deductive and inductive reasoning ([Glossary][Deductive vs. Inductive Reasoning]).
 Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
 “All men are mortal, Socrates is a man, therefore Socrates is mortal” is a classic example of deductive reasoning.
 In biomedical research, this is typically the process of deriving a conclusion from a set of PK.
@@ -231,7 +231,7 @@ In consequence, the *inductive biases* we introduce into our models (i.e., those
 
 ### Meaning and examples of biases
 
-Biases, generally, are systematic prejudices of a model towards certain outcomes.
+Biases ([Glossary][Bias (machine learning)]), generally, are systematic prejudices of a model towards certain outcomes.
 Humans make frequent use of biases to function in a complex world with limited cognitive resources [@doi:10.1037/0033-295X.111.1.3].
 In fact, we often presume causality from observation (i.e., we “jump to conclusions”), which is indicative of a strong inductive bias [@doi:10.1126/science.1192788].
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
@@ -248,7 +248,7 @@ For instance, PK on protein interactions can impact inference on activation casc
 
 Humans will be the gold standard for common-sense reasoning for the foreseeable future.
 However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive it nor keep it in memory.
-Machine learning seems like the ideal solution, but the "No Free Lunch" theorems present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch].
+Machine learning seems like the ideal solution, but the "No Free Lunch" theorems ([Glossary]['No Free Lunch' Theorems]) present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains [@no-free-lunch].
 Although they have recently been challenged [@doi:10.48550/arXiv.2304.05366], these theorems highlight the inherent difficulty in designing algorithms that generalise well from specific training data to new, unseen data.
 Inductive biases guide algorithms in making educated guesses about unseen data, thereby improving their generalisation capabilities [@doi:10.1098/rspa.2021.0068].
 
@@ -268,8 +268,8 @@ Some central questions then arise:
 
 ## Bias from prior knowledge
 
-The first question alone is highly debated in the wider field of machine learning.
-The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
+The first question alone is highly debated in the wider field of machine learning; it is related to the concept of the bias-variance tradeoff ([Glossary][Bias-variance tradeoff]).
+The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases ([Glossary][Bias (machine learning)]) in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
 However, it has been argued that many improvements that led to the models of today, such as convolution or attention ([Glossary][Attention (deep learning)]), disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
@@ -277,7 +277,7 @@ Considering these constraints, the question is not whether to include PK in our 
 
 ### Prior knowledge
 
-PK refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
+PK ([Glossary][Prior knowledge]) refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
 It can be used to inform the inductive biases of a model, either explicitly through the design choices and assumptions embedded into the models, or implicitly through the data and methods used in training.
 For this to be possible, biomedical entities and relationships must be clearly defined and represented unambiguously.
 Additionally, the diversity in our tasks and knowledge sources requires a flexible representation.
@@ -295,12 +295,12 @@ PK can be used to derive inductive biases either *explicitly* or *implicitly*.
 
 The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
 Ordinary Differential Equation (ODE) models, logic-based models, rule-based models, and constraint-based models [@doi:10.1038/nrg3643], all of which are commonly used in systems biology, explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
-In the field of CR, Structural Causal Models (SCMs) can be used when mechanisms are unknown [@doi:10.48550/arXiv.2310.14935].
+In the field of CR, Structural Causal Models ([Glossary][Structural Causal Models (SCMs)]) can be used when mechanisms are unknown [@doi:10.48550/arXiv.2310.14935].
 Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
 Learning mechanisms intruduced as implicit biases can be simple (e.g., sparsity) or elaborate.
-Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x], or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
+Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting [@doi:10.1111/j.2517-6161.1996.tb02080.x] ([Glossary][Overfitting]), or decisions about the types of prior distributions in bayesian models [@doi:10.1038/s41467-017-02554-5].
 More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) [@doi:10.1162/neco.1989.1.4.541], Recurrent Neural Networks (RNNs) [@doi:10.1162/neco.1997.9.8.1735], or Transformers [@doi:10.48550/arXiv.1706.03762].
 Their advantages and disadvantages are inverse to those of explicit models [@doi:10.1103/PhysRevResearch.5.043252].
 
@@ -318,20 +318,20 @@ Frequently, these learners are also coupled in an end-to-end learning process, i
 
 ## Causality in foundation models
 
-There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs).
-While the high performance of LLMs is based on myriad technical improvements, the introduction of attention as an architectural bias has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
+There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs, [Glossary][Large Language Models]).
+While the high performance of LLMs is based on myriad technical improvements, the introduction of attention ([Glossary][Attention (deep learning)]) as an architectural bias ([Glossary][Bias (machine learning)]) has been a major contributor to their success [@doi:10.48550/arXiv.1706.03762].
 This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered “GPT” models: Generative Pre-trained Transformers [@doi:10.1038/s41592-021-01252-x;@doi:10.1038/s41586-023-06139-9;@doi:10.1101/2023.04.30.538439].
 Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
 In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of distant regulatory elements [@doi:10.1038/s41586-023-06139-9].
 Notably, this mechanism comes with a computational cost that increases exponentially with respect to the length of the input sequence [@doi:10.48550/arXiv.2310.05869].
 
 The generalist capabilities of LLMs have led to the designation of “foundation models” [@{https://crfm.stanford.edu/}].
-Foundation models are models that achieve high performance by training a generic architecture on extremely large amounts of data in an unsupervised manner.
+Foundation models ([Glossary][Foundation model]) are models that achieve high performance by training a generic architecture on extremely large amounts of data in an unsupervised manner.
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
 However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance [@doi:10.1101/2023.10.16.561085;@doi:10.1101/2023.10.19.563100].
 Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
 State-of-the-art methods such as scVI [@doi:10.1038/s41592-018-0229-2] and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
-However, these are early models, and it could still be argued that, in line with the scaling hypothesis, models may improve via a combination of the right architecture with sufficient amounts of data [@doi:10.48550/arXiv.2401.04720].
+However, these are early models, and it could still be argued that, in line with the scaling hypothesis ([Glossary][Scaling hypothesis]), models may improve via a combination of the right architecture with sufficient amounts of data [@doi:10.48550/arXiv.2401.04720].
 
 Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
 Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
@@ -355,7 +355,7 @@ While the creation of explicit molecular models (e.g., logic, structural causal,
 Theodoris et al. explore the attention layers of their Geneformer foundation model to explain the model’s reasoning [@doi:10.1038/s41586-023-06139-9].
 While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable, much less so than explicit molecular models.
 
-**Benchmarking**: Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting to the training data is not clear.
+**Benchmarking**: Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting ([Glossary][Overfitting]) to the training data is not clear.
 One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks [@doi:10.1101/2023.10.16.561085; @doi:10.1101/2023.10.19.563100].
 To determine whether molecular foundation models indeed capture generalisable causal representations of biology, dedicated benchmarks are needed.
 
@@ -395,12 +395,12 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 ### Dichotomy of scaling (data-driven) and bias injection (knowledge-driven)
 
-The debate between adopting scaling strategies versus the injection of biases from PK highlights a fundamental tension in modern biomedical research.
+The debate between adopting scaling strategies ([Glossary][Scaling hypothesis]) versus the injection of biases ([Glossary][Bias (machine learning)]) from PK ([Glossary][Prior knowledge]) highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
 However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
 Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
 Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
-Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorem), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
+Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorems, [Glossary]['No Free Lunch' Theorems]), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
 
 ### Theoretical foundations: interventions and inductive biases
 
@@ -408,7 +408,7 @@ Theoretical work emphasises the need for interventions in causal discovery but d
 The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models [@doi:10.48550/arXiv.1910.01075].
 However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
 The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
-Foundation models have embraced causal self-attention as a step towards integrating causality, but this alone may be insufficient.
+Foundation models ([Glossary][Foundation model]) have embraced causal self-attention as a step towards integrating causality, but this alone may be insufficient.
 Empirical studies and more robust theories are needed to understand these dynamics, including the potential existence and validation of causal latent spaces.
 
 ### Data types: observational vs. interventional
@@ -423,7 +423,7 @@ A balanced approach, possibly incorporating both observational and interventiona
 ### Foundation models: architectural biases and the No Free Lunch theorems
 
 Foundation models challenge the "No Free Lunch" theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models [@doi:10.48550/arXiv.2304.05366].
-These biases, and how to transfer them from LLMs to systems biology, necessitate careful evaluation.
+These biases, and how to transfer them from LLMs ([Glossary][Large Language Models]) to systems biology, necessitate careful evaluation.
 As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas [@doi:10.1038/s41587-023-01848-y;@doi:10.48550/arXiv.2210.17283].
 A crucial aspect of these frameworks will be establishing benchmarks in the face of missing biological ground truth.
 
@@ -447,74 +447,106 @@ The field must explore these possibilities, balancing the drive for large-scale 
 A mechanism in deep learning that allows the model to focus on specific parts of the input data.
 Attention mechanisms are often used in natural language processing to focus on specific words in a sentence, but can also be used in other domains.
 
-Bias (machine learning): Bias can be understood in two ways in the context of machine learning.
+### Bias (machine learning)
+
+Bias can be understood in two ways in the context of machine learning.
 
 1. The first definition, and the one predominantly used in this Perspective, is also referred to as statistical bias; a technical term referring to the assumptions made by a model to make predictions.
 This bias is a necessary part of any machine learning model.
-A model with high bias (low variance) pays very little attention to the training data and oversimplifies the model, which can lead to underfitting.
+A model with high bias (low variance) pays very little attention to the training data and oversimplifies the model, which can lead to [underfitting][Underfitting].
 This means it does not capture the complexity of the data and fails to learn the underlying patterns effectively.
-Conversely, a model with low bias (high variance) makes complex assumptions to fit the data closely, which can lead to overfitting, where the model captures noise in the data as if it were a true pattern.
+Conversely, a model with low bias (high variance) makes complex assumptions to fit the data closely, which can lead to [overfitting][Overfitting], where the model captures noise in the data as if it were a true pattern.
+See also the [bias-variance tradeoff][Bias-variance tradeoff].
 
 2. The second definition is also known as algorithmic bias, and refers to the systematic and repeatable errors in a model due to faulty assumptions or data.
 It often reflect existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
 As such, algorithmic bias can result from any stage in model training, from data collection to model deployment.
 
-Bias-variance tradeoff: the concept in machine learning that bias and variance of a model are inversely related.
+### Bias-variance tradeoff
+
+The concept in machine learning that [bias][Bias (machine learning)] and [variance][Variance (machine learning)] of a model are inversely related.
 The term implies that an optimal model finds a balance between bias (impact of the model on predictions) and variance (impact of the data on predictions).
 This balance depends on the complexity of model and data.
 
-Deductive vs. Inductive Reasoning: Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
+### Deductive vs. Inductive Reasoning
+
+Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
 Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.
 
-Do-Calculus: see Pearl’s Do-Calculus.
+### Do-Calculus
 
-Foundation model: a model that is trained on a large amount of data and can be used as a starting point for further model development (also referred to as fine-tuning).
+See Pearl’s Do-Calculus.
+
+### Foundation model
+
+A model that is trained on a large amount of data and can be used as a starting point for further model development (also referred to as fine-tuning).
 Foundation models are assumed to have learned generalisable patterns from their input data.
 To achieve this, they require large amounts of data and compute power.
 
-Large Language Models: Large Language Models are advanced AI models trained on extensive text data.
+### Large Language Models
+
+Large Language Models are advanced AI models trained on extensive text data.
 They are capable of understanding and generating human-like text, making them useful in various applications like translation, summarization, and conversation.
 LLMs leverage vast amounts of training data to grasp nuances of language, context, and even some elements of human communication.
 They are the first commercially successful example of foundation models.
 
-'No Free Lunch' Theorems: These theorems in optimization and machine learning suggest that no single algorithm is best for every problem.
+### 'No Free Lunch' Theorems
+
+These theorems in optimization and machine learning suggest that no single algorithm is best for every problem.
 The performance of an algorithm is contingent on the specificities of the task and data at hand.
 This highlights the importance of choosing or designing algorithms that are well-suited to the particular characteristics of the problem being addressed.
 Related to the bias-variance tradeoff, partly opposed to the scaling hypothesis and foundation models.
 
-Overfitting: a technical term referring to a model that captures noise in the data as if it were a true pattern.
+### Overfitting
+
+A technical term referring to a model that captures noise in the data as if it were a true pattern.
 Overfitting tends to lead to high performance on the training data but poor performance on the test data.
 If a model has overfitted also to the test data, it will also perform poorly on new data, i.e., it will not generalise well.
 This is a common occurrence if there has been data leakage between training, validation, and test data.
 
-Pearl’s Do-Calculus: Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
+### Pearl’s Do-Calculus
+
+Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
 It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.
 
-Prior knowledge: a term referring to information that is available to inform a learning process.
+### Prior knowledge
+
+A term referring to information that is available to inform a learning process.
 Often, this is the result of previous research.
 The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.
 
-Randomized Clinical Trials: Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
-Participants are randomly assigned to groups receiving different treatments, including a control group.
+### Randomized Clinical Trials
+
+Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
+Participants are randomly assigned to groups receiving different treatments, including a control group, which often receives a placebo or gold-standard treatment.
 To further minimise confounding factors, participants and administering doctors are often blinded to the treatment given.
 This method is considered the gold standard in clinical research for its ability to minimize bias and establish causality between a treatment and its outcomes.
 
-Scaling hypothesis: The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
+### Scaling hypothesis
+
+The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
 Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
 The enormous success of current Large Language Models has been attributed to scaling, with emergence of human-like language capabilities around the time of GPT-3.
 The ability to scale depends on several factors: the availability of data, parallelisation of training, adequate compute power with a parallel architecture, and a model architecture that can digest large amounts of data effectively.
 
-Structural Causal Models (SCMs): SCMs are a type of statistical model used to represent and analyze causal relationships.
+### Structural Causal Models (SCMs)
+
+SCMs are a type of statistical model used to represent and analyze causal relationships.
 They consist of variables and equations that describe how these variables interact causally.
 SCMs are particularly useful in causal inference as they allow for the analysis of how changes in one variable may cause changes in another.
 
-Underfitting: a technical term referring to a model that does not capture the complexity of the data.
+### Underfitting
+
+A technical term referring to a model that does not capture the complexity of the data.
 Underfitting tends to lead to poor performance on both the training and test data.
 
-Variance (machine learning): a technical term referring to the sensitivity of a model to the training data.
+### Variance (machine learning)
+
+A technical term referring to the sensitivity of a model to the training data.
 Describes how much the predictions of a model vary given different training data.
-High variance (low bias) in a model can lead to overfitting and thus harm generalisation.
-Conversely, low variance (high bias) can lead to underfitting and thus to a model that does not capture the complexity of the data.
+High variance (low bias) in a model can lead to [overfitting][Overfitting] and thus harm generalisation.
+Conversely, low variance (high bias) can lead to [underfitting][Underfitting] and thus to a model that does not capture the complexity of the data.
+See also the [bias-variance tradeoff][Bias-variance tradeoff].
 
 ## Acknowledgements {.page_break_before}
 
