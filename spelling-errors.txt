@@ -43,14 +43,14 @@ omics
 Orthogonally
 overactivation
 overfitted
-Overfitting
+overfitting
 pablormier
 parallelisation
 PCA
 PerMedCoE
 Philipp
 phosphoproteomic
-Pre
+pre
 priori
 Programme
 RAS
@@ -73,7 +73,7 @@ Theodoris
 tradeoff
 Travere
 UMAP
-Underfitting
+underfitting
 unfeasibly
 Vemurafenib
 Vis

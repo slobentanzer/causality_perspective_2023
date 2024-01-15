@@ -1,0 +1,1016 @@
+This manuscript
+(\href{https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/}{permalink})
+was automatically generated
+from \href{https://github.com/slobentanzer/causality_perspective_2023/tree/87770c7000b52697503e84194db45aba3c9b0ee1}{slobentanzer/causality\_perspective\_2023@87770c7}
+on January 15, 2024.
+
+\hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+\begin{itemize}
+\item
+  \textbf{Sebastian Lobentanzer}
+  \textsuperscript{\protect\hyperlink{correspondence}{✉}}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0003-3399-6695}{0000-0003-3399-6695}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/slobentanzer}{slobentanzer}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/slobentanzer}{slobentanzer}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\item
+  \textbf{Pablo Rodriguez-Mier}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-4938-4418}{0000-0002-4938-4418}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/pablormier}{pablormier}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\item
+  \textbf{Stefan Bauer}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0003-1712-060X}{0000-0003-1712-060X}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/Vis7i}{Vis7i}
+  Helmholtz AI and TU Munich, Munich, Germany
+\item
+  \textbf{Julio Saez-Rodriguez}
+  \textsuperscript{\protect\hyperlink{correspondence}{✉}}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-8552-8976}{0000-0002-8552-8976}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/saezrodriguez}{saezrodriguez}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/saezlab}{saezlab}
+  Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany
+\end{itemize}
+
+\leavevmode\vadjust pre{\hypertarget{correspondence}{}}%
+✉ --- Correspondence possible via \href{https://github.com/slobentanzer/causality_perspective_2023/issues}{GitHub Issues}
+or email to
+Sebastian Lobentanzer \textless sebastian.lobentanzer@gmail.com\textgreater,
+Julio Saez-Rodriguez \textless pub.saez@uni-heidelberg.de\textgreater.
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Correlation is not causation.
+As simple as this widely agreed-upon statement may seem, scientifically defining causality and using it to drive our modern biomedical research is immensely challenging.
+Since being described by Aristotle approximately 2500 years ago {[}\protect\hyperlink{ref-UFFRFvH4}{1}{]}, causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements {[}\protect\hyperlink{ref-peGxtHPM}{2},\protect\hyperlink{ref-w47lt0ah}{3},\protect\hyperlink{ref-712MuGug}{4}{]} and a resurgence in the field of machine learning {[}\protect\hyperlink{ref-12vzXD9U2}{5},\protect\hyperlink{ref-4Dq1NQZ8}{6}{]} only in recent times.
+In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.
+
+In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation {[}\protect\hyperlink{ref-IxBIB6CT}{7},\protect\hyperlink{ref-17kSbeSiE}{8},\protect\hyperlink{ref-17scpieH5}{9}{]}.
+
+Randomised clinical trials (\protect\hyperlink{randomized-clinical-trials}{Glossary}) show that, in a lower-dimensional context, we can reliably identify causal effects.
+By controlling ``all'' relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
+In the language of Pearl's Do-Calculus {[}\protect\hyperlink{ref-12GOinshI}{10}{]} (\protect\hyperlink{pearls-do-calculus}{Glossary}), we measure the outcome of, for instance, do(``Treat with Vemurafenib'') when conducting a clinical trial on V600E-positive melanoma {[}\protect\hyperlink{ref-muFRX2ZL}{11}{]}.
+However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
+The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results {[}\protect\hyperlink{ref-3e4s1VLp}{12},\protect\hyperlink{ref-15RkhPQiZ}{13}{]}, as well as in model explainability {[}\protect\hyperlink{ref-18RVn064W}{14}{]}.
+With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.
+We will elaborate on three main points:
+
+\begin{itemize}
+\item
+  biases (\protect\hyperlink{bias-machine-learning}{Glossary}) and what they mean for CR, particularly in the context of biomedical data
+\item
+  the role of prior knowledge (PK, \protect\hyperlink{prior-knowledge-1}{Glossary}) in CR and how to translate PK into suitable biases
+\item
+  the role of foundation models in molecular systems biology and their relationship to CR
+\end{itemize}
+
+\hypertarget{background}{%
+\subsection{Background}\label{background}}
+
+\hypertarget{causal-discovery-and-inference}{%
+\subsubsection{Causal discovery and inference}\label{causal-discovery-and-inference}}
+
+The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system \emph{a priori}.
+
+Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents {[}\protect\hyperlink{ref-1CPlHia5R}{15}{]}.
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem {[}\protect\hyperlink{ref-10mjWN2op}{16},\protect\hyperlink{ref-10AL1hWhU}{17}{]} (\protect\hyperlink{scaling-hypothesis}{Glossary}).
+
+Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
+This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
+Most inference mechanisms perform better when including PK at some point in the process, as has been observed in biomedical research {[}\protect\hyperlink{ref-qpg6x7P4}{18}{]}.
+This allows researchers to represent both the causal connections between variables and their directionality, which is required to understand how changes in one variable might lead to changes in another.
+For instance, in the case of the RAF-MEK-ERK signalling pathway, a graph would depict RAF activation leading to MEK activation, which in turn leads to ERK activation.
+This clear representation of directionality is important for causal inference, as it ensures that analyses focus on the effect of upstream changes on downstream outcomes.
+For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
+Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
+However, inference is also very sensitive to the completeness of the PK that is applied; most biomedical PK is far from complete {[}\protect\hyperlink{ref-TUhGg6tD}{19}{]}.
+For instance, the function of more than 95\% of all the known phosphorylation events that occur in human cells is currently unknown {[}\protect\hyperlink{ref-4VxTzwTj}{20},\protect\hyperlink{ref-yCFobrFQ}{21}{]}.
+In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the ``right'' biases (\protect\hyperlink{bias-machine-learning}{Glossary}) to apply.
+
+\hypertarget{the-ladder-of-causality}{%
+\subsubsection{The ladder of causality}\label{the-ladder-of-causality}}
+
+Orthogonally to the distinction between causal discovery and inference, we can also distinguish between different levels of causality.
+Pearl's ladder of causality roughly distinguishes three types of CR in increasing order of power: observation, intervention, and counterfactuals {[}\protect\hyperlink{ref-185mDnD0M}{22}{]}.
+While the inferences we wish to make in biomedical research are often of the counterfactual type (e.g., ``would RAF inhibition lead to decrease in ERK activation if the media contained Epidermal Growth Factors?''), the data we have available is typically observational (e.g., ``the levels of RAF and MEK activity are correlated'') and sometimes interventional (e.g., ``targeting RAF with CRISPR leads to a decrease in ERK activity'').
+To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study {[}\protect\hyperlink{ref-dJUlTjFg}{23}{]}.
+
+There are approaches to delineate interventional inference from observational data, such as the `natural experiments' framework {[}\protect\hyperlink{ref-w47lt0ah}{3},\protect\hyperlink{ref-712MuGug}{4}{]}.
+However, these approaches are by their nature even more data-hungry than when using interventional data, as they often do not use the full breadth of the dataset {[}\protect\hyperlink{ref-1A5MoTSGF}{24}{]}.
+Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution {[}\protect\hyperlink{ref-152yKY5w7}{25}{]}.
+Current developments of CR in the biomedical field thus mostly focus on these types of data.
+
+\hypertarget{deduction-and-induction}{%
+\subsubsection{Deduction and induction}\label{deduction-and-induction}}
+
+Lastly, in CR, we can also distinguish between deductive and inductive reasoning (\protect\hyperlink{deductive-vs.-inductive-reasoning}{Glossary}).
+Deductive reasoning is the process of deriving a conclusion from a set of fixed and known premises.
+``All men are mortal, Socrates is a man, therefore Socrates is mortal'' is a classic example of deductive reasoning.
+In biomedical research, this is typically the process of deriving a conclusion from a set of PK.
+For instance, having PK of the linear activation cascade EGFR-\textgreater RAS-\textgreater RAF-\textgreater MEK-\textgreater ERK-\textgreater Growth, and that Vemurafenib will inhibit RAF activity, allows us to deduce that giving Vemurafenib will inhibit growth of cancer cells {[}\protect\hyperlink{ref-muFRX2ZL}{11}{]}.
+
+Inductive reasoning, on the other hand, involves making generalisations from specific observations.
+Testing the hypothesis above, we apply Vemurafenib in a clinical trial of V600E-positive melanoma and find that it is clinically efficacious {[}\protect\hyperlink{ref-muFRX2ZL}{11}{]}.
+Commonly, we then use induction to infer from this limited cohort that the treatment may be effective in the entire population.
+We could further infer that Vemurafenib may be an effective remedy in other V600E-positive cancers as well, or that inhibiting this cascade may be a general mechanism of action of anti-cancer agents in cancers that display MAPK pathway overactivation {[}\protect\hyperlink{ref-1BSi2Dk6R}{26}{]}.
+In the molecular realm, we could further infer that the inhibition of other components of the cascade, such as EGFR or MEK, may also be promising target leads {[}\protect\hyperlink{ref-ZkFzi3Xl}{27}{]}.
+
+The main difference between deduction and induction is that the former is logically complete - i.e., if the premises are true and the argument is valid, the conclusion must also be true.
+However, deduction is also more limited in scope than induction.
+In biomedical research, we often have to rely on inductive reasoning because we cannot feasibly test all hypotheses in a deductive manner.
+In consequence, the \emph{inductive biases} we introduce into our models (i.e., those mechanisms in the model that help with inductive reasoning) are a pivotal part of performing CR in biomedical research.
+
+\hypertarget{bias}{%
+\subsection{Bias}\label{bias}}
+
+\hypertarget{meaning-and-examples-of-biases}{%
+\subsubsection{Meaning and examples of biases}\label{meaning-and-examples-of-biases}}
+
+Biases (\protect\hyperlink{bias-machine-learning}{Glossary}), generally, are systematic prejudices of a model towards certain outcomes.
+Humans make frequent use of biases to function in a complex world with limited cognitive resources {[}\protect\hyperlink{ref-1DMQH5kzt}{28}{]}.
+In fact, we often presume causality from observation (i.e., we ``jump to conclusions''), which is indicative of a strong inductive bias {[}\protect\hyperlink{ref-iWcDZtHu}{29}{]}.
+A good \emph{heuristic} is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
+
+In machine learning, we can distinguish between useful and harmful biases.
+Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, and confirmation bias {[}\protect\hyperlink{ref-B5WSzZkm}{30}{]}.
+While addressing harmful biases is a crucial part of machine learning, we will not discuss them further in this perspective.
+
+Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
+Since most models developed in biomedical research and the broader machine learning community are inductive models, one of the most discussed useful biases is \emph{inductive bias} {[}\protect\hyperlink{ref-2RptKLT2}{31}{]}.
+For instance, PK on protein interactions can impact inference on activation cascades; only upstream proteins can activate downstream proteins, not vice versa.
+
+\hypertarget{why-do-we-need-biases}{%
+\subsubsection{Why do we need biases?}\label{why-do-we-need-biases}}
+
+Humans will be the gold standard for common-sense reasoning for the foreseeable future.
+However, human reasoning is limited by our sensory and mnemonic capacity; we cannot reason about high-dimensional data since we can neither perceive it nor keep it in memory.
+Machine learning seems like the ideal solution, but the ``No Free Lunch'' theorems (\protect\hyperlink{no-free-lunch-theorems}{Glossary}) present a fundamental challenge: no single learning algorithm may be universally superior across all problem domains {[}\protect\hyperlink{ref-nT3xJkyD}{32}{]}.
+Although they have recently been challenged {[}\protect\hyperlink{ref-D3JIQ7Oe}{33}{]}, these theorems highlight the inherent difficulty in designing algorithms that generalise well from specific training data to new, unseen data.
+Inductive biases guide algorithms in making educated guesses about unseen data, thereby improving their generalisation capabilities {[}\protect\hyperlink{ref-11wELIlTc}{34}{]}.
+
+This need for inductive biases is particularly apparent in the realm of biomedicine {[}\protect\hyperlink{ref-1AZn5l2ah}{35}{]}.
+Biomedical research operates within a framework constrained by limited and often high-dimensional data, stemming from the high costs of experiments, the scarcity of samples, and the inherent complexity of biological systems.
+Coupled with the natural variability of biological measurements, these factors result in a low signal-to-noise ratio, making it challenging to discern meaningful patterns.
+Inductive biases direct the learning process towards more relevant solutions by incorporating assumptions that enable more effective learning and interpretation, ensuring that models are not just statistically sound but also biologically meaningful.
+
+Some central questions then arise:
+
+\begin{itemize}
+\item
+  How explicit should we be in introducing biases, i.e., should the model determine its own biases, or do we force them on the model?
+\item
+  How do we choose the right biases to introduce?
+\item
+  How do we evaluate the biases we introduce?
+\end{itemize}
+
+\hypertarget{bias-from-prior-knowledge}{%
+\subsection{Bias from prior knowledge}\label{bias-from-prior-knowledge}}
+
+The first question alone is highly debated in the wider field of machine learning; it is related to the concept of the bias-variance tradeoff (\protect\hyperlink{bias-variance-tradeoff}{Glossary}).
+The frequently quoted ``Bitter Lesson'' posits that we should refrain from inducing all but the most basic biases (\protect\hyperlink{bias-machine-learning}{Glossary}) in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth {[}\protect\hyperlink{ref-ydpntqD3}{36}{]}.
+However, it has been argued that many improvements that led to the models of today, such as convolution or attention (\protect\hyperlink{attention-deep-learning}{Glossary}), disprove this theory {[}\protect\hyperlink{ref-rh7nCPVE}{37}{]}, and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks {[}\protect\hyperlink{ref-eT8vyMzx}{38},\protect\hyperlink{ref-AT0GCO31}{39}{]}.
+
+In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK {[}\protect\hyperlink{ref-17scpieH5}{9},\protect\hyperlink{ref-11wELIlTc}{34},\protect\hyperlink{ref-URCTSFCA}{40},\protect\hyperlink{ref-T7D6XA6s}{41},\protect\hyperlink{ref-vm2M7mI5}{42}{]}.
+Considering these constraints, the question is not whether to include PK in our reasoning, but which knowledge, when, and how {[}\protect\hyperlink{ref-AT0GCO31}{39}{]}.
+
+\hypertarget{prior-knowledge}{%
+\subsubsection{Prior knowledge}\label{prior-knowledge}}
+
+PK (\protect\hyperlink{prior-knowledge-1}{Glossary}) refers to information or data that is available to inform a learning process, enhancing the performance of the trained models and their ability to generalise.
+It can be used to inform the inductive biases of a model, either explicitly through the design choices and assumptions embedded into the models, or implicitly through the data and methods used in training.
+For this to be possible, biomedical entities and relationships must be clearly defined and represented unambiguously.
+Additionally, the diversity in our tasks and knowledge sources requires a flexible representation.
+Knowledge representation frameworks can aid in this process {[}\protect\hyperlink{ref-tr1XjZ1R}{43}{]}.
+
+In the biomedical field, there is a rich tradition of documenting biological knowledge at various levels of detail and focusing on different aspects of biology.
+Detailed mechanistic models provide mathematical descriptions of the dynamic interactions at a molecular or cellular level.
+Genome-scale networks, including metabolic and gene regulatory networks, offer comprehensive views of metabolic processes and gene interactions {[}\protect\hyperlink{ref-s2EFuVEM}{44}{]}.
+Protein-protein interaction databases recapitulate either causal or non-causal interactions between proteins {[}\protect\hyperlink{ref-s2EFuVEM}{44}{]}.
+
+\hypertarget{modelling-on-prior-knowledge}{%
+\subsubsection{Modelling on prior knowledge}\label{modelling-on-prior-knowledge}}
+
+The integration of PK into models is a non-trivial but essential process for moving from correlation to causation.
+PK can be used to derive inductive biases either \emph{explicitly} or \emph{implicitly}.
+
+The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
+Ordinary Differential Equation (ODE) models, logic-based models, rule-based models, and constraint-based models {[}\protect\hyperlink{ref-94lBUqNp}{45}{]}, all of which are commonly used in systems biology, explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
+In the field of CR, Structural Causal Models (\protect\hyperlink{structural-causal-models-scms}{Glossary}) can be used when mechanisms are unknown {[}\protect\hyperlink{ref-4Dq1NQZ8}{6}{]}.
+Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK {[}\protect\hyperlink{ref-xjVh8IQ5}{46}{]}.
+
+In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
+Learning mechanisms intruduced as implicit biases can be simple (e.g., sparsity) or elaborate.
+Simple implicit biases include regularisation techniques that help models generalise by preventing overfitting {[}\protect\hyperlink{ref-kX2zf6UE}{47}{]} (\protect\hyperlink{overfitting}{Glossary}), or decisions about the types of prior distributions in bayesian models {[}\protect\hyperlink{ref-cKqFMtL2}{48}{]}.
+More elaborate are neural networks which employ specific architectural designs, such as Convolutional Neural Networks (CNNs) {[}\protect\hyperlink{ref-bZ3hxYDX}{49}{]}, Recurrent Neural Networks (RNNs) {[}\protect\hyperlink{ref-x4dbEYer}{50}{]}, or Transformers {[}\protect\hyperlink{ref-rh7nCPVE}{37}{]}.
+Their advantages and disadvantages are inverse to those of explicit models {[}\protect\hyperlink{ref-xjVh8IQ5}{46}{]}.
+
+As a result, choosing the best way to derive inductive biases from PK is not straightforward.
+Models that explicitly incorporate PK are more interpretable and can generalise effectively even when data is scarce {[}\protect\hyperlink{ref-xjVh8IQ5}{46}{]}.
+However, they are constrained by the accuracy of the existing knowledge and often struggle to scale to larger datasets {[}\protect\hyperlink{ref-6W1y3ZrT}{51},\protect\hyperlink{ref-OlEfQKqu}{52}{]}.
+Models with implicit biases, on the other hand, particularly those typically found in deep learning architectures, excel at learning from large, high-dimensional datasets and offer flexibility across diverse domains.
+Yet, they suffer from limited interpretability, are prone to overfitting, and typically do not generalise well to scenarios not encountered during training, such as predicting the effects of new drugs or drug combinations, largely due to their lack of causal knowledge.
+
+Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce {[}\protect\hyperlink{ref-bMaT0Vyc}{53},\protect\hyperlink{ref-KZ19R8ZY}{54},\protect\hyperlink{ref-aLhTIs9}{55},\protect\hyperlink{ref-4smautjA}{56},\protect\hyperlink{ref-YOm0bqVR}{57},\protect\hyperlink{ref-JkqcQgM7}{58},\protect\hyperlink{ref-1Xej0UJj}{59}{]}.
+While their implementation details differ, they often employ two learners side-by-side, one of which is driven by explicit biases from PK, while the other learns from data.
+Frequently, these learners are also coupled in an end-to-end learning process, i.e., they ``learn together.'' This mode of learning aims to benefit from the ``bias-free'' nature of neural networks while simultaneously improving model performance in the face of scarce data via the added explicit bias.
+
+\hypertarget{causality-in-foundation-models}{%
+\subsection{Causality in foundation models}\label{causality-in-foundation-models}}
+
+There has been an enormous spike of interest in attention-based neural network models, in large part due to the success of Large Language Models (LLMs, \protect\hyperlink{large-language-models}{Glossary}).
+While the high performance of LLMs is based on myriad technical improvements, the introduction of attention (\protect\hyperlink{attention-deep-learning}{Glossary}) as an architectural bias (\protect\hyperlink{bias-machine-learning}{Glossary}) has been a major contributor to their success {[}\protect\hyperlink{ref-rh7nCPVE}{37}{]}.
+This has led to the development of attention-based molecular models (most commonly for gene expression), which can also be considered ``GPT'' models: Generative Pre-trained Transformers {[}\protect\hyperlink{ref-gAQyFCbW}{60},\protect\hyperlink{ref-VmzWBJUJ}{61},\protect\hyperlink{ref-r5y0HbhJ}{62}{]}.
+Attention as a learning mechanism enables the integration of non-local information in a flexible manner.
+In a molecular model that reasons about gene expression, such as Geneformer, attention allows the integration of distant regulatory elements {[}\protect\hyperlink{ref-VmzWBJUJ}{61}{]}.
+Notably, this mechanism comes with a computational cost that increases exponentially with respect to the length of the input sequence {[}\protect\hyperlink{ref-1DSO3BUly}{63}{]}.
+
+The generalist capabilities of LLMs have led to the designation of ``foundation models'' {[}\protect\hyperlink{ref-U6LC2Ufe}{64}{]}.
+Foundation models (\protect\hyperlink{foundation-model}{Glossary}) are models that achieve high performance by training a generic architecture on extremely large amounts of data in a self-supervised manner (\protect\hyperlink{self-supervised-learning}{Glossary}).
+They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
+However, recent molecular foundation model benchmarks highlight clear discrepancies between the ``foundational'' aspirations of the pre-trained models and the real-world evaluation of their performance {[}\protect\hyperlink{ref-WEYqVcYG}{65},\protect\hyperlink{ref-OFczH7ba}{66}{]}.
+Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
+State-of-the-art methods such as scVI {[}\protect\hyperlink{ref-1ELFXHA51}{67}{]} and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
+However, these are early models, and it could still be argued that, in line with the scaling hypothesis (\protect\hyperlink{scaling-hypothesis}{Glossary}), models may improve via a combination of the right architecture with sufficient amounts of data {[}\protect\hyperlink{ref-1GGrqZlzU}{68}{]}.
+
+Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
+Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
+The question whether scaling will lead to the emergence of ``foundational behaviour'' in molecular models is still a matter of much debate.
+
+\hypertarget{attention---and-large-amounts-of-data---is-all-you-need}{%
+\subsubsection{Attention - and large amounts of data - is all you need?}\label{attention---and-large-amounts-of-data---is-all-you-need}}
+
+Given enough data to train on - and ample funds for compute - is attention ``all you need'' to induce reliable biases in your model?
+While there are doubts regarding the reasoning capabilities of LLMs, GPT arguably ``understands'' language very well already, to the point where it can flawlessly communicate and synthesise information {[}\protect\hyperlink{ref-19EQh1DNG}{69}{]}.
+This is what the term ``foundation model'' implies: the model has derived a generalisable representation of language, a tool that can be fine-tuned for a variety of language-related tasks.
+This behaviour is not possible without assuming some form of causality, even if it is not explicitly encoded in the model {[}\protect\hyperlink{ref-10mjWN2op}{16}{]}.
+
+In this light, what are the reasons to be sceptical about the capacity of molecular foundation models to understand the ``grammar'' of the cell?
+
+\textbf{Explainability}: For one, large transformer models (i.e., billions of parameters) are not explainable due to their high complexity.
+As such, there is often no way to scrutinise their reasoning beyond the output they produce {[}\protect\hyperlink{ref-1GbAsSOZV}{70},\protect\hyperlink{ref-15hYXC3QB}{71}{]}.
+What seems simple in the case of language models - the famous Turing test can be performed by any human with a basic understanding of language - is exceedingly difficult in the molecular space, where many causal relationships are still unknown {[}\protect\hyperlink{ref-19EQh1DNG}{69}{]}.
+Yet the only way to scrutinise and subsequently improve the reasoning capabilities of a model is precisely this explicit validation of its predictions in an interpretable setting.
+
+While the creation of explicit molecular models (e.g., logic, structural causal, or ODE-based models) and the self-supervised training of molecular foundation models are methodically very different, both can provide a hypothesis on causal structure that can be formulated as a network.
+Theodoris et al.~explore the attention layers of their Geneformer foundation model to explain the model's reasoning {[}\protect\hyperlink{ref-VmzWBJUJ}{61}{]}.
+While some layers show clear patterns of attention, such as attending to highly connected or highly expressed genes, other layers are not as readily interpretable, much less so than explicit molecular models.
+
+\textbf{Benchmarking}: Whether these complex layers reflect the true complexity of the underlying biology or are rather evidence for overfitting (\protect\hyperlink{overfitting}{Glossary}) to the training data is not clear.
+One argument in favour of overfitting is the poor generalisation of the model in independent benchmarks {[}\protect\hyperlink{ref-WEYqVcYG}{65},\protect\hyperlink{ref-OFczH7ba}{66}{]}.
+To determine whether molecular foundation models indeed capture generalisable causal representations of biology, dedicated benchmarks are needed.
+
+\textbf{Causal bias}: The GPT-3 architecture that led to the recent breakthrough in LLM capabilities employs ``causal self-attention,'' describing an implicit architectural bias that prevents the model from ``looking into the future'': for predicting the next token, only the previous tokens in the sentence can be used {[}\protect\hyperlink{ref-1DSO3BUly}{63}{]}.
+This leverages the implicit causality present in language, which incidentally is similar to one of the earliest formal descriptions of causality, that ``the effect has regularly followed the cause in the past'' {[}\protect\hyperlink{ref-WmT8ZU5I}{72}{]}.
+Compared to language, the data that form the input of molecular foundation models do not implicitly contain causal information.
+The individual cells are in general not on a known trajectory, and the genes that are masked as part of the training objective are masked at random, not because they are downstream (in some form) of the genes used for prediction.
+This fundamental difference between language and molecular models has so far not been explored theoretically or empirically.
+
+\hypertarget{causal-latent-spaces}{%
+\subsubsection{Causal latent spaces}\label{causal-latent-spaces}}
+
+Due to the fundamental limitation of human perception, dimensionality reduction is a popular workflow for data interpretation, typically via methods such as PCA, t-SNE, or UMAP {[}\protect\hyperlink{ref-13qoNo4Fj}{73}{]}.
+The hope is that exploration and explanation in the lower-dimensional embedding space may be less challenging than in the original data, which assumes that the most important aspects of variability in the original data are captured in the reduced dimensions {[}\protect\hyperlink{ref-AO84A4MA}{74}{]}.
+However, without explicit supervision, which is rare in typical biomedical datasets, the resulting latent spaces are rarely interpretable, and do not lend themselves to causal interpretation.
+In addition, they often suffer from biases that result from technical rather than biological factors {[}\protect\hyperlink{ref-6McXkHVo}{75}{]}.
+In consequence, biological insight during the exploration of these latent spaces is often challenging due to the dominance of biases over the biological generative mechanism.
+
+Performing causal inference in latent spaces could potentially solve some of these issues.
+``Moving through the latent space'' reduces the number of variables that change upon intervention, making exploration simpler in theory.
+In practice, however, ease and sensibility of exploration depend completely on whether the inductive biases in the embedding process capture the underlying biology.
+In addition, latent spaces have no trivial connection to the real-world measurements they are based on.
+Each model instance generates its own, independent latent space; in consequence, the exploration of latent spaces is challenging and time-consuming.
+
+Even if a given latent space can be explored, there is often no guarantee that interpolation between sensible latent representations also leads to sensible results.
+As an example, consider a prevailing issue of visual generative models in drawing human hands: images of hands typically involve mangled anatomy and an incorrect number of digits {[}\protect\hyperlink{ref-iE5sGWcB}{76}{]}.
+Even though there is a section in the latent space that represents hands, this does not represent the concept of a hand, but rather is guided by learning on many diverse pictures of hands.
+A section of this latent space may represent only a finger, and carry some information that next to a finger there usually is another finger.
+However, when generating the image, there is no mechanism to keep track of how many digits to add to any generated hand, leading to wrong anatomy.
+Similarly, when exploring the latent space of a model of molecular signalling, there may be no guarantees that the model respects the concept of a given pathway when generating the signalling molecules involved.
+
+If mastered, exploring and performing interventions in latent spaces promises many benefits: better generalisation and improved sample efficiency {[}\protect\hyperlink{ref-T7D6XA6s}{41}{]}, predicting the outcomes of interventions not observed at training time {[}\protect\hyperlink{ref-MhOZ3PWC}{77}{]}, or insights into the effect of different inductive biases in the model {[}\protect\hyperlink{ref-FVLAWGsX}{78}{]}.
+However, to achieve this, gaining a better understanding of properties of the learned embeddings and variables is essential, for instance by performing ``imagined interventions'' in the latent space {[}\protect\hyperlink{ref-r5mjeIhV}{79}{]} or by using model uncertainty for guiding the optimisation process in the latent space {[}\protect\hyperlink{ref-eEfUqiI4}{80}{]}.
+Of note, many of the proposed solutions for more explainable latent spaces depend on architectures that may scale significantly worse than transformers {[}\protect\hyperlink{ref-6W1y3ZrT}{51},\protect\hyperlink{ref-OlEfQKqu}{52}{]}.
+
+\hypertarget{discussion-conclusion}{%
+\subsection{Discussion / Conclusion}\label{discussion-conclusion}}
+
+\hypertarget{dichotomy-of-scaling-data-driven-and-bias-injection-knowledge-driven}{%
+\subsubsection{Dichotomy of scaling (data-driven) and bias injection (knowledge-driven)}\label{dichotomy-of-scaling-data-driven-and-bias-injection-knowledge-driven}}
+
+The debate between adopting scaling strategies (\protect\hyperlink{scaling-hypothesis}{Glossary}) versus the injection of biases (\protect\hyperlink{bias-machine-learning}{Glossary}) from PK (\protect\hyperlink{prior-knowledge-1}{Glossary}) highlights a fundamental tension in modern biomedical research.
+The ``Bitter Lesson'' suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
+However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
+Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
+Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
+Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the ``No Free Lunch'' theorems, \protect\hyperlink{no-free-lunch-theorems}{Glossary}), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
+
+\hypertarget{theoretical-foundations-interventions-and-inductive-biases}{%
+\subsubsection{Theoretical foundations: interventions and inductive biases}\label{theoretical-foundations-interventions-and-inductive-biases}}
+
+Theoretical work emphasises the need for interventions in causal discovery but does not yet address the influence of inductive biases {[}\protect\hyperlink{ref-S1VP202R}{81}{]}.
+The number of required interventions might be reduced significantly when complemented with high-quality observational data and appropriate biases, as suggested by neural causal models {[}\protect\hyperlink{ref-7HxYpmt4}{82}{]}.
+However, the precise nature of these biases and their impact remains understudied theoretically as well as empirically.
+The comparative effectiveness and theoretical underpinnings of explicit models versus implicit models are particularly understudied.
+Foundation models (\protect\hyperlink{foundation-model}{Glossary}) have embraced causal self-attention as a step towards integrating causality, but this alone may be insufficient.
+Empirical studies and more robust theories are needed to understand these dynamics, including the potential existence and validation of causal latent spaces.
+
+\hypertarget{data-types-observational-vs.-interventional}{%
+\subsubsection{Data types: observational vs.~interventional}\label{data-types-observational-vs.-interventional}}
+
+The choice between training on observational versus interventional data (or a mixture of both) is critical in the development of models.
+While large-scale data collection is vital, the type of data collected can significantly influence model performance and the ability to generalise and make accurate causal inferences.
+The complexity and high cost of collecting data requires an efficient experimental design to maximise causal discovery with limited resources.
+Observational data are more readily available but may lead to confounded or biassed insights.
+Interventional data, while more challenging to obtain, provide clearer causal pathways and can greatly enhance the model's understanding of underlying biological processes {[}\protect\hyperlink{ref-3MP7gokd}{83},\protect\hyperlink{ref-zXrfFfft}{84}{]}.
+A balanced approach, possibly incorporating both observational and interventional data, coupled with mechanisms for deciding the right number and type of interventions, might provide a more nuanced understanding and improve model robustness and interpretability.
+
+\hypertarget{foundation-models-architectural-biases-and-the-no-free-lunch-theorems}{%
+\subsubsection{Foundation models: architectural biases and the No Free Lunch theorems}\label{foundation-models-architectural-biases-and-the-no-free-lunch-theorems}}
+
+Foundation models challenge the ``No Free Lunch'' theorems by suggesting that certain architectural biases, learned from vast amounts of data, can yield generalisable and high-performing models {[}\protect\hyperlink{ref-D3JIQ7Oe}{33}{]}.
+These biases, and how to transfer them from LLMs (\protect\hyperlink{large-language-models}{Glossary}) to systems biology, necessitate careful evaluation.
+As the biomedical field looks to these models for answers, it becomes crucial to develop frameworks that facilitate rapid development and exploration of ideas {[}\protect\hyperlink{ref-tr1XjZ1R}{43},\protect\hyperlink{ref-Ex1JrMxh}{85}{]}.
+A crucial aspect of these frameworks will be establishing benchmarks in the face of missing biological ground truth.
+
+\hypertarget{systems-biology-and-causality---finding-a-balance}{%
+\subsubsection{Systems biology and causality - finding a balance}\label{systems-biology-and-causality---finding-a-balance}}
+
+Systems biology has historically followed both knowledge-driven (bottom-up) and data-driven (top-down) approaches.
+Bottom-up systems biology, aiming to understand specific molecular mechanisms driving biological phenomena, has \emph{de facto} been doing CR, despite both fields being largely disconnected.
+Meanwhile, top-down systems biology, inspired more by machine learning principles, has struggled with moving from correlation to causality.
+New methods and models offer the potential to converge these complementary approaches and scale our understanding to larger, more complex systems.
+However, it remains to be seen whether the future of biological modelling will be dominated by the generation of vast datasets for generalist models or by more nuanced, bias-inclusive architectures.
+
+While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
+Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
+The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.
+
+\hypertarget{glossary}{%
+\subsection{Glossary}\label{glossary}}
+
+\hypertarget{attention-deep-learning}{%
+\subsubsection{Attention (deep learning)}\label{attention-deep-learning}}
+
+A mechanism in deep learning that allows the model to focus on specific parts of the input data.
+Attention mechanisms are often used in natural language processing to focus on specific words in a sentence, but can also be used in other domains.
+
+\hypertarget{bias-machine-learning}{%
+\subsubsection{Bias (machine learning)}\label{bias-machine-learning}}
+
+Bias can be understood in two ways in the context of machine learning.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The first definition, and the one predominantly used in this Perspective, is also referred to as statistical bias; a technical term referring to the assumptions made by a model to make predictions.
+  This bias is a necessary part of any machine learning model.
+  A model with high bias (low variance) pays very little attention to the training data and oversimplifies the model, which can lead to \protect\hyperlink{underfitting}{underfitting}.
+  This means it does not capture the complexity of the data and fails to learn the underlying patterns effectively.
+  Conversely, a model with low bias (high variance) makes complex assumptions to fit the data closely, which can lead to \protect\hyperlink{overfitting}{overfitting}, where the model captures noise in the data as if it were a true pattern.
+  See also the \protect\hyperlink{bias-variance-tradeoff}{bias-variance tradeoff}.
+\item
+  The second definition is also known as algorithmic bias, and refers to the systematic and repeatable errors in a model due to faulty assumptions or data.
+  It often reflect existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
+  As such, algorithmic bias can result from any stage in model training, from data collection to model deployment.
+\end{enumerate}
+
+\hypertarget{bias-variance-tradeoff}{%
+\subsubsection{Bias-variance tradeoff}\label{bias-variance-tradeoff}}
+
+The concept in machine learning that \protect\hyperlink{bias-machine-learning}{bias} and \protect\hyperlink{variance-machine-learning}{variance} of a model are inversely related.
+The term implies that an optimal model finds a balance between bias (impact of the model on predictions) and variance (impact of the data on predictions).
+This balance depends on the complexity of model and data.
+
+\hypertarget{deductive-vs.-inductive-reasoning}{%
+\subsubsection{Deductive vs.~Inductive Reasoning}\label{deductive-vs.-inductive-reasoning}}
+
+Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
+Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.
+
+\hypertarget{do-calculus}{%
+\subsubsection{Do-Calculus}\label{do-calculus}}
+
+See Pearl's Do-Calculus.
+
+\hypertarget{foundation-model}{%
+\subsubsection{Foundation model}\label{foundation-model}}
+
+A model that is trained on a large amount of data and can be used as a starting point for further model development (also referred to as fine-tuning).
+Foundation models are assumed to have learned generalisable patterns from their input data.
+To achieve this, they require large amounts of data and compute power.
+
+\hypertarget{large-language-models}{%
+\subsubsection{Large Language Models}\label{large-language-models}}
+
+Large Language Models are advanced AI models trained on extensive text data.
+They are capable of understanding and generating human-like text, making them useful in various applications like translation, summarization, and conversation.
+LLMs leverage vast amounts of training data to grasp nuances of language, context, and even some elements of human communication.
+They are the first commercially successful example of foundation models.
+
+\hypertarget{no-free-lunch-theorems}{%
+\subsubsection{`No Free Lunch' Theorems}\label{no-free-lunch-theorems}}
+
+These theorems in optimization and machine learning suggest that no single algorithm is best for every problem.
+The performance of an algorithm is contingent on the specificities of the task and data at hand.
+This highlights the importance of choosing or designing algorithms that are well-suited to the particular characteristics of the problem being addressed.
+Related to the bias-variance tradeoff, partly opposed to the scaling hypothesis and foundation models.
+
+\hypertarget{overfitting}{%
+\subsubsection{Overfitting}\label{overfitting}}
+
+A technical term referring to a model that captures noise in the data as if it were a true pattern.
+Overfitting tends to lead to high performance on the training data but poor performance on the test data.
+If a model has overfitted also to the test data, it will also perform poorly on new data, i.e., it will not generalise well.
+This is a common occurrence if there has been data leakage between training, validation, and test data.
+
+\hypertarget{pearls-do-calculus}{%
+\subsubsection{Pearl's Do-Calculus}\label{pearls-do-calculus}}
+
+Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
+It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.
+
+\hypertarget{prior-knowledge-1}{%
+\subsubsection{Prior knowledge}\label{prior-knowledge-1}}
+
+A term referring to information that is available to inform a learning process.
+Often, this is the result of previous research.
+The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.
+
+\hypertarget{randomized-clinical-trials}{%
+\subsubsection{Randomized Clinical Trials}\label{randomized-clinical-trials}}
+
+Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
+Participants are randomly assigned to groups receiving different treatments, including a control group, which often receives a placebo or gold-standard treatment.
+To further minimise confounding factors, participants and administering doctors are often blinded to the treatment given.
+This method is considered the gold standard in clinical research for its ability to minimize bias and establish causality between a treatment and its outcomes.
+
+\hypertarget{scaling-hypothesis}{%
+\subsubsection{Scaling hypothesis}\label{scaling-hypothesis}}
+
+The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
+Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
+The enormous success of current Large Language Models has been attributed to scaling, with emergence of human-like language capabilities around the time of GPT-3.
+The ability to scale depends on several factors: the availability of data, parallelisation of training, adequate compute power with a parallel architecture, and a model architecture that can digest large amounts of data effectively.
+
+\hypertarget{self-supervised-learning}{%
+\subsubsection{Self-supervised learning}\label{self-supervised-learning}}
+
+A type of machine learning where the model learns from the data itself, without the need for human labelling.
+This is achieved by training the model to predict certain properties of the data, such as the next word in a sentence, or the next frame in a video.
+Self-supervised learning is often used in the pre-training of \protect\hyperlink{foundation-model}{foundation models}.
+It typically requires a specific mechanism in the model to account for the lack of labelled data, such as the masking applied in the training of \protect\hyperlink{large-language-models}{Large Language Models}.
+
+\hypertarget{structural-causal-models-scms}{%
+\subsubsection{Structural Causal Models (SCMs)}\label{structural-causal-models-scms}}
+
+SCMs are a type of statistical model used to represent and analyze causal relationships.
+They consist of variables and equations that describe how these variables interact causally.
+SCMs are particularly useful in causal inference as they allow for the analysis of how changes in one variable may cause changes in another.
+
+\hypertarget{underfitting}{%
+\subsubsection{Underfitting}\label{underfitting}}
+
+A technical term referring to a model that does not capture the complexity of the data.
+Underfitting tends to lead to poor performance on both the training and test data.
+
+\hypertarget{variance-machine-learning}{%
+\subsubsection{Variance (machine learning)}\label{variance-machine-learning}}
+
+A technical term referring to the sensitivity of a model to the training data.
+Describes how much the predictions of a model vary given different training data.
+High variance (low bias) in a model can lead to \protect\hyperlink{overfitting}{overfitting} and thus harm generalisation.
+Conversely, low variance (high bias) can lead to \protect\hyperlink{underfitting}{underfitting} and thus to a model that does not capture the complexity of the data.
+See also the \protect\hyperlink{bias-variance-tradeoff}{bias-variance tradeoff}.
+
+\hypertarget{acknowledgements}{%
+\subsection{Acknowledgements}\label{acknowledgements}}
+
+We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.
+
+\hypertarget{funding}{%
+\subsection{Funding}\label{funding}}
+
+This work was supported by the European Union's Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).
+
+\hypertarget{conflict-of-interest}{%
+\subsection{Conflict of Interest}\label{conflict-of-interest}}
+
+JSR reports funding from GSK, Pfizer, and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer, and Grunenthal.
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-UFFRFvH4}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{\textbf{ORGANON OR LOGICAL TREATISES O}
+\CSLBlock{Aristotle, Octavius Freire 1816?-1873 Owen} \emph{Wentworth Press} (2016)
+\CSLBlock{ISBN: 9781372537233}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-peGxtHPM}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{\textbf{Causality}
+\CSLBlock{Judea Pearl} \emph{Cambridge University Press} (2009-09-14) \url{https://doi.org/ggd72q}
+\CSLBlock{DOI: \href{https://doi.org/10.1017/cbo9780511803161}{10.1017/cbo9780511803161}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-w47lt0ah}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{\textbf{Identification of Causal Effects Using Instrumental Variables}
+\CSLBlock{Joshua D Angrist, Guido W Imbens, Donald B Rubin} \emph{Journal of the American Statistical Association} (1996-06) \url{https://doi.org/gdz4f4}
+\CSLBlock{DOI: \href{https://doi.org/10.1080/01621459.1996.10476902}{10.1080/01621459.1996.10476902}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-712MuGug}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{\textbf{Myth and measurement: the new economics of the minimum wage}
+\CSLBlock{David E Card, Alan B Krueger} \emph{Princeton University Press} (2016)
+\CSLBlock{ISBN: 9781400880874}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-12vzXD9U2}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{\textbf{Causal Machine Learning: A Survey and Open Problems}
+\CSLBlock{Jean Kaddour, Aengus Lynch, Qi Liu, Matt J Kusner, Ricardo Silva} (2022) \url{https://arxiv.org/abs/2206.15475}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-4Dq1NQZ8}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{\textbf{Causal machine learning for single-cell genomics}
+\CSLBlock{Alejandro Tejada-Lapuerta, Paul Bertin, Stefan Bauer, Hananeh Aliee, Yoshua Bengio, Fabian J Theis} \emph{arXiv} (2023) \url{https://doi.org/gtb97p}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2310.14935}{10.48550/arxiv.2310.14935}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-IxBIB6CT}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{\textbf{A map of human genome variation from population-scale sequencing} \emph{Nature} (2010-10-27) \url{https://doi.org/fmk7rw}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nature09534}{10.1038/nature09534} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20981092}{20981092} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3042601}{PMC3042601}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-17kSbeSiE}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{\textbf{Causality in digital medicine}
+\CSLBlock{Nature Communications} (2021-09-15) \url{https://doi.org/gtcfvh}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-021-25743-9}{10.1038/s41467-021-25743-9} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34526509}{34526509} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8443583}{PMC8443583}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-17scpieH5}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{\textbf{The perpetual motion machine of AI-generated data and the distraction of ChatGPT-as-scientist}
+\CSLBlock{Jennifer Listgarten} \emph{arXiv} (2023) \url{https://doi.org/gs8pnp}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2312.00818}{10.48550/arxiv.2312.00818}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-12GOinshI}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{\textbf{The Do-Calculus Revisited}
+\CSLBlock{Judea Pearl} \emph{arXiv} (2012) \url{https://doi.org/gtbf4r}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1210.4852}{10.48550/arxiv.1210.4852}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-muFRX2ZL}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{\textbf{Improved Survival with Vemurafenib in Melanoma with BRAF V600E Mutation}
+\CSLBlock{Paul B Chapman, Axel Hauschild, Caroline Robert, John B Haanen, Paolo Ascierto, James Larkin, Reinhard Dummer, Claus Garbe, Alessandro Testori, Michele Maio, \ldots{} Grant A McArthur} \emph{New England Journal of Medicine} (2011-06-30) \url{https://doi.org/dsbxxt}
+\CSLBlock{DOI: \href{https://doi.org/10.1056/nejmoa1103782}{10.1056/nejmoa1103782} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/21639808}{21639808} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549296}{PMC3549296}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-3e4s1VLp}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{\textbf{Reliable interpretability of biology-inspired deep neural networks}
+\CSLBlock{Wolfgang Esser-Skala, Nikolaus Fortelny} \emph{npj Systems Biology and Applications} (2023-10-10) \url{https://doi.org/gtb95c}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41540-023-00310-8}{10.1038/s41540-023-00310-8} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37816807}{37816807} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10564878}{PMC10564878}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-15RkhPQiZ}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{\textbf{Structural Identifiability of Systems Biology Models: A Critical Comparison of Methods}
+\CSLBlock{Oana-Teodora Chis, Julio R Banga, Eva Balsa-Canto} \emph{PLoS ONE} (2011-11-22) \url{https://doi.org/fch6rc}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pone.0027755}{10.1371/journal.pone.0027755} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/22132135}{22132135} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222653}{PMC3222653}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-18RVn064W}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{\textbf{The role of causality in explainable artificial intelligence}
+\CSLBlock{Gianluca Carloni, Andrea Berti, Sara Colantonio} \emph{arXiv} (2023) \url{https://doi.org/gtb95k}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2309.09901}{10.48550/arxiv.2309.09901}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1CPlHia5R}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{\textbf{Causal Structure Learning}
+\CSLBlock{Christina Heinze-Deml, Marloes H Maathuis, Nicolai Meinshausen} \emph{Annual Review of Statistics and Its Application} (2018-03-07) \url{https://doi.org/ggh4pj}
+\CSLBlock{DOI: \href{https://doi.org/10.1146/annurev-statistics-031017-100630}{10.1146/annurev-statistics-031017-100630}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-10mjWN2op}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{\textbf{Can Foundation Models Talk Causality?}
+\CSLBlock{Moritz Willig, Matej Zečević, Devendra Singh Dhami, Kristian Kersting} \emph{arXiv} (2022) \url{https://doi.org/gtb9wb}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2206.10591}{10.48550/arxiv.2206.10591}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-10AL1hWhU}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{\textbf{The Scaling Hypothesis}
+\CSLBlock{Gwern Branwen} (2020-05-28) \url{https://gwern.net/scaling-hypothesis}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-qpg6x7P4}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{\textbf{Inferring causal molecular networks: empirical assessment through a community-based effort}
+\CSLBlock{Steven M Hill, Laura M Heiser, Thomas Cokelaer, Michael Unger, Nicole K Nesser, Daniel E Carlin, Yang Zhang, Artem Sokolov, Evan O Paull, \ldots{} Sach Mukherjee} \emph{Nature Methods} (2016-02-22) \url{https://doi.org/f3t7t4}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nmeth.3773}{10.1038/nmeth.3773} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26901648}{26901648} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4854847}{PMC4854847}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-TUhGg6tD}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{\textbf{Integrating knowledge and omics to decipher mechanisms via large‐scale models of signaling networks}
+\CSLBlock{Martin Garrido‐Rodriguez, Katharina Zirngibl, Olga Ivanova, Sebastian Lobentanzer, Julio Saez‐Rodriguez} \emph{Molecular Systems Biology} (2022-07) \url{https://doi.org/gtb9v8}
+\CSLBlock{DOI: \href{https://doi.org/10.15252/msb.202211036}{10.15252/msb.202211036} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35880747}{35880747} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9316933}{PMC9316933}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-4VxTzwTj}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{\textbf{Illuminating the dark phosphoproteome}
+\CSLBlock{Elise J Needham, Benjamin L Parker, Timur Burykin, David E James, Sean J Humphrey} \emph{Science Signaling} (2019-01-22) \url{https://doi.org/gf8c3h}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/scisignal.aau8645}{10.1126/scisignal.aau8645} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30670635}{30670635}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-yCFobrFQ}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{\textbf{The functional landscape of the human phosphoproteome}
+\CSLBlock{David Ochoa, Andrew F Jarnuczak, Cristina Viéitez, Maja Gehre, Margaret Soucheray, André Mateus, Askar A Kleefeldt, Anthony Hill, Luz Garcia-Alonso, Frank Stein, \ldots{} Pedro Beltrao} \emph{Nature Biotechnology} (2019-12-09) \url{https://doi.org/ggd8n7}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-019-0344-3}{10.1038/s41587-019-0344-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31819260}{31819260} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7100915}{PMC7100915}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-185mDnD0M}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{\textbf{The book of why: the new science of cause and effect}
+\CSLBlock{Judea Pearl, Dana Mackenzie} \emph{Basic Books} (2018)
+\CSLBlock{ISBN: 9780465097616}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-dJUlTjFg}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{\textbf{Causal inference in statistics: An overview}
+\CSLBlock{Judea Pearl} \emph{Statistics Surveys} (2009-01-01) \url{https://doi.org/drt748}
+\CSLBlock{DOI: \href{https://doi.org/10.1214/09-ss057}{10.1214/09-ss057}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1A5MoTSGF}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{\textbf{Regression discontinuity designs: A guide to practice}
+\CSLBlock{Guido W Imbens, Thomas Lemieux} \emph{Journal of Econometrics} (2008-02) \url{https://doi.org/bzx7rb}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.jeconom.2007.05.001}{10.1016/j.jeconom.2007.05.001}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-152yKY5w7}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{\textbf{Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens}
+\CSLBlock{Atray Dixit, Oren Parnas, Biyu Li, Jenny Chen, Charles P Fulco, Livnat Jerby-Arnon, Nemanja D Marjanovic, Danielle Dionne, Tyler Burks, Raktima Raychowdhury, \ldots{} Aviv Regev} \emph{Cell} (2016-12) \url{https://doi.org/f9prjd}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.cell.2016.11.038}{10.1016/j.cell.2016.11.038} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27984732}{27984732} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5181115}{PMC5181115}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1BSi2Dk6R}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{\textbf{Vemurafenib: the first drug approved for BRAF-mutant cancer}
+\CSLBlock{Gideon Bollag, James Tsai, Jiazhong Zhang, Chao Zhang, Prabha Ibrahim, Keith Nolop, Peter Hirth} \emph{Nature Reviews Drug Discovery} (2012-10-12) \url{https://doi.org/f4b975}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrd3847}{10.1038/nrd3847} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/23060265}{23060265}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ZkFzi3Xl}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{\textbf{Targeting the ERK Signaling Pathway in Melanoma}
+\CSLBlock{Paola Savoia, Paolo Fava, Filippo Casoni, Ottavio Cremona} \emph{International Journal of Molecular Sciences} (2019-03-25) \url{https://doi.org/gtb9v9}
+\CSLBlock{DOI: \href{https://doi.org/10.3390/ijms20061483}{10.3390/ijms20061483} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30934534}{30934534} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6472057}{PMC6472057}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1DMQH5kzt}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{\textbf{A Theory of Causal Learning in Children: Causal Maps and Bayes Nets.}
+\CSLBlock{Alison Gopnik, Clark Glymour, David M Sobel, Laura E Schulz, Tamar Kushnir, David Danks} \emph{Psychological Review} (2004) \url{https://doi.org/fkj59s}
+\CSLBlock{DOI: \href{https://doi.org/10.1037/0033-295x.111.1.3}{10.1037/0033-295x.111.1.3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/14756583}{14756583}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-iWcDZtHu}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{\textbf{How to Grow a Mind: Statistics, Structure, and Abstraction}
+\CSLBlock{Joshua B Tenenbaum, Charles Kemp, Thomas L Griffiths, Noah D Goodman} \emph{Science} (2011-03-11) \url{https://doi.org/d8vvm9}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1192788}{10.1126/science.1192788} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/21393536}{21393536}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-B5WSzZkm}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{\textbf{A Survey on Bias and Fairness in Machine Learning}
+\CSLBlock{Ninareh Mehrabi, Fred Morstatter, Nripsuta Saxena, Kristina Lerman, Aram Galstyan} \emph{arXiv} (2019) \url{https://doi.org/gtb9wn}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1908.09635}{10.48550/arxiv.1908.09635}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-2RptKLT2}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{\textbf{A Model of Inductive Bias Learning}
+\CSLBlock{J Baxter} \emph{Journal of Artificial Intelligence Research} (2000-03-01) \url{https://doi.org/gg66h8}
+\CSLBlock{DOI: \href{https://doi.org/10.1613/jair.731}{10.1613/jair.731}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-nT3xJkyD}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{\textbf{No Free Lunch Theorems for Search}
+\CSLBlock{David H Wolpert, William G Macready} \emph{Santa Fe Institute} (1995) \url{https://ideas.repec.org/p/wop/safiwp/95-02-010.html}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-D3JIQ7Oe}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{\textbf{The No Free Lunch Theorem, Kolmogorov Complexity, and the Role of Inductive Biases in Machine Learning}
+\CSLBlock{Micah Goldblum, Marc Finzi, Keefer Rowan, Andrew Gordon Wilson} \emph{arXiv} (2023) \url{https://doi.org/gtb9wp}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2304.05366}{10.48550/arxiv.2304.05366}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-11wELIlTc}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{\textbf{Inductive biases for deep learning of higher-level cognition}
+\CSLBlock{Anirudh Goyal, Yoshua Bengio} \emph{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences} (2022-10) \url{https://doi.org/gs39f8}
+\CSLBlock{DOI: \href{https://doi.org/10.1098/rspa.2021.0068}{10.1098/rspa.2021.0068}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1AZn5l2ah}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{\textbf{Current progress and open challenges for applying deep learning across the biosciences}
+\CSLBlock{Nicolae Sapoval, Amirali Aghazadeh, Michael G Nute, Dinler A Antunes, Advait Balaji, Richard Baraniuk, CJ Barberan, Ruth Dannenfelser, Chen Dun, Mohammadamin Edrisi, \ldots{} Todd J Treangen} \emph{Nature Communications} (2022-04-01) \url{https://doi.org/gp26xk}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-022-29268-7}{10.1038/s41467-022-29268-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35365602}{35365602} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8976012}{PMC8976012}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ydpntqD3}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{\textbf{The Bitter Lesson} \url{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rh7nCPVE}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{\textbf{Attention Is All You Need}
+\CSLBlock{Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, Illia Polosukhin} \emph{arXiv} (2017) \url{https://doi.org/gpnmtv}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1706.03762}{10.48550/arxiv.1706.03762}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-eT8vyMzx}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{\textbf{A Better Lesson -- Rodney Brooks} (2019-03-19) \url{https://rodneybrooks.com/a-better-lesson/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-AT0GCO31}{}}%
+\CSLLeftMargin{39. }%
+\CSLRightInline{\textbf{Thread by @shimon8282: "Rich Sutton has a new blog post entitled ``The Bitter Lesson'' (incompleteideas.net/IncIdeas/Bitte\ldots) that I strongly disagree with. In it, he {[}\ldots{]}"}
+\CSLBlock{https://twitter.com/shimon8282} \url{https://threadreaderapp.com/thread/1106534178676506624.html}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-URCTSFCA}{}}%
+\CSLLeftMargin{40. }%
+\CSLRightInline{\textbf{Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations}
+\CSLBlock{Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Rätsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem} \emph{arXiv} (2018) \url{https://doi.org/grx79c}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1811.12359}{10.48550/arxiv.1811.12359}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-T7D6XA6s}{}}%
+\CSLLeftMargin{41. }%
+\CSLRightInline{\textbf{Toward Causal Representation Learning}
+\CSLBlock{Bernhard Scholkopf, Francesco Locatello, Stefan Bauer, Nan Rosemary Ke, Nal Kalchbrenner, Anirudh Goyal, Yoshua Bengio} \emph{Proceedings of the IEEE} (2021-05) \url{https://doi.org/gjhqrh}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/jproc.2021.3058954}{10.1109/jproc.2021.3058954}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vm2M7mI5}{}}%
+\CSLLeftMargin{42. }%
+\CSLRightInline{\textbf{Beyond Predictions in Neural ODEs: Identification and Interventions}
+\CSLBlock{Hananeh Aliee, Fabian J Theis, Niki Kilbertus} \emph{arXiv} (2021) \url{https://doi.org/gszw4d}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2106.12430}{10.48550/arxiv.2106.12430}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-tr1XjZ1R}{}}%
+\CSLLeftMargin{43. }%
+\CSLRightInline{\textbf{Democratizing knowledge representation with BioCypher}
+\CSLBlock{Sebastian Lobentanzer, Patrick Aloy, Jan Baumbach, Balazs Bohar, Vincent J Carey, Pornpimol Charoentong, Katharina Danhauser, Tunca Doğan, Johann Dreo, Ian Dunham, \ldots{} Julio Saez-Rodriguez} \emph{Nature Biotechnology} (2023-06-19) \url{https://doi.org/gszqjr}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-023-01848-y}{10.1038/s41587-023-01848-y} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37337100}{37337100}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-s2EFuVEM}{}}%
+\CSLLeftMargin{44. }%
+\CSLRightInline{\textbf{Quantitative and logic modelling of molecular and gene networks}
+\CSLBlock{Nicolas Le Novère} \emph{Nature Reviews Genetics} (2015-02-03) \url{https://doi.org/f6299z}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrg3885}{10.1038/nrg3885} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25645874}{25645874} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4604653}{PMC4604653}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-94lBUqNp}{}}%
+\CSLLeftMargin{45. }%
+\CSLRightInline{\textbf{Constraint-based models predict metabolic and associated cellular functions}
+\CSLBlock{Aarash Bordbar, Jonathan M Monk, Zachary A King, Bernhard O Palsson} \emph{Nature Reviews Genetics} (2014-01-16) \url{https://doi.org/f5sk8s}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrg3643}{10.1038/nrg3643} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24430943}{24430943}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-xjVh8IQ5}{}}%
+\CSLLeftMargin{46. }%
+\CSLRightInline{\textbf{Model scale versus domain knowledge in statistical forecasting of chaotic systems}
+\CSLBlock{William Gilpin} \emph{Physical Review Research} (2023-12-15) \url{https://doi.org/gs9xz3}
+\CSLBlock{DOI: \href{https://doi.org/10.1103/physrevresearch.5.043252}{10.1103/physrevresearch.5.043252}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kX2zf6UE}{}}%
+\CSLLeftMargin{47. }%
+\CSLRightInline{\textbf{Regression Shrinkage and Selection Via the Lasso}
+\CSLBlock{Robert Tibshirani} \emph{Journal of the Royal Statistical Society: Series B (Methodological)} (1996-01) \url{https://doi.org/gfn45m}
+\CSLBlock{DOI: \href{https://doi.org/10.1111/j.2517-6161.1996.tb02080.x}{10.1111/j.2517-6161.1996.tb02080.x}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-cKqFMtL2}{}}%
+\CSLLeftMargin{48. }%
+\CSLRightInline{\textbf{A general and flexible method for signal extraction from single-cell RNA-seq data}
+\CSLBlock{Davide Risso, Fanny Perraudeau, Svetlana Gribkova, Sandrine Dudoit, Jean-Philippe Vert} \emph{Nature Communications} (2018-01-18) \url{https://doi.org/gcv5w7}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-017-02554-5}{10.1038/s41467-017-02554-5} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29348443}{29348443} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5773593}{PMC5773593}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bZ3hxYDX}{}}%
+\CSLLeftMargin{49. }%
+\CSLRightInline{\textbf{Backpropagation Applied to Handwritten Zip Code Recognition}
+\CSLBlock{Y LeCun, B Boser, JS Denker, D Henderson, RE Howard, W Hubbard, LD Jackel} \emph{Neural Computation} (1989-12) \url{https://doi.org/bknd8g}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/neco.1989.1.4.541}{10.1162/neco.1989.1.4.541}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-x4dbEYer}{}}%
+\CSLLeftMargin{50. }%
+\CSLRightInline{\textbf{Long Short-Term Memory}
+\CSLBlock{Sepp Hochreiter, Jürgen Schmidhuber} \emph{Neural Computation} (1997-11-01) \url{https://doi.org/bxd65w}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/neco.1997.9.8.1735}{10.1162/neco.1997.9.8.1735} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9377276}{9377276}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-6W1y3ZrT}{}}%
+\CSLLeftMargin{51. }%
+\CSLRightInline{\textbf{Scaling Laws for Neural Language Models}
+\CSLBlock{Jared Kaplan, Sam McCandlish, Tom Henighan, Tom B Brown, Benjamin Chess, Rewon Child, Scott Gray, Alec Radford, Jeffrey Wu, Dario Amodei} \emph{arXiv} (2020) \url{https://doi.org/gtb96w}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2001.08361}{10.48550/arxiv.2001.08361}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-OlEfQKqu}{}}%
+\CSLLeftMargin{52. }%
+\CSLRightInline{\textbf{Investigating Power laws in Deep Representation Learning}
+\CSLBlock{Arna Ghosh, Arnab Kumar Mondal, Kumar Krishna Agrawal, Blake Richards} \emph{arXiv} (2022) \url{https://doi.org/gtb966}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2202.05808}{10.48550/arxiv.2202.05808}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bMaT0Vyc}{}}%
+\CSLLeftMargin{53. }%
+\CSLRightInline{\textbf{Differentiable biology: using deep learning for biophysics-based and data-driven modeling of molecular mechanisms}
+\CSLBlock{Mohammed AlQuraishi, Peter K Sorger} \emph{Nature Methods} (2021-10) \url{https://doi.org/gm2b58}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41592-021-01283-4}{10.1038/s41592-021-01283-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34608321}{34608321} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8793939}{PMC8793939}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KZ19R8ZY}{}}%
+\CSLLeftMargin{54. }%
+\CSLRightInline{\textbf{Artificial neural networks enable genome-scale simulations of intracellular signaling}
+\CSLBlock{Avlant Nilsson, Joshua M Peters, Nikolaos Meimetis, Bryan Bryson, Douglas A Lauffenburger} \emph{Nature Communications} (2022-06-02) \url{https://doi.org/gqd9j9}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-022-30684-y}{10.1038/s41467-022-30684-y} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35654811}{35654811} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9163072}{PMC9163072}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-aLhTIs9}{}}%
+\CSLLeftMargin{55. }%
+\CSLRightInline{\textbf{A neural-mechanistic hybrid approach improving the predictive power of genome-scale metabolic models}
+\CSLBlock{Léon Faure, Bastien Mollet, Wolfram Liebermeister, Jean-Loup Faulon} \emph{Nature Communications} (2023-08-03) \url{https://doi.org/gtb96p}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-023-40380-0}{10.1038/s41467-023-40380-0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37537192}{37537192} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10400647}{PMC10400647}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-4smautjA}{}}%
+\CSLLeftMargin{56. }%
+\CSLRightInline{\textbf{Predicting transcriptional outcomes of novel multigene perturbations with GEARS}
+\CSLBlock{Yusuf Roohani, Kexin Huang, Jure Leskovec} \emph{Nature Biotechnology} (2023-08-17) \url{https://doi.org/gtb96r}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41587-023-01905-6}{10.1038/s41587-023-01905-6} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37592036}{37592036}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-YOm0bqVR}{}}%
+\CSLLeftMargin{57. }%
+\CSLRightInline{\textbf{Knowledge-primed neural networks enable biologically interpretable deep learning on single-cell sequencing data}
+\CSLBlock{Nikolaus Fortelny, Christoph Bock} \emph{Genome Biology} (2020-08-03) \url{https://doi.org/gg8ws9}
+\CSLBlock{DOI: \href{https://doi.org/10.1186/s13059-020-02100-5}{10.1186/s13059-020-02100-5} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32746932}{32746932} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7397672}{PMC7397672}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-JkqcQgM7}{}}%
+\CSLLeftMargin{58. }%
+\CSLRightInline{\textbf{Biologically informed deep learning to query gene programs in single-cell atlases}
+\CSLBlock{Mohammad Lotfollahi, Sergei Rybakov, Karin Hrovatin, Soroor Hediyeh-zadeh, Carlos Talavera-López, Alexander V Misharin, Fabian J Theis} \emph{Nature Cell Biology} (2023-02-02) \url{https://doi.org/gtb96q}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41556-022-01072-x}{10.1038/s41556-022-01072-x} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36732632}{36732632} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9928587}{PMC9928587}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1Xej0UJj}{}}%
+\CSLLeftMargin{59. }%
+\CSLRightInline{\textbf{CellBox: Interpretable Machine Learning for Perturbation Biology with Application to the Design of Cancer Combination Therapy}
+\CSLBlock{Bo Yuan, Ciyue Shen, Augustin Luna, Anil Korkut, Debora S Marks, John Ingraham, Chris Sander} \emph{Cell Systems} (2021-02) \url{https://doi.org/ght4v6}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.cels.2020.11.013}{10.1016/j.cels.2020.11.013} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33373583}{33373583}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gAQyFCbW}{}}%
+\CSLLeftMargin{60. }%
+\CSLRightInline{\textbf{Effective gene expression prediction from sequence by integrating long-range interactions}
+\CSLBlock{Žiga Avsec, Vikram Agarwal, Daniel Visentin, Joseph R Ledsam, Agnieszka Grabska-Barwinska, Kyle R Taylor, Yannis Assael, John Jumper, Pushmeet Kohli, David R Kelley} \emph{Nature Methods} (2021-10) \url{https://doi.org/gm2wv4}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41592-021-01252-x}{10.1038/s41592-021-01252-x} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34608324}{34608324} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8490152}{PMC8490152}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-VmzWBJUJ}{}}%
+\CSLLeftMargin{61. }%
+\CSLRightInline{\textbf{Transfer learning enables predictions in network biology}
+\CSLBlock{Christina V Theodoris, Ling Xiao, Anant Chopra, Mark D Chaffin, Zeina R Al Sayed, Matthew C Hill, Helene Mantineo, Elizabeth M Brydon, Zexian Zeng, XShirley Liu, Patrick T Ellinor} \emph{Nature} (2023-05-31) \url{https://doi.org/gr9x63}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41586-023-06139-9}{10.1038/s41586-023-06139-9} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37258680}{37258680}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-r5y0HbhJ}{}}%
+\CSLLeftMargin{62. }%
+\CSLRightInline{\textbf{scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI}
+\CSLBlock{Haotian Cui, Chloe Wang, Hassaan Maan, Kuan Pang, Fengning Luo, Bo Wang} \emph{Cold Spring Harbor Laboratory} (2023-05-01) \url{https://doi.org/gshk6p}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2023.04.30.538439}{10.1101/2023.04.30.538439}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1DSO3BUly}{}}%
+\CSLLeftMargin{63. }%
+\CSLRightInline{\textbf{HyperAttention: Long-context Attention in Near-Linear Time}
+\CSLBlock{Insu Han, Rajesh Jayaram, Amin Karbasi, Vahab Mirrokni, David P Woodruff, Amir Zandieh} \emph{arXiv} (2023) \url{https://doi.org/gtb9wc}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2310.05869}{10.48550/arxiv.2310.05869}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-U6LC2Ufe}{}}%
+\CSLLeftMargin{64. }%
+\CSLRightInline{\textbf{Stanford CRFM} \url{https://crfm.stanford.edu/}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WEYqVcYG}{}}%
+\CSLLeftMargin{65. }%
+\CSLRightInline{\textbf{Assessing the limits of zero-shot foundation models in single-cell biology}
+\CSLBlock{Kasia Z Kedzierska, Lorin Crawford, Ava P Amini, Alex X Lu} \emph{Cold Spring Harbor Laboratory} (2023-10-17) \url{https://doi.org/gszxk9}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2023.10.16.561085}{10.1101/2023.10.16.561085}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-OFczH7ba}{}}%
+\CSLLeftMargin{66. }%
+\CSLRightInline{\textbf{A Deep Dive into Single-Cell RNA Sequencing Foundation Models}
+\CSLBlock{Rebecca Boiarsky, Nalini Singh, Alejandro Buendia, Gad Getz, David Sontag} \emph{Cold Spring Harbor Laboratory} (2023-10-23) \url{https://doi.org/gszxmb}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2023.10.19.563100}{10.1101/2023.10.19.563100}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1ELFXHA51}{}}%
+\CSLLeftMargin{67. }%
+\CSLRightInline{\textbf{Deep generative modeling for single-cell transcriptomics}
+\CSLBlock{Romain Lopez, Jeffrey Regier, Michael B Cole, Michael I Jordan, Nir Yosef} \emph{Nature Methods} (2018-11-30) \url{https://doi.org/gfkw5z}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41592-018-0229-2}{10.1038/s41592-018-0229-2} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30504886}{30504886} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6289068}{PMC6289068}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1GGrqZlzU}{}}%
+\CSLLeftMargin{68. }%
+\CSLRightInline{\textbf{Low-resource finetuning of foundation models beats state-of-the-art in histopathology}
+\CSLBlock{Benedikt Roth, Valentin Koch, Sophia J Wagner, Julia A Schnabel, Carsten Marr, Tingying Peng} \emph{arXiv} (2024) \url{https://doi.org/gtdf95}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2401.04720}{10.48550/arxiv.2401.04720}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19EQh1DNG}{}}%
+\CSLLeftMargin{69. }%
+\CSLRightInline{\textbf{ChatGPT broke the Turing test --- the race is on for new ways to assess AI}
+\CSLBlock{Celeste Biever} \emph{Nature} (2023-07-25) \url{https://doi.org/gskd92}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-02361-7}{10.1038/d41586-023-02361-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37491395}{37491395}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1GbAsSOZV}{}}%
+\CSLLeftMargin{70. }%
+\CSLRightInline{\textbf{On the Opportunities and Risks of Foundation Models}
+\CSLBlock{Rishi Bommasani, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, \ldots{} Percy Liang} \emph{arXiv} (2021) \url{https://doi.org/hw3v}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2108.07258}{10.48550/arxiv.2108.07258}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-15hYXC3QB}{}}%
+\CSLLeftMargin{71. }%
+\CSLRightInline{\textbf{Designing an Interpretability-Based Model to Explain the Artificial Intelligence Algorithms in Healthcare}
+\CSLBlock{Mohammad Ennab, Hamid Mcheick} \emph{Diagnostics} (2022-06-26) \url{https://doi.org/gtdf94}
+\CSLBlock{DOI: \href{https://doi.org/10.3390/diagnostics12071557}{10.3390/diagnostics12071557} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35885463}{35885463} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319389}{PMC9319389}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WmT8ZU5I}{}}%
+\CSLLeftMargin{72. }%
+\CSLRightInline{\textbf{An enquiry concerning human understanding}
+\CSLBlock{David Hume, PF Millican} \emph{Oxford University Press} (2007)
+\CSLBlock{ISBN: 9780199211586}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-13qoNo4Fj}{}}%
+\CSLLeftMargin{73. }%
+\CSLRightInline{\textbf{Review of Dimension Reduction Methods}
+\CSLBlock{Salifu Nanga, Ahmed Tijani Bawah, Benjamin Ansah Acquaye, Mac-Issaka Billa, Francis Delali Baeta, Nii Afotey Odai, Samuel Kwaku Obeng, Ampem Darko Nsiah} \emph{Journal of Data Analysis and Information Processing} (2021) \url{https://doi.org/gtb96v}
+\CSLBlock{DOI: \href{https://doi.org/10.4236/jdaip.2021.93013}{10.4236/jdaip.2021.93013}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-AO84A4MA}{}}%
+\CSLLeftMargin{74. }%
+\CSLRightInline{\textbf{Why the simplest explanation isn't always the best}
+\CSLBlock{Eva L Dyer, Konrad Kording} \emph{Proceedings of the National Academy of Sciences} (2023-12-20) \url{https://doi.org/gtbqms}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.2319169120}{10.1073/pnas.2319169120} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/38117857}{38117857} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10756184}{PMC10756184}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-6McXkHVo}{}}%
+\CSLLeftMargin{75. }%
+\CSLRightInline{\textbf{The specious art of single-cell genomics}
+\CSLBlock{Tara Chari, Lior Pachter} \emph{PLOS Computational Biology} (2023-08-17) \url{https://doi.org/gtb96t}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1011288}{10.1371/journal.pcbi.1011288} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37590228}{37590228} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10434946}{PMC10434946}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-iE5sGWcB}{}}%
+\CSLLeftMargin{76. }%
+\CSLRightInline{\textbf{The Uncanny Failure of A.I.-Generated Hands}
+\CSLBlock{Kyle Chayka} \emph{The New Yorker} (2023-03-10) \url{https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-MhOZ3PWC}{}}%
+\CSLLeftMargin{77. }%
+\CSLRightInline{\textbf{Identifying Representations for Intervention Extrapolation}
+\CSLBlock{Sorawit Saengkyongam, Elan Rosenfeld, Pradeep Ravikumar, Niklas Pfister, Jonas Peters} \emph{arXiv} (2023) \url{https://doi.org/gtb97m}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2310.04295}{10.48550/arxiv.2310.04295}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-FVLAWGsX}{}}%
+\CSLLeftMargin{78. }%
+\CSLRightInline{\textbf{The Causal-Neural Connection: Expressiveness, Learnability, and Inference}
+\CSLBlock{Kevin Xia, Kai-Zhan Lee, Yoshua Bengio, Elias Bareinboim} \emph{arXiv} (2021) \url{https://doi.org/grw6m7}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2107.00793}{10.48550/arxiv.2107.00793}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-r5mjeIhV}{}}%
+\CSLLeftMargin{79. }%
+\CSLRightInline{\textbf{Exploring the Latent Space of Autoencoders with Interventional Assays}
+\CSLBlock{Felix Leeb, Stefan Bauer, Michel Besserve, Bernhard Schölkopf} \emph{arXiv} (2021) \url{https://doi.org/gtb96x}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2106.16091}{10.48550/arxiv.2106.16091}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-eEfUqiI4}{}}%
+\CSLLeftMargin{80. }%
+\CSLRightInline{\textbf{Improving black-box optimization in VAE latent space using decoder uncertainty}
+\CSLBlock{Pascal Notin, José Miguel Hernández-Lobato, Yarin Gal} \emph{arXiv} (2021) \url{https://doi.org/gtb962}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2107.00096}{10.48550/arxiv.2107.00096}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-S1VP202R}{}}%
+\CSLLeftMargin{81. }%
+\CSLRightInline{\textbf{On the Number of Experiments Sufficient and in the Worst Case Necessary to Identify All Causal Relations Among N Variables}
+\CSLBlock{Frederick Eberhardt, Clark Glymour, Richard Scheines} \emph{arXiv} (2012) \url{https://doi.org/gtb997}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1207.1389}{10.48550/arxiv.1207.1389}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-7HxYpmt4}{}}%
+\CSLLeftMargin{82. }%
+\CSLRightInline{\textbf{Learning Neural Causal Models from Unknown Interventions}
+\CSLBlock{Nan Rosemary Ke, Olexa Bilaniuk, Anirudh Goyal, Stefan Bauer, Hugo Larochelle, Bernhard Schölkopf, Michael C Mozer, Chris Pal, Yoshua Bengio} \emph{arXiv} (2019) \url{https://doi.org/grw6nc}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1910.01075}{10.48550/arxiv.1910.01075}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-3MP7gokd}{}}%
+\CSLLeftMargin{83. }%
+\CSLRightInline{\textbf{DiscoBAX - Discovery of optimal intervention sets in genomic experiment design}
+\CSLBlock{Clare Lyle, Arash Mehrjou, Pascal Notin, Andrew Jesson, Stefan Bauer, Yarin Gal, Patrick Schwab} (2023) \url{https://openreview.net/forum?id=mBkUeW8rpD6}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zXrfFfft}{}}%
+\CSLLeftMargin{84. }%
+\CSLRightInline{\textbf{Interventions, Where and How? Experimental Design for Causal Models at Scale}
+\CSLBlock{Panagiotis Tigas, Yashas Annadani, Andrew Jesson, Bernhard Schölkopf, Yarin Gal, Stefan Bauer} \emph{arXiv} (2022) \url{https://doi.org/gtcfvk}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2203.02016}{10.48550/arxiv.2203.02016}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ex1JrMxh}{}}%
+\CSLLeftMargin{85. }%
+\CSLRightInline{\textbf{CausalBench: A Large-scale Benchmark for Network Inference from Single-cell Perturbation Data}
+\CSLBlock{Mathieu Chevalley, Yusuf Roohani, Arash Mehrjou, Jure Leskovec, Patrick Schwab} \emph{arXiv} (2022) \url{https://doi.org/gtcbbc}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.2210.17283}{10.48550/arxiv.2210.17283}}}
+
+\end{CSLReferences}
