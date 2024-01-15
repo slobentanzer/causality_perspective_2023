@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T18:08:46+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T18:08:46+00:00" />
+  <meta name="dc.modified" content="2024-01-15T18:19:54+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T18:19:54+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3339a70e28f9fe1129f5a397502b065796656af0/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3339a70e28f9fe1129f5a397502b065796656af0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3339a70e28f9fe1129f5a397502b065796656af0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3339a70e28f9fe1129f5a397502b065796656af0/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@39ddb9b](https://github.com/slobentanzer/causality_perspective_2023/tree/39ddb9bc2b0d6f410320737f74b54af3298c23ec)
+from [slobentanzer/causality_perspective_2023@3339a70](https://github.com/slobentanzer/causality_perspective_2023/tree/3339a70e28f9fe1129f5a397502b065796656af0)
 on January 15, 2024.
 </em></small>
 
@@ -550,7 +550,7 @@ See also the [bias-variance tradeoff][Bias-variance tradeoff].
 
 ## Acknowledgements {.page_break_before}
 
-We thank Aurelien Dugourd, Philipp Schäfer, and Loan Vulliard for their helpful comments on the manuscript.
+We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.
 
 ## Funding
 
