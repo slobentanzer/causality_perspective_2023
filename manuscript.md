@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:47:33+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:47:33+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:53:37+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:53:37+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@c9eb90b](https://github.com/slobentanzer/causality_perspective_2023/tree/c9eb90b38e80c06eb00a5fc23bed26c9e9d245fb)
+from [slobentanzer/causality_perspective_2023@ce8cc64](https://github.com/slobentanzer/causality_perspective_2023/tree/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb)
 on January 15, 2024.
 </em></small>
 
@@ -498,7 +498,7 @@ They are the first commercially successful example of foundation models.
 These theorems in optimization and machine learning suggest that no single algorithm is best for every problem.
 The performance of an algorithm is contingent on the specificities of the task and data at hand.
 This highlights the importance of choosing or designing algorithms that are well-suited to the particular characteristics of the problem being addressed.
-Related to the bias-variance tradeoff, partly opposed to the scaling hypothesis and foundation models.
+Related to the [bias-variance tradeoff][Bias-variance tradeoff], partly opposed to the [scaling hypothesis][Scaling hypothesis] and [foundation models][Foundation model].
 
 ### Overfitting
 
