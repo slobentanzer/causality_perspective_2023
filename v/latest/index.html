@@ -56,8 +56,8 @@
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:17:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:17:27+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:25:21+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:25:21+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/777eb73928e901f13fcc036bc3be436abb99cd2d">slobentanzer/causality_perspective_2023@777eb73</a>
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/ad5677f0aa3b886528cd1b40bfcd686c81ebca45">slobentanzer/causality_perspective_2023@ad5677f</a>
 on January 15, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -294,7 +294,7 @@ Notably, this mechanism comes with a computational cost that increases exponenti
 Foundation models (<a href="#foundation-model">Glossary</a>) are models that achieve high performance by training a generic architecture on extremely large amounts of data in a self-supervised manner (<a href="#self-supervised-learning">Glossary</a>).
 They can be fine-tuned for more specific tasks, because they are thought to derive generalisable representations and mechanisms by training on an amount of data large enough to learn the complexity of real-world systems.
 However, recent molecular foundation model benchmarks highlight clear discrepancies between the “foundational” aspirations of the pre-trained models and the real-world evaluation of their performance <span class="citation" data-cites="WEYqVcYG OFczH7ba">[<a href="#ref-WEYqVcYG" role="doc-biblioref">65</a>,<a href="#ref-OFczH7ba" role="doc-biblioref">66</a>]</span>.
-Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently.
+Briefly, the benchmarks found that, on single cell classification tasks, the proposed foundation models did not outperform simple baselines consistently when applied “zero-shot,” i.e., without fine-tuning.
 State-of-the-art methods such as scVI <span class="citation" data-cites="1ELFXHA51">[<a href="#ref-1ELFXHA51" role="doc-biblioref">67</a>]</span> and even the mere selection of highly variable genes was often statistically indistinguishable from the highly parameterised methods, and sometimes even yielded better classification outcomes.
 However, these are early models, and it could still be argued that, in line with the scaling hypothesis (<a href="#scaling-hypothesis">Glossary</a>), models may improve via a combination of the right architecture with sufficient amounts of data <span class="citation" data-cites="1GGrqZlzU">[<a href="#ref-1GGrqZlzU" role="doc-biblioref">68</a>]</span>.</p>
 <p>Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
