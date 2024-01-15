@@ -8,7 +8,7 @@
   <meta name="author" content="Pablo Rodriguez-Mier" />
   <meta name="author" content="Stefan Bauer" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-13" />
+  <meta name="dcterms.date" content="2024-01-15" />
   <meta name="keywords" content="systems biology, biomedicine, causality, modelling, machine learning, foundation models" />
   <title>Molecular causality in the advent of foundation models</title>
   <style>
@@ -53,11 +53,11 @@
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-13" />
-  <meta name="citation_publication_date" content="2024-01-13" />
-  <meta property="article:published_time" content="2024-01-13" />
-  <meta name="dc.modified" content="2024-01-13T14:10:34+00:00" />
-  <meta property="article:modified_time" content="2024-01-13T14:10:34+00:00" />
+  <meta name="dc.date" content="2024-01-15" />
+  <meta name="citation_publication_date" content="2024-01-15" />
+  <meta property="article:published_time" content="2024-01-15" />
+  <meta name="dc.modified" content="2024-01-15T12:05:26+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T12:05:26+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1">slobentanzer/causality_perspective_2023@8c8ec57</a>
-on January 13, 2024.
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/71639572619edd1c3910c4c14f81e68328923817">slobentanzer/causality_perspective_2023@7163957</a>
+on January 15, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -250,7 +250,7 @@ Inductive biases direct the learning process towards more relevant solutions by 
 <h2 id="bias-from-prior-knowledge">Bias from prior knowledge</h2>
 <p>The first question alone is highly debated in the wider field of machine learning.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth <span class="citation" data-cites="ydpntqD3">[<a href="#ref-ydpntqD3" role="doc-biblioref">35</a>]</span>.
-However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">36</a>]</span>, and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks <span class="citation" data-cites="eT8vyMzx AT0GCO31">[<a href="#ref-eT8vyMzx" role="doc-biblioref">37</a>,<a href="#ref-AT0GCO31" role="doc-biblioref">38</a>]</span>.</p>
+However, it has been argued that many improvements that led to the models of today, such as convolution or attention (<a href="#attention-deep-learning">Glossary</a>), disprove this theory <span class="citation" data-cites="rh7nCPVE">[<a href="#ref-rh7nCPVE" role="doc-biblioref">36</a>]</span>, and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks <span class="citation" data-cites="eT8vyMzx AT0GCO31">[<a href="#ref-eT8vyMzx" role="doc-biblioref">37</a>,<a href="#ref-AT0GCO31" role="doc-biblioref">38</a>]</span>.</p>
 <p>In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK <span class="citation" data-cites="URCTSFCA T7D6XA6s vm2M7mI5 17scpieH5 11wELIlTc">[<a href="#ref-17scpieH5" role="doc-biblioref">9</a>,<a href="#ref-11wELIlTc" role="doc-biblioref">33</a>,<a href="#ref-URCTSFCA" role="doc-biblioref">39</a>,<a href="#ref-T7D6XA6s" role="doc-biblioref">40</a>,<a href="#ref-vm2M7mI5" role="doc-biblioref">41</a>]</span>.
 Considering these constraints, the question is not whether to include PK in our reasoning, but which knowledge, when, and how <span class="citation" data-cites="AT0GCO31">[<a href="#ref-AT0GCO31" role="doc-biblioref">38</a>]</span>.</p>
 <h3 id="prior-knowledge">Prior knowledge</h3>
@@ -378,7 +378,8 @@ However, it remains to be seen whether the future of biological modelling will b
 Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
 The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.</p>
 <h2 id="glossary">Glossary</h2>
-<p>Attention (deep learning): a mechanism in deep learning that allows the model to focus on specific parts of the input data.
+<h3 id="attention-deep-learning">Attention (deep learning)</h3>
+<p>A mechanism in deep learning that allows the model to focus on specific parts of the input data.
 Attention mechanisms are often used in natural language processing to focus on specific words in a sentence, but can also be used in other domains.</p>
 <p>Bias (machine learning): Bias can be understood in two ways in the context of machine learning.</p>
 <ol type="1">
