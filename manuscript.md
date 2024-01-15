@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T18:35:43+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T18:35:43+00:00" />
+  <meta name="dc.modified" content="2024-01-15T22:41:52+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T22:41:52+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/87770c7000b52697503e84194db45aba3c9b0ee1/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/777eb73928e901f13fcc036bc3be436abb99cd2d/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@87770c7](https://github.com/slobentanzer/causality_perspective_2023/tree/87770c7000b52697503e84194db45aba3c9b0ee1)
+from [slobentanzer/causality_perspective_2023@777eb73](https://github.com/slobentanzer/causality_perspective_2023/tree/777eb73928e901f13fcc036bc3be436abb99cd2d)
 on January 15, 2024.
 </em></small>
 
@@ -335,7 +335,7 @@ However, these are early models, and it could still be argued that, in line with
 
 Indeed, molecular foundation models lag behind in size: while current-generation LLMs have around 100 billion parameters or more and are trained on enormous text corpuses (hundreds of billions to trillions of tokens), molecular foundation models have tens of millions of parameters (scGPT: 53M, Geneformer: 10M) and are trained on corpuses of tens of millions of cells, which (optimistically) yields hundreds of billions of individual data points.
 Thus, LLMs are currently about 2000 times larger than molecular foundation models, while arguably also dealing with a less complicated system.
-The question whether scaling will lead to the emergence of “foundational behaviour” in molecular models is still a matter of much debate.
+The question whether scaling will lead to the emergence of “foundational behaviour” in molecular models is still a matter of much debate [@emergent-abilities].
 
 ### Attention - and large amounts of data - is all you need?
 

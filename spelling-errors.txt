@@ -18,7 +18,7 @@ Dugourd
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 facto
 Geneformer
 generalisable
@@ -43,7 +43,7 @@ omics
 Orthogonally
 overactivation
 overfitted
-overfitting
+Overfitting
 pablormier
 parallelisation
 PCA
@@ -73,7 +73,7 @@ Theodoris
 tradeoff
 Travere
 UMAP
-underfitting
+Underfitting
 unfeasibly
 Vemurafenib
 Vis
