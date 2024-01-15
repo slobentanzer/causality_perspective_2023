@@ -76,7 +76,7 @@
         ]
       ]
     },
-    "type": "misc",
+    "type": "preprint",
     "URL": "https://arxiv.org/abs/2206.15475",
     "archivePrefix": "arXiv",
     "primaryClass": "cs.LG"
@@ -121,7 +121,34 @@
         ]
       ]
     },
-    "type": "misc",
+    "type": "inproceedings",
     "URL": "https://openreview.net/forum?id=mBkUeW8rpD6"
+  },
+  {
+    "id": "emergent-abilities",
+    "title": "Are Emergent Abilities of Large Language Models a Mirage?",
+    "author": [
+      {
+        "given": "Rylan",
+        "family": "Schaeffer"
+      },
+      {
+        "given": "Brando",
+        "family": "Miranda"
+      },
+      {
+        "given": "Sanmi",
+        "family": "Koyejo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "type": "inproceedings",
+    "URL": "https://openreview.net/forum?id=ITw9edRDlD"
   }
 ]
