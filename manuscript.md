@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:25:21+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:25:21+00:00" />
+  <meta name="dc.modified" content="2024-01-15T23:31:29+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T23:31:29+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ad5677f0aa3b886528cd1b40bfcd686c81ebca45/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/b08a453a12793c803b1547131ed5ee06bd159ab0/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@ad5677f](https://github.com/slobentanzer/causality_perspective_2023/tree/ad5677f0aa3b886528cd1b40bfcd686c81ebca45)
+from [slobentanzer/causality_perspective_2023@b08a453](https://github.com/slobentanzer/causality_perspective_2023/tree/b08a453a12793c803b1547131ed5ee06bd159ab0)
 on January 15, 2024.
 </em></small>
 
@@ -180,8 +180,10 @@ We will elaborate on three main points:
 
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system *a priori*.
 
-Causal discovery is more expensive than inference both computationally and data-wise, because it needs to account for the variability in data generation while isolating generalisable relationships between single measured agents [@doi:10.1146/annurev-statistics-031017-100630].
-For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments. Highly parameterised models such as neural networks increase this requirement even further. As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}] ([Glossary][Scaling hypothesis]).
+Causal discovery is more expensive than inference both computationally and data-wise, because it involves distinguishing between correlation and causation and extracting generalisable relationships from the data [@doi:10.1146/annurev-statistics-031017-100630].
+For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments.
+Highly parameterised models such as neural networks increase this requirement even further.
+As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}] ([Glossary][Scaling hypothesis]).
 
 Causal inference, in contrast, focuses on quantifying the causal effects of one variable on another within the framework of already hypothesised causal relationships.
 This approach leverages PK about the assumed causal links, which in the causal field are often encoded using directed graphs.
@@ -192,7 +194,7 @@ This clear representation of directionality is important for causal inference, a
 For example, in analysing phosphoproteomic data to assess the impact of inhibiting RAF, a graph-based approach would guide researchers to correctly attribute subsequent changes in ERK to this specific intervention.
 Without this causal framework, one might mistakenly interpret correlations as bidirectional influences or overlook confounding factors, leading to incorrect conclusions.
 However, inference is also very sensitive to the completeness of the PK that is applied; most biomedical PK is far from complete [@doi:10.15252/msb.202211036].
-For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645; @doi:10.1038/s41587-019-0344-3].
+For instance, the function of more than 95% of all the known phosphorylation events that occur in human cells is currently unknown [@doi:10.1126/scisignal.aau8645;@doi:10.1038/s41587-019-0344-3].
 In contrast to causal discovery, scaling therefore plays a smaller role in causal inference; here, the main problems are incompleteness and identifying the “right” biases ([Glossary][Bias (machine learning)]) to apply.
 
 ### The ladder of causality
