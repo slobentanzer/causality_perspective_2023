@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T18:04:14+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T18:04:14+00:00" />
+  <meta name="dc.modified" content="2024-01-15T18:08:46+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T18:08:46+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/909bf6834a50f804b75b07a4640b351916a6e850/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/39ddb9bc2b0d6f410320737f74b54af3298c23ec/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@909bf68](https://github.com/slobentanzer/causality_perspective_2023/tree/909bf6834a50f804b75b07a4640b351916a6e850)
+from [slobentanzer/causality_perspective_2023@39ddb9b](https://github.com/slobentanzer/causality_perspective_2023/tree/39ddb9bc2b0d6f410320737f74b54af3298c23ec)
 on January 15, 2024.
 </em></small>
 
@@ -203,7 +203,7 @@ While the inferences we wish to make in biomedical research are often of the cou
 To generate interventional or even counterfactual inferences from observational data is a major challenge, if not impossible, depending on the characteristics of the system under study [@doi:10.1214/09-SS057].
 
 There are approaches to delineate interventional inference from observational data, such as the ‘natural experiments’ framework [@doi:10.1080/01621459.1996.10476902;@isbn:9781400880874].
-However, these approaches are by their nature even more data-hungry than when using interventional data, as they necessarily discard information that is not relevant to the intervention.
+However, these approaches are by their nature even more data-hungry than when using interventional data, as they often do not use the full breadth of the dataset [@doi:10.1016/j.jeconom.2007.05.001].
 Therefore, in biomedical research, there has been a push towards generating large-scale interventional data, for instance through the use of CRISPR/Cas9 screens with single-cell resolution [@doi:10.1016/j.cell.2016.11.038].
 Current developments of CR in the biomedical field thus mostly focus on these types of data.
 
