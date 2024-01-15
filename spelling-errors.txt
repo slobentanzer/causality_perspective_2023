@@ -43,14 +43,14 @@ omics
 Orthogonally
 overactivation
 overfitted
-Overfitting
+overfitting
 pablormier
 parallelisation
 PCA
 PerMedCoE
 Philipp
 phosphoproteomic
-pre
+Pre
 priori
 Programme
 RAS
