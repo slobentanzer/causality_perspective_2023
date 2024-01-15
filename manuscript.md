@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-15" />
   <meta name="citation_publication_date" content="2024-01-15" />
   <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T18:20:30+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T18:20:30+00:00" />
+  <meta name="dc.modified" content="2024-01-15T18:23:10+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T18:23:10+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/6117532ec58445eacdf12340b42a619b1c5c113c/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6117532ec58445eacdf12340b42a619b1c5c113c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/6117532ec58445eacdf12340b42a619b1c5c113c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/6117532ec58445eacdf12340b42a619b1c5c113c/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/5f53994cc618a7f8532702ec47627385e0a8defa/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@6117532](https://github.com/slobentanzer/causality_perspective_2023/tree/6117532ec58445eacdf12340b42a619b1c5c113c)
+from [slobentanzer/causality_perspective_2023@5f53994](https://github.com/slobentanzer/causality_perspective_2023/tree/5f53994cc618a7f8532702ec47627385e0a8defa)
 on January 15, 2024.
 </em></small>
 
