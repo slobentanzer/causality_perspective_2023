@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-13'
+date-meta: '2024-01-15'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez-Mier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-13" />
-  <meta name="citation_publication_date" content="2024-01-13" />
-  <meta property="article:published_time" content="2024-01-13" />
-  <meta name="dc.modified" content="2024-01-13T14:10:34+00:00" />
-  <meta property="article:modified_time" content="2024-01-13T14:10:34+00:00" />
+  <meta name="dc.date" content="2024-01-15" />
+  <meta name="citation_publication_date" content="2024-01-15" />
+  <meta property="article:published_time" content="2024-01-15" />
+  <meta name="dc.modified" content="2024-01-15T12:05:26+00:00" />
+  <meta property="article:modified_time" content="2024-01-15T12:05:26+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/71639572619edd1c3910c4c14f81e68328923817/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@8c8ec57](https://github.com/slobentanzer/causality_perspective_2023/tree/8c8ec5732d54391fdbc1fec06ecb2f041f65c6b1)
-on January 13, 2024.
+from [slobentanzer/causality_perspective_2023@7163957](https://github.com/slobentanzer/causality_perspective_2023/tree/71639572619edd1c3910c4c14f81e68328923817)
+on January 15, 2024.
 </em></small>
 
 
@@ -270,7 +270,7 @@ Some central questions then arise:
 
 The first question alone is highly debated in the wider field of machine learning.
 The frequently quoted “Bitter Lesson” posits that we should refrain from inducing all but the most basic biases in our models, and that we should not view metrics as the ultimate measure of performance, but rather whether the model gets us closer to some truth [@{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}].
-However, it has been argued that many improvements that led to the models of today, such as convolution or attention, disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
+However, it has been argued that many improvements that led to the models of today, such as convolution or attention ([Glossary][Attention (deep learning)]), disprove this theory [@doi:10.48550/arXiv.1706.03762], and that the intrinsic complexity of real-world systems does not obviate, but rather necessitate, the integration of human insight into our learning frameworks [@{https://rodneybrooks.com/a-better-lesson/}; @{https://threadreaderapp.com/thread/1106534178676506624.html}].
 
 In systems biology, specifically, there is much interest in finding models with suitable biases to deal with constraints specific to the field, such as data availability and the completeness of PK [@doi:10.48550/arxiv.1811.12359;@doi:10.1109/JPROC.2021.3058954;@doi:10.48550/arxiv.2106.12430;@doi:10.48550/arXiv.2312.00818;@doi:10.1098/rspa.2021.0068].
 Considering these constraints, the question is not whether to include PK in our reasoning, but which knowledge, when, and how [@{https://threadreaderapp.com/thread/1106534178676506624.html}].
@@ -442,7 +442,9 @@ The field must explore these possibilities, balancing the drive for large-scale 
 
 ## Glossary
 
-Attention (deep learning): a mechanism in deep learning that allows the model to focus on specific parts of the input data.
+### Attention (deep learning)
+
+A mechanism in deep learning that allows the model to focus on specific parts of the input data.
 Attention mechanisms are often used in natural language processing to focus on specific words in a sentence, but can also be used in other domains.
 
 Bias (machine learning): Bias can be understood in two ways in the context of machine learning.

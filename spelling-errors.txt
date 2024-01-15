@@ -2,7 +2,7 @@ Astex
 Aurelien
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -28,7 +28,7 @@ honoraria
 identifiability
 interpretability
 interpretable
-interventional
+Interventional
 intruduced
 JSR
 LLM
@@ -41,14 +41,14 @@ omics
 Orthogonally
 overactivation
 overfitted
-overfitting
+Overfitting
 pablormier
 parallelisation
 PCA
 PerMedCoE
 Philipp
 phosphoproteomic
-pre
+Pre
 priori
 Programme
 RAS
@@ -71,7 +71,7 @@ Theodoris
 tradeoff
 Travere
 UMAP
-Underfitting
+underfitting
 unfeasibly
 Vemurafenib
 Vis
