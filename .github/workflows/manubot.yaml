@@ -25,11 +25,11 @@ on:
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
-        default: true
+        default: false
       SPELLCHECK:
         type: boolean
         description: Check spelling
-        default: true
+        default: false
       MANUBOT_USE_DOCKER:
         type: boolean
         description: Use Docker to generate PDF
