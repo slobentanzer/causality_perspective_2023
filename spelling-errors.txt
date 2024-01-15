@@ -29,7 +29,7 @@ honoraria
 identifiability
 interpretability
 interpretable
-interventional
+Interventional
 intruduced
 JSR
 Lanzer
@@ -43,7 +43,7 @@ omics
 Orthogonally
 overactivation
 overfitted
-Overfitting
+overfitting
 pablormier
 parallelisation
 PCA
