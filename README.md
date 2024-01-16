@@ -6,12 +6,11 @@
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/slobentanzer/causality_perspective_2023/workflows/Manubot/badge.svg)](https://github.com/slobentanzer/causality_perspective_2023/actions)
 
-## Manuscript description
+## Molecular causality in the advent of foundation models
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This perspective discusses causal reasoning in molecular biology and biomedicine in our current time of foundation models.
 
 ## Manubot
 
