@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-16" />
   <meta name="citation_publication_date" content="2024-01-16" />
   <meta property="article:published_time" content="2024-01-16" />
-  <meta name="dc.modified" content="2024-01-16T00:16:02+00:00" />
-  <meta property="article:modified_time" content="2024-01-16T00:16:02+00:00" />
+  <meta name="dc.modified" content="2024-01-16T08:00:57+00:00" />
+  <meta property="article:modified_time" content="2024-01-16T08:00:57+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/1c373612b7fcb5b5dd29332dd446dc81f7eb6928/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/1c373612b7fcb5b5dd29332dd446dc81f7eb6928/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/1c373612b7fcb5b5dd29332dd446dc81f7eb6928/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/1c373612b7fcb5b5dd29332dd446dc81f7eb6928/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@440db88](https://github.com/slobentanzer/causality_perspective_2023/tree/440db88c1e4f6d05fa7e985542e883e4ddd478ee)
+from [slobentanzer/causality_perspective_2023@1c37361](https://github.com/slobentanzer/causality_perspective_2023/tree/1c373612b7fcb5b5dd29332dd446dc81f7eb6928)
 on January 16, 2024.
 </em></small>
 
@@ -164,7 +164,7 @@ Randomised clinical trials ([Glossary][Randomised Clinical Trials]) show that, i
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
 In the language of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852] ([Glossary][Pearl’s Do-Calculus]), we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
-The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results [@doi:10.1038/s41540-023-00310-8;@doi:10.1371/journal.pone.0027755], as well as in model explainability [@doi:10.48550/arXiv.2309.09901].
+The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results [@doi:10.1007/s10208-022-09581-9;@doi:10.1038/s41540-023-00310-8;@doi:10.1371/journal.pone.0027755], as well as in model explainability [@doi:10.48550/arXiv.2309.09901].
 With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.
 We will elaborate on three main points:
 
@@ -180,7 +180,7 @@ We will elaborate on three main points:
 
 The field of CR distinguishes between causal discovery - the process of building causal hypotheses from data - and causal inference - the process of predicting specific outcomes given data and the causal relationships known about the system *a priori*.
 
-Causal discovery is more expensive than inference both computationally and data-wise, because it involves distinguishing between correlation and causation and extracting generalisable relationships from the data [@doi:10.1146/annurev-statistics-031017-100630].
+Causal discovery is more expensive than inference both computationally and data-wise, because it involves distinguishing between correlation and causation and extracting generalisable relationships from the data [@doi:10.1146/annurev-statistics-031017-100630;@doi:10.1007/s10208-022-09581-9].
 For modern systems biology, this means that methods for causal discovery typically require large amounts of experiments.
 Highly parameterised models such as neural networks increase this requirement even further.
 As such, many regard causal discovery in molecular biomedicine as a scaling problem [@doi:10.48550/arXiv.2206.10591;@{https://gwern.net/scaling-hypothesis}] ([Glossary][Scaling hypothesis]).
@@ -239,7 +239,7 @@ In fact, we often presume causality from observation (i.e., we “jump to conclu
 A good *heuristic* is the application of a suitable bias to a problem, such that the solution can be considered acceptable despite limited resources.
 
 In machine learning, we can distinguish between useful and harmful biases.
-Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, and confirmation bias [@doi:10.48550/arXiv.1908.09635].
+Harmful biases are common issues in the technical process of training models; they include, for instance, sampling bias, selection bias, and confirmation bias [@doi:10.48550/arXiv.1908.09635;@doi:10.1007/s10208-022-09581-9].
 While addressing harmful biases is a crucial part of machine learning, we will not discuss them further in this perspective.
 
 Useful biases, on the other hand, are biases that are introduced into a model to improve its performance.
@@ -297,7 +297,7 @@ PK can be used to derive inductive biases either *explicitly* or *implicitly*.
 
 The explicit case typically involves a mathematical framework where a set of assumptions is explicitly stated and integrated into the model.
 Ordinary Differential Equation (ODE) models, logic-based models, rule-based models, and constraint-based models [@doi:10.1038/nrg3643], all of which are commonly used in systems biology, explicitly incorporate different types of PK, can be fitted to data, and then be used to answer different types of causal questions.
-In the field of CR, Structural Causal Models ([Glossary][Structural Causal Models (SCMs)]) can be used when mechanisms are unknown [@doi:10.48550/arXiv.2310.14935].
+In the field of CR, Structural Causal Models ([Glossary][Structural Causal Models (SCMs)]) can be used when mechanisms are unknown [@doi:10.48550/arXiv.2310.14935;@doi:10.1007/s10208-022-09581-9].
 Their advantage is high efficiency in the face of scarce data, but they are highly reliant on the quality and comprehensiveness of the underlying PK [@doi:10.1103/PhysRevResearch.5.043252].
 
 In contrast, implicit integration of PK in models involves learning useful representations directly from the data, without the explicit inclusion of biological assumptions or causal knowledge.
@@ -399,7 +399,7 @@ Of note, many of the proposed solutions for more explainable latent spaces depen
 
 The debate between adopting scaling strategies ([Glossary][Scaling hypothesis]) versus the injection of biases ([Glossary][Bias (machine learning)]) from PK ([Glossary][Prior knowledge]) highlights a fundamental tension in modern biomedical research.
 The "Bitter Lesson" suggests a preference for general-purpose learning algorithms that scale with computational resources, implicitly learning biases from data.
-However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded.
+However, complex models often pose significant computational challenges; many models are limited to network sizes unfeasibly small for biological inference, and feedback loops are often excluded [@doi:10.1007/s10208-022-09581-9].
 Conversely, explicitly injecting biases from PK can lead to more specialised and efficient models that can generalise using relatively little training data, but may not scale.
 Hybrid models represent a promising middle ground, combining the scalability of generalist models with the efficiency and specificity provided by tailored biases.
 Researchers often rely on intuition to determine which biases to inject, understanding that while no single model may universally excel (reflecting the "No Free Lunch" theorems, [Glossary]['No Free Lunch' Theorems]), the blend of generalisation through scaling and specialisation through bias injection might provide a robust framework for tackling complex biomedical challenges.
