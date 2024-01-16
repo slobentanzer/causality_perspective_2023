@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-16" />
   <meta name="citation_publication_date" content="2024-01-16" />
   <meta property="article:published_time" content="2024-01-16" />
-  <meta name="dc.modified" content="2024-01-16T00:06:53+00:00" />
-  <meta property="article:modified_time" content="2024-01-16T00:06:53+00:00" />
+  <meta name="dc.modified" content="2024-01-16T00:16:02+00:00" />
+  <meta property="article:modified_time" content="2024-01-16T00:16:02+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/440db88c1e4f6d05fa7e985542e883e4ddd478ee/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@548e0dd](https://github.com/slobentanzer/causality_perspective_2023/tree/548e0dd7b4c6376bf1b9921f29306100ce2b675c)
+from [slobentanzer/causality_perspective_2023@440db88](https://github.com/slobentanzer/causality_perspective_2023/tree/440db88c1e4f6d05fa7e985542e883e4ddd478ee)
 on January 16, 2024.
 </em></small>
 
@@ -541,7 +541,7 @@ It typically requires a specific mechanism in the model to account for the lack 
 
 ### Structural Causal Models (SCMs)
 
-SCMs are a type of statistical model used to represent and analyze causal relationships.
+SCMs are a type of statistical model used to represent and analyse causal relationships.
 They consist of variables and equations that describe how these variables interact causally.
 SCMs are particularly useful in causal inference as they allow for the analysis of how changes in one variable may cause changes in another.
 
