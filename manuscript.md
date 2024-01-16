@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-15'
+date-meta: '2024-01-16'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez-Mier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-15" />
-  <meta name="citation_publication_date" content="2024-01-15" />
-  <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:53:39+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:53:39+00:00" />
+  <meta name="dc.date" content="2024-01-16" />
+  <meta name="citation_publication_date" content="2024-01-16" />
+  <meta property="article:published_time" content="2024-01-16" />
+  <meta name="dc.modified" content="2024-01-16T00:06:53+00:00" />
+  <meta property="article:modified_time" content="2024-01-16T00:06:53+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@ce8cc64](https://github.com/slobentanzer/causality_perspective_2023/tree/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb)
-on January 15, 2024.
+from [slobentanzer/causality_perspective_2023@548e0dd](https://github.com/slobentanzer/causality_perspective_2023/tree/548e0dd7b4c6376bf1b9921f29306100ce2b675c)
+on January 16, 2024.
 </em></small>
 
 
@@ -160,7 +160,7 @@ In parallel, biomedicine has made major leaps in the past century, in particular
 
 In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation [@doi:10.1038/nature09534;@doi:10.1038/s41467-021-25743-9;@doi:10.48550/arXiv.2312.00818].
 
-Randomised clinical trials ([Glossary][Randomized Clinical Trials]) show that, in a lower-dimensional context, we can reliably identify causal effects.
+Randomised clinical trials ([Glossary][Randomised Clinical Trials]) show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
 In the language of Pearl’s Do-Calculus [@doi:10.48550/arXiv.1210.4852] ([Glossary][Pearl’s Do-Calculus]), we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
@@ -473,7 +473,7 @@ This balance depends on the complexity of model and data.
 
 ### Deductive vs. Inductive Reasoning
 
-Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
+Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalisations from specific observations.
 Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.
 
 ### Do-Calculus
@@ -518,12 +518,12 @@ A term referring to information that is available to inform a learning process.
 Often, this is the result of previous research.
 The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.
 
-### Randomized Clinical Trials
+### Randomised Clinical Trials
 
-Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
+Randomised clinical trials are experiments designed to test the efficacy of medical interventions.
 Participants are randomly assigned to groups receiving different treatments, including a control group, which often receives a placebo or gold-standard treatment.
 To further minimise confounding factors, participants and administering doctors are often blinded to the treatment given.
-This method is considered the gold standard in clinical research for its ability to minimize bias and establish causality between a treatment and its outcomes.
+This method is considered the gold standard in clinical research for its ability to minimise bias and establish causality between a treatment and its outcomes.
 
 ### Scaling hypothesis
 
