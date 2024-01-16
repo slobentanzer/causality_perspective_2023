@@ -8,7 +8,7 @@
   <meta name="author" content="Pablo Rodriguez-Mier" />
   <meta name="author" content="Stefan Bauer" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-15" />
+  <meta name="dcterms.date" content="2024-01-16" />
   <meta name="keywords" content="systems biology, biomedicine, causality, modelling, machine learning, foundation models" />
   <title>Molecular causality in the advent of foundation models</title>
   <style>
@@ -53,11 +53,11 @@
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-15" />
-  <meta name="citation_publication_date" content="2024-01-15" />
-  <meta property="article:published_time" content="2024-01-15" />
-  <meta name="dc.modified" content="2024-01-15T23:53:39+00:00" />
-  <meta property="article:modified_time" content="2024-01-15T23:53:39+00:00" />
+  <meta name="dc.date" content="2024-01-16" />
+  <meta name="citation_publication_date" content="2024-01-16" />
+  <meta property="article:published_time" content="2024-01-16" />
+  <meta name="dc.modified" content="2024-01-16T00:06:53+00:00" />
+  <meta property="article:modified_time" content="2024-01-16T00:06:53+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/548e0dd7b4c6376bf1b9921f29306100ce2b675c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/ce8cc64a3d90eeb81e2aa131ea91e68620b6b8eb">slobentanzer/causality_perspective_2023@ce8cc64</a>
-on January 15, 2024.
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/548e0dd7b4c6376bf1b9921f29306100ce2b675c">slobentanzer/causality_perspective_2023@548e0dd</a>
+on January 16, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -167,7 +167,7 @@ As simple as this widely agreed-upon statement may seem, scientifically defining
 Since being described by Aristotle approximately 2500 years ago <span class="citation" data-cites="UFFRFvH4">[<a href="#ref-UFFRFvH4" role="doc-biblioref">1</a>]</span>, causal reasoning (CR) remained virtually unchanged until it experienced significant formal and mathematical advancements <span class="citation" data-cites="peGxtHPM w47lt0ah 712MuGug">[<a href="#ref-peGxtHPM" role="doc-biblioref">2</a>,<a href="#ref-w47lt0ah" role="doc-biblioref">3</a>,<a href="#ref-712MuGug" role="doc-biblioref">4</a>]</span> and a resurgence in the field of machine learning <span class="citation" data-cites="12vzXD9U2 4Dq1NQZ8">[<a href="#ref-12vzXD9U2" role="doc-biblioref">5</a>,<a href="#ref-4Dq1NQZ8" role="doc-biblioref">6</a>]</span> only in recent times.
 In parallel, biomedicine has made major leaps in the past century, in particular in the development of high-throughput and large-scale methods.</p>
 <p>In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation <span class="citation" data-cites="IxBIB6CT 17kSbeSiE 17scpieH5">[<a href="#ref-IxBIB6CT" role="doc-biblioref">7</a>,<a href="#ref-17kSbeSiE" role="doc-biblioref">8</a>,<a href="#ref-17scpieH5" role="doc-biblioref">9</a>]</span>.</p>
-<p>Randomised clinical trials (<a href="#randomized-clinical-trials">Glossary</a>) show that, in a lower-dimensional context, we can reliably identify causal effects.
+<p>Randomised clinical trials (<a href="#randomised-clinical-trials">Glossary</a>) show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
 In the language of Pearl’s Do-Calculus <span class="citation" data-cites="12GOinshI">[<a href="#ref-12GOinshI" role="doc-biblioref">10</a>]</span> (<a href="#pearls-do-calculus">Glossary</a>), we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">11</a>]</span>.
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
@@ -402,7 +402,7 @@ As such, algorithmic bias can result from any stage in model training, from data
 The term implies that an optimal model finds a balance between bias (impact of the model on predictions) and variance (impact of the data on predictions).
 This balance depends on the complexity of model and data.</p>
 <h3 id="deductive-vs.-inductive-reasoning">Deductive vs. Inductive Reasoning</h3>
-<p>Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalizations from specific observations.
+<p>Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalisations from specific observations.
 Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.</p>
 <h3 id="do-calculus">Do-Calculus</h3>
 <p>See Pearl’s Do-Calculus.</p>
@@ -432,11 +432,11 @@ It provides a set of rules for calculating the effects of interventions in proba
 <p>A term referring to information that is available to inform a learning process.
 Often, this is the result of previous research.
 The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.</p>
-<h3 id="randomized-clinical-trials">Randomized Clinical Trials</h3>
-<p>Randomized clinical trials are experiments designed to test the efficacy of medical interventions.
+<h3 id="randomised-clinical-trials">Randomised Clinical Trials</h3>
+<p>Randomised clinical trials are experiments designed to test the efficacy of medical interventions.
 Participants are randomly assigned to groups receiving different treatments, including a control group, which often receives a placebo or gold-standard treatment.
 To further minimise confounding factors, participants and administering doctors are often blinded to the treatment given.
-This method is considered the gold standard in clinical research for its ability to minimize bias and establish causality between a treatment and its outcomes.</p>
+This method is considered the gold standard in clinical research for its ability to minimise bias and establish causality between a treatment and its outcomes.</p>
 <h3 id="scaling-hypothesis">Scaling hypothesis</h3>
 <p>The scaling hypothesis posits that the performance of a model increases with the amount of data it is trained on.
 Recently, it has come to describe the idea that, given enough data, complex model behaviours can emerge.
