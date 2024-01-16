@@ -18,7 +18,7 @@ Dugourd
 EGFR
 embeddings
 ERK
-Explainability
+explainability
 facto
 Geneformer
 generalisable
