@@ -28,8 +28,8 @@ header-includes: |
   <meta name="dc.date" content="2024-01-17" />
   <meta name="citation_publication_date" content="2024-01-17" />
   <meta property="article:published_time" content="2024-01-17" />
-  <meta name="dc.modified" content="2024-01-17T11:51:55+00:00" />
-  <meta property="article:modified_time" content="2024-01-17T11:51:55+00:00" />
+  <meta name="dc.modified" content="2024-01-17T18:54:10+00:00" />
+  <meta property="article:modified_time" content="2024-01-17T18:54:10+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/8a11cc5b86e1bf583b67264368b95009583541d3/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8a11cc5b86e1bf583b67264368b95009583541d3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/8a11cc5b86e1bf583b67264368b95009583541d3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/8a11cc5b86e1bf583b67264368b95009583541d3/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@3b7436f](https://github.com/slobentanzer/causality_perspective_2023/tree/3b7436f9e63581037b10fdc8f7701a3958d7ad59)
+from [slobentanzer/causality_perspective_2023@8a11cc5](https://github.com/slobentanzer/causality_perspective_2023/tree/8a11cc5b86e1bf583b67264368b95009583541d3)
 on January 17, 2024.
 </em></small>
 
@@ -162,7 +162,7 @@ In the field of systems biology, however, great hopes of causal insights from la
 
 [Randomised clinical trials][Randomised Clinical Trials] show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
-In the language of [Pearl’s Do-Calculus][Pearl’s Do-Calculus] [@doi:10.48550/arXiv.1210.4852], we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
+In the language of Pearl’s [Do-Calculus][Do-Calculus] [@doi:10.48550/arXiv.1210.4852], we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma [@doi:10.1056/NEJMoa1103782].
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
 The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results [@doi:10.1007/s10208-022-09581-9;@doi:10.1038/s41540-023-00310-8;@doi:10.1371/journal.pone.0027755], as well as in model explainability [@doi:10.48550/arXiv.2309.09901].
 With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.

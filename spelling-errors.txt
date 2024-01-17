@@ -2,7 +2,7 @@ Astex
 Aurelien
 Benchmarking
 biassed
-biomedicine
+Biomedicine
 Cas
 CNNs
 Convolutional
@@ -42,7 +42,7 @@ omics
 Orthogonally
 overactivation
 overfitted
-overfitting
+Overfitting
 pablormier
 parallelisation
 PCA
@@ -72,7 +72,7 @@ Theodoris
 tradeoff
 Travere
 UMAP
-Underfitting
+underfitting
 unfeasibly
 Vemurafenib
 Vis
