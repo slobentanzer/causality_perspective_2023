@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/slobentanzer/causality_perspective_2023/tree/gh-pages) branch hosts the contents of this directory at <https://slobentanzer.github.io/causality_perspective_2023/>.
-The permalink for this webpage version is <https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/>.
+The permalink for this webpage version is <https://slobentanzer.github.io/causality_perspective_2023/v/8a11cc5b86e1bf583b67264368b95009583541d3/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://slobentanzer.github.io/causality_perspective_2023/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`3b7436f9e63581037b10fdc8f7701a3958d7ad59`](https://github.com/slobentanzer/causality_perspective_2023/commit/3b7436f9e63581037b10fdc8f7701a3958d7ad59).
+[`8a11cc5b86e1bf583b67264368b95009583541d3`](https://github.com/slobentanzer/causality_perspective_2023/commit/8a11cc5b86e1bf583b67264368b95009583541d3).
