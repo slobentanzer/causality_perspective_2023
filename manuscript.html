@@ -8,7 +8,7 @@
   <meta name="author" content="Pablo Rodriguez-Mier" />
   <meta name="author" content="Stefan Bauer" />
   <meta name="author" content="Julio Saez-Rodriguez" />
-  <meta name="dcterms.date" content="2024-01-16" />
+  <meta name="dcterms.date" content="2024-01-17" />
   <meta name="keywords" content="systems biology, biomedicine, causality, modelling, machine learning, foundation models" />
   <title>Molecular causality in the advent of foundation models</title>
   <style>
@@ -53,11 +53,11 @@
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-16" />
-  <meta name="citation_publication_date" content="2024-01-16" />
-  <meta property="article:published_time" content="2024-01-16" />
-  <meta name="dc.modified" content="2024-01-16T09:16:14+00:00" />
-  <meta property="article:modified_time" content="2024-01-16T09:16:14+00:00" />
+  <meta name="dc.date" content="2024-01-17" />
+  <meta name="citation_publication_date" content="2024-01-17" />
+  <meta property="article:published_time" content="2024-01-17" />
+  <meta name="dc.modified" content="2024-01-17T11:51:55+00:00" />
+  <meta property="article:modified_time" content="2024-01-17T11:51:55+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/">permalink</a>)
+(<a href="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/3c2200286939bbcfd438bfec67e7ee0dff3d062a">slobentanzer/causality_perspective_2023@3c22002</a>
-on January 16, 2024.
+from <a href="https://github.com/slobentanzer/causality_perspective_2023/tree/3b7436f9e63581037b10fdc8f7701a3958d7ad59">slobentanzer/causality_perspective_2023@3b7436f</a>
+on January 17, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -169,7 +169,7 @@ In parallel, biomedicine has made major leaps in the past century, in particular
 <p>In the field of systems biology, however, great hopes of causal insights from large-scale omics studies have largely been thwarted by the complexity of molecular mechanisms and the inability of existing methods to distinguish between correlation and causation <span class="citation" data-cites="IxBIB6CT 17kSbeSiE 17scpieH5">[<a href="#ref-IxBIB6CT" role="doc-biblioref">7</a>,<a href="#ref-17kSbeSiE" role="doc-biblioref">8</a>,<a href="#ref-17scpieH5" role="doc-biblioref">9</a>]</span>.</p>
 <p><a href="#randomised-clinical-trials">Randomised clinical trials</a> show that, in a lower-dimensional context, we can reliably identify causal effects.
 By controlling “all” relevant covariates in a trial (via the principle of the gold-standard, randomised, double-blind, and placebo-controlled trial), we isolate the causal effect of the controlled variable, i.e., the treatment.
-In the language of <a href="#pearls-do-calculus">Pearl’s Do-Calculus</a> <span class="citation" data-cites="12GOinshI">[<a href="#ref-12GOinshI" role="doc-biblioref">10</a>]</span>, we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">11</a>]</span>.
+In the language of [Pearl’s Do-Calculus][Pearl’s Do-Calculus] <span class="citation" data-cites="12GOinshI">[<a href="#ref-12GOinshI" role="doc-biblioref">10</a>]</span>, we measure the outcome of, for instance, do(“Treat with Vemurafenib”) when conducting a clinical trial on V600E-positive melanoma <span class="citation" data-cites="muFRX2ZL">[<a href="#ref-muFRX2ZL" role="doc-biblioref">11</a>]</span>.
 However, translating this mode of reasoning into the high-dimensional space of modern omics poses enormous challenges.
 The dramatically larger parameter space of models at the molecular level leads to problems in the performance of methods and the identifiability of results <span class="citation" data-cites="zmU2wGX7 3e4s1VLp 15RkhPQiZ">[<a href="#ref-zmU2wGX7" role="doc-biblioref">12</a>,<a href="#ref-3e4s1VLp" role="doc-biblioref">13</a>,<a href="#ref-15RkhPQiZ" role="doc-biblioref">14</a>]</span>, as well as in model explainability <span class="citation" data-cites="18RVn064W">[<a href="#ref-18RVn064W" role="doc-biblioref">15</a>]</span>.
 With this perspective, we discuss the current connections between CR and molecular systems biology in the context of these challenges.
@@ -380,6 +380,12 @@ However, it remains to be seen whether the future of biological modelling will b
 <p>While the allure of generalist models trained on extensive datasets is strong, the unique challenges of biomedical research may necessitate a more tailored approach.
 Including explicit favourable biases, informed by deep domain knowledge and specific data types (observational or interventional), could lead to breakthroughs in understanding complex biological systems.
 The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.</p>
+<h2 class="page_break_before" id="acknowledgements">Acknowledgements</h2>
+<p>We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.</p>
+<h2 id="funding">Funding</h2>
+<p>This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).</p>
+<h2 id="conflict-of-interest">Conflict of Interest</h2>
+<p>JSR reports funding from GSK, Pfizer, and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer, and Grunenthal.</p>
 <h2 id="glossary">Glossary</h2>
 <h3 id="attention-deep-learning">Attention (deep learning)</h3>
 <p>A mechanism in deep learning that allows the model to focus on specific parts of the input data.
@@ -394,7 +400,7 @@ This means it does not capture the complexity of the data and fails to learn the
 Conversely, a model with low bias (high variance) makes complex assumptions to fit the data closely, which can lead to <a href="#overfitting">overfitting</a>, where the model captures noise in the data as if it were a true pattern.
 See also the <a href="#bias-variance-tradeoff">bias-variance tradeoff</a>.</p></li>
 <li><p>The second definition is also known as algorithmic bias, and refers to the systematic and repeatable errors in a model due to faulty assumptions or data.
-It often reflect existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
+It often reflects existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
 As such, algorithmic bias can result from any stage in model training, from data collection to model deployment.</p></li>
 </ol>
 <h3 id="bias-variance-tradeoff">Bias-variance tradeoff</h3>
@@ -405,7 +411,8 @@ This balance depends on the complexity of model and data.</p>
 <p>Deductive reasoning involves drawing specific conclusions from general statements or premises, whereas inductive reasoning involves making broad generalisations from specific observations.
 Deductive reasoning is often seen as more logically sound but less informative about the real world, while inductive reasoning is more exploratory but can lead to less certain conclusions.</p>
 <h3 id="do-calculus">Do-Calculus</h3>
-<p>See Pearl’s Do-Calculus.</p>
+<p>Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
+It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.</p>
 <h3 id="foundation-model">Foundation model</h3>
 <p>A model that is trained on a large amount of data and can be used as a starting point for further model development (also referred to as fine-tuning).
 Foundation models are assumed to have learned generalisable patterns from their input data.
@@ -425,13 +432,9 @@ Related to the <a href="#bias-variance-tradeoff">bias-variance tradeoff</a>, par
 Overfitting tends to lead to high performance on the training data but poor performance on the test data.
 If a model has overfitted also to the test data, it will also perform poorly on new data, i.e., it will not generalise well.
 This is a common occurrence if there has been data leakage between training, validation, and test data.</p>
-<h3 id="pearls-do-calculus">Pearl’s Do-Calculus</h3>
-<p>Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
-It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.</p>
 <h3 id="prior-knowledge-1">Prior knowledge</h3>
 <p>A term referring to information that is available to inform a learning process.
-Often, this is the result of previous research.
-The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.</p>
+Often, this is the result of previous research.</p>
 <h3 id="randomised-clinical-trials">Randomised Clinical Trials</h3>
 <p>Randomised clinical trials are experiments designed to test the efficacy of medical interventions.
 Participants are randomly assigned to groups receiving different treatments, including a control group, which often receives a placebo or gold-standard treatment.
@@ -460,12 +463,6 @@ Describes how much the predictions of a model vary given different training data
 High variance (low bias) in a model can lead to <a href="#overfitting">overfitting</a> and thus harm generalisation.
 Conversely, low variance (high bias) can lead to <a href="#underfitting">underfitting</a> and thus to a model that does not capture the complexity of the data.
 See also the <a href="#bias-variance-tradeoff">bias-variance tradeoff</a>.</p>
-<h2 class="page_break_before" id="acknowledgements">Acknowledgements</h2>
-<p>We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.</p>
-<h2 id="funding">Funding</h2>
-<p>This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).</p>
-<h2 id="conflict-of-interest">Conflict of Interest</h2>
-<p>JSR reports funding from GSK, Pfizer, and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer, and Grunenthal.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">

@@ -2,7 +2,7 @@ Astex
 Aurelien
 Benchmarking
 biassed
-Biomedicine
+biomedicine
 Cas
 CNNs
 Convolutional
@@ -42,7 +42,7 @@ omics
 Orthogonally
 overactivation
 overfitted
-Overfitting
+overfitting
 pablormier
 parallelisation
 PCA

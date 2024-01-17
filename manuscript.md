@@ -8,7 +8,7 @@ keywords:
 - machine learning
 - foundation models
 lang: en-UK
-date-meta: '2024-01-16'
+date-meta: '2024-01-17'
 author-meta:
 - Sebastian Lobentanzer
 - Pablo Rodriguez-Mier
@@ -25,11 +25,11 @@ header-includes: |
   <meta name="citation_title" content="Molecular causality in the advent of foundation models" />
   <meta property="og:title" content="Molecular causality in the advent of foundation models" />
   <meta property="twitter:title" content="Molecular causality in the advent of foundation models" />
-  <meta name="dc.date" content="2024-01-16" />
-  <meta name="citation_publication_date" content="2024-01-16" />
-  <meta property="article:published_time" content="2024-01-16" />
-  <meta name="dc.modified" content="2024-01-16T09:16:14+00:00" />
-  <meta property="article:modified_time" content="2024-01-16T09:16:14+00:00" />
+  <meta name="dc.date" content="2024-01-17" />
+  <meta name="citation_publication_date" content="2024-01-17" />
+  <meta property="article:published_time" content="2024-01-17" />
+  <meta name="dc.modified" content="2024-01-17T11:51:55+00:00" />
+  <meta property="article:modified_time" content="2024-01-17T11:51:55+00:00" />
   <meta name="dc.language" content="en-UK" />
   <meta name="citation_language" content="en-UK" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://slobentanzer.github.io/causality_perspective_2023/" />
   <meta name="citation_pdf_url" content="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://slobentanzer.github.io/causality_perspective_2023/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/" />
-  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
+  <meta name="manubot_html_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/" />
+  <meta name="manubot_pdf_url_versioned" content="https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3c2200286939bbcfd438bfec67e7ee0dff3d062a/))
+([permalink](https://slobentanzer.github.io/causality_perspective_2023/v/3b7436f9e63581037b10fdc8f7701a3958d7ad59/))
 was automatically generated
-from [slobentanzer/causality_perspective_2023@3c22002](https://github.com/slobentanzer/causality_perspective_2023/tree/3c2200286939bbcfd438bfec67e7ee0dff3d062a)
-on January 16, 2024.
+from [slobentanzer/causality_perspective_2023@3b7436f](https://github.com/slobentanzer/causality_perspective_2023/tree/3b7436f9e63581037b10fdc8f7701a3958d7ad59)
+on January 17, 2024.
 </em></small>
 
 
@@ -443,6 +443,18 @@ Including explicit favourable biases, informed by deep domain knowledge and spec
 The field must explore these possibilities, balancing the drive for large-scale data with the need for precision and specificity, to realise the full potential of modern systems biology.
 
 
+## Acknowledgements {.page_break_before}
+
+We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.
+
+## Funding
+
+This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).
+
+## Conflict of Interest
+
+JSR reports funding from GSK, Pfizer, and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer, and Grunenthal.
+
 ## Glossary
 
 ### Attention (deep learning)
@@ -462,7 +474,7 @@ Conversely, a model with low bias (high variance) makes complex assumptions to f
 See also the [bias-variance tradeoff][Bias-variance tradeoff].
 
 2. The second definition is also known as algorithmic bias, and refers to the systematic and repeatable errors in a model due to faulty assumptions or data.
-It often reflect existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
+It often reflects existing biases in the real world that the training data are derived from, but can also result from architectural choices in the model.
 As such, algorithmic bias can result from any stage in model training, from data collection to model deployment.
 
 ### Bias-variance tradeoff
@@ -478,7 +490,8 @@ Deductive reasoning is often seen as more logically sound but less informative a
 
 ### Do-Calculus
 
-See Pearl’s Do-Calculus.
+Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
+It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.
 
 ### Foundation model
 
@@ -507,16 +520,10 @@ Overfitting tends to lead to high performance on the training data but poor perf
 If a model has overfitted also to the test data, it will also perform poorly on new data, i.e., it will not generalise well.
 This is a common occurrence if there has been data leakage between training, validation, and test data.
 
-### Pearl’s Do-Calculus
-
-Developed by Judea Pearl, Do-Calculus is a formal mathematical framework used in causal inference.
-It provides a set of rules for calculating the effects of interventions in probabilistic models, allowing researchers to infer causality from observational data.
-
 ### Prior knowledge
 
 A term referring to information that is available to inform a learning process.
 Often, this is the result of previous research.
-The tasks of collecting and integrating prior knowledge are often referred to as knowledge engineering and form a crucial part of model development in systems biology.
 
 ### Randomised Clinical Trials
 
@@ -557,18 +564,6 @@ Describes how much the predictions of a model vary given different training data
 High variance (low bias) in a model can lead to [overfitting][Overfitting] and thus harm generalisation.
 Conversely, low variance (high bias) can lead to [underfitting][Underfitting] and thus to a model that does not capture the complexity of the data.
 See also the [bias-variance tradeoff][Bias-variance tradeoff].
-
-## Acknowledgements {.page_break_before}
-
-We thank Aurelien Dugourd, Philipp Schäfer, Loan Vulliard, and Jan Lanzer for their helpful comments on the manuscript.
-
-## Funding
-
-This work was supported by the European Union’s Horizon 2020 Programme under PerMedCoE (951773) and DECIDER (965193).
-
-## Conflict of Interest
-
-JSR reports funding from GSK, Pfizer, and Sanofi and fees/honoraria from Travere Therapeutics, Stadapharm, Astex, Pfizer, and Grunenthal.
 
 ## References {.page_break_before}
 
